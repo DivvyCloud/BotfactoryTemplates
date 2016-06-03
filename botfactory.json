@@ -1,0 +1,18 @@
+{
+    "templates": [
+        {
+            "uuid": "divvy.security_rule_audit",
+            "name": "Audit Security Rules",
+            "category": "Security",
+            "description": "Identify select ports such as SSH open to the world",
+            "version": "0.1.0"
+        },
+        {
+            "uuid": "divvy.database_multiaz",
+            "name": "Database Is Multi-AZ",
+            "category": "Best Practices",
+            "description": "Ensures that databases are configured with multi-az for resilience",
+            "version": "0.1.0"
+        }
+    ]
+}

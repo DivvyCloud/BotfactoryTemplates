@@ -1,0 +1,67 @@
+{
+    "uuid": "divvy.security_rule_audit",
+    "name": "Audit Security Rules",
+    "category": "Security",
+    "description": "Identify select ports such as SSH open to the world ",
+    "instructions": {
+        "actions": [
+            {
+                "config": {},
+                "name": "divvy.action.mark_non_compliant",
+                "run_when_result_is": true
+            }
+        ],
+        "filters": [
+            {
+                "config": {
+                    "direction": [
+                        "ingress"
+                    ]
+                },
+                "name": "divvy.filter.access_rule_direction",
+                "negate": false
+            },
+            {
+                "config": {
+                    "access_list_types": [
+                        "security_group"
+                    ]
+                },
+                "name": "divvy.filter.access_list_type",
+                "negate": false
+            },
+            {
+                "config": {
+                    "ports": [
+                        "22",
+                        "3306",
+                        "6379",
+                        "3389"
+                    ]
+                },
+                "name": "divvy.filter.access_rule_ports",
+                "negate": false
+            },
+            {
+                "config": {
+                    "action": "allow"
+                },
+                "name": "divvy.filter.access_rule_action",
+                "negate": false
+            },
+            {
+                "config": {},
+                "name": "divvy.filter.network_open_to_world",
+                "negate": false
+            }
+        ],
+    },
+    "groups": [],
+    "hookpoints": ["divvy.resource.created"],
+    "ondemand_enabled": true,
+    "resource_types": [
+        "resourceaccesslistrule"
+    ],
+    "schedule": null,
+    "schedule_description": null
+}
