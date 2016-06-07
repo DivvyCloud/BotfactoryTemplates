@@ -17,20 +17,20 @@
                 "name": "divvy.filter.database_instance_multi_az",
                 "negate": false
             }
-        ]
-    },
-    "groups": [],
-    "hookpoints": [
-        "divvycloud.resource.created"
-    ],
-    "ondemand_enabled": true,
-    "resource_types": [
-        "dbinstance"
-    ],
-    "schedule": {
-        "_type": "Daily",
-        "time_of_day": {"_type": "TimeOfDay", "second": 0, "minute": 0, "hour": 4},
-        "exclude_days": []
-    },
-    "schedule_description": "Daily at 04:00:00"
+        ],
+        "groups": [],
+        "hookpoints": [
+            "divvycloud.resource.created"
+        ],
+        "ondemand_enabled": true,
+        "resource_types": [
+            "dbinstance"
+        ],
+        "schedule": {
+            "_type": "Daily",
+            "time_of_day": {"_type": "TimeOfDay", "second": 0, "minute": 0, "hour": 4},
+            "exclude_days": []
+        },
+        "schedule_description": "Daily at 04:00:00"
+    }
 }

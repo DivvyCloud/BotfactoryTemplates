@@ -55,13 +55,13 @@
                 "negate": false
             }
         ],
-    },
-    "groups": [],
-    "hookpoints": ["divvy.resource.created"],
-    "ondemand_enabled": true,
-    "resource_types": [
-        "resourceaccesslistrule"
-    ],
-    "schedule": null,
-    "schedule_description": null
+        "groups": [],
+        "hookpoints": ["divvy.resource.created"],
+        "ondemand_enabled": true,
+        "resource_types": [
+            "resourceaccesslistrule"
+        ],
+        "schedule": null,
+        "schedule_description": null
+    }
 }
