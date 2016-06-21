@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.database_multiaz",
-    "name": "Database Is Multi-AZ",
-    "category": "Best Practices",
-    "description": "Ensures that databases are configured with multi-az for resillency",
+    "uuid": "divvy.snapshot_age",
+    "name": "Snapshot Age",
+    "category": "Optimization",
+    "description": "Identify snapshots older than X days",
     "instructions": {
         "actions": [
             {
@@ -13,22 +13,22 @@
         ],
         "filters": [
             {
-                "config": {},
-                "name": "divvy.filter.database_instance_multi_az",
+                "config": {
+                    "days": 90
+                },
+                "name": "divvy.filter.snapshot_of_age",
                 "negate": false
             }
         ],
         "groups": [],
-        "hookpoints": [
-            "divvycloud.resource.created"
-        ],
+        "hookpoints": [],
         "ondemand_enabled": true,
         "resource_types": [
-            "dbinstance"
+            "snapshot"
         ],
         "schedule": {
             "_type": "Daily",
-            "time_of_day": {"_type": "TimeOfDay", "second": 0, "minute": 0, "hour": 4},
+            "time_of_day": {"_type": "TimeOfDay", "second": 0, "minute": 0, "hour": 3},
             "exclude_days": []
         }
     }

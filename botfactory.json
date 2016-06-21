@@ -15,6 +15,150 @@
             "description": "Ensures that databases are configured with multi-az for resilience",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_database_multiaz.json"
+        },
+        {
+            "uuid": "divvy.scheduled_instances",
+            "category": "Optimization",
+            "name": "Scheduled Instances",
+            "description": "Scheduled instance stop/start across one or more clouds/resource groups",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_scheduled_instances.json"
+        },
+        {
+            "uuid": "divvy.group_curation",
+            "name": "Resource Group Curation",
+            "category": "Curation",
+            "description": "Curate target resources into one or more resource groups",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_group_curation.json"
+        },
+        {
+            "uuid": "divvy.snapshot_age",
+            "name": "Snapshot Age",
+            "category": "Optimization",
+            "description": "Identify snapshots older than X days",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_snapshot_age.json"
+        },
+        {
+            "uuid": "divvy.region_audit",
+            "name": "Region Audit",
+            "category": "Best Practices",
+            "description": "Audit select resource types across specific cloud regions",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_region_audit.json"
+        },
+        {
+            "uuid": "divvy.instance_audit",
+            "name": "Compute Instance Type Audit",
+            "category": "Optimization",
+            "description": "Audit compute instance types against select clouds",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_instance_audit.json"
+        },
+        {
+            "uuid": "divvy.database_instance_audit",
+            "name": "Database Instance Type Audit",
+            "category": "Optimization",
+            "description": "Audit database instance types against select clouds",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_database_instance_audit.json"
+        },
+        {
+            "uuid": "divvy.memcache_instance_audit",
+            "name": "Memcache Instance Type Audit",
+            "category": "Optimization",
+            "description": "Audit memcache instance types against select clouds",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_memcache_instance_audit.json"
+        },
+        {
+            "uuid": "divvy.expired_ssl_certs",
+            "name": "Expired SSL Certificates",
+            "category": "Security",
+            "description": "Identify expired/soon to expire SSL certificates",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_expired_ssl_cert.json"
+        },
+        {
+            "uuid": "divvy.tag_audit",
+            "name": "Tag Audit",
+            "category": "Best Practices",
+            "description": "Enforce tagging standards and policy across select resource types",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_tag_audit.json"
+        },
+        {
+            "uuid": "divvy.bucket_permissions",
+            "name": "S3 Bucket Permissions",
+            "category": "Security",
+            "description": "Identify buckets exposing data with permissive access lists",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_bucket_permissions.json"
+        },
+        {
+            "uuid": "divvy.unattached_volumes",
+            "name": "Unattached Volumes",
+            "category": "Optimization",
+            "description": "Identifies unattached volumes",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_unattached_volumes.json"
+        },
+        {
+            "uuid": "divvy.orphaned_public_ips",
+            "name": "Orphaned Public IP addresses",
+            "category": "Optimization",
+            "description": "Identifies unattached IP addresses which can incur cost",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_ophaned_public_ips.json"
+        },
+        {
+            "uuid": "divvy.ensure_2fa_enabled",
+            "name": "Ensure MFA enabled on user accounts",
+            "category": "Security",
+            "description": "Identify cloud users without two-factor (MFA) enabled",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_ensure_2fa_enabled.json"
+        },
+        {
+            "uuid": "divvy.orphaned_load_balancers",
+            "name": "Load balancers with no instances",
+            "category": "Optimization",
+            "description": "Identifies orphaned load balancers with no instance associations",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_ophaned_load_balancers.json"
+        },
+        {
+            "uuid": "divvy.unsupported_db_engines",
+            "name": "Database Engine Types",
+            "category": "Best Practices",
+            "description": "Identify unsupported/blacklisted database engines",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_unsupported_db_engines.json"
+        },
+        {
+            "uuid": "divvy.buckets_without_permissions",
+            "name": "S3 buckets with no permissions",
+            "category": "Security",
+            "description": "Identifies buckets without any permission sets",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_buckets_without_permissions.json"
+        },
+        {
+            "uuid": "divvy.subnet_exceeds_maximum_netblock",
+            "name": "Subnet CIDR exceeds maximum netblock",
+            "category": "Optimization",
+            "description": "Identify subnets where the number of IP's exceeds a defined limit",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_subnet_exceeds_maximum_netblock.json"
+        },
+        {
+            "uuid": "divvy.orphaned_security_groups",
+            "category": "Security",
+            "name": "Orphaned Security Groups",
+            "description": "Security groups unattached to instances",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_orphaned_security_groups.json"
         }
     ]
 }

@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.database_multiaz",
-    "name": "Database Is Multi-AZ",
-    "category": "Best Practices",
-    "description": "Ensures that databases are configured with multi-az for resillency",
+    "uuid": "divvy.ensure_2fa_enabled",
+    "name": "Ensure MFA enabled on user accounts",
+    "category": "Security",
+    "description": "Identify cloud users without two-factor (MFA) enabled",
     "instructions": {
         "actions": [
             {
@@ -14,17 +14,18 @@
         "filters": [
             {
                 "config": {},
-                "name": "divvy.filter.database_instance_multi_az",
+                "name": "divvy.filter.user_has_two_factor_enabled",
                 "negate": false
             }
         ],
         "groups": [],
         "hookpoints": [
-            "divvycloud.resource.created"
+            "divvycloud.resource.created",
+            "divvycloud.resource.modified"
         ],
         "ondemand_enabled": true,
         "resource_types": [
-            "dbinstance"
+            "serviceuser"
         ],
         "schedule": {
             "_type": "Daily",

@@ -1,30 +1,28 @@
 {
-    "uuid": "divvy.database_multiaz",
-    "name": "Database Is Multi-AZ",
-    "category": "Best Practices",
-    "description": "Ensures that databases are configured with multi-az for resillency",
+    "uuid": "divvy.orphaned_security_groups",
+    "category": "Security",
+    "name": "Orphaned Security Groups",
+    "description": "Security groups unattached to instances",
     "instructions": {
         "actions": [
             {
                 "config": {},
                 "name": "divvy.action.mark_non_compliant",
-                "run_when_result_is": false
+                "run_when_result_is": true
             }
         ],
         "filters": [
             {
                 "config": {},
-                "name": "divvy.filter.database_instance_multi_az",
+                "name": "divvy.filter.orphaned_security_groups",
                 "negate": false
             }
         ],
         "groups": [],
-        "hookpoints": [
-            "divvycloud.resource.created"
-        ],
+        "hookpoints": [],
         "ondemand_enabled": true,
         "resource_types": [
-            "dbinstance"
+            "resourceaccesslist"
         ],
         "schedule": {
             "_type": "Daily",

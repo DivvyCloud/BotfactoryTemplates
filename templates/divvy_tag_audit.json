@@ -1,0 +1,59 @@
+{
+    "uuid": "divvy.tag_audit",
+    "name": "Tag Audit",
+    "category": "Best Practices",
+    "description": "Enforce tagging standards and policy across select resource types",
+    "instructions": {
+        "actions": [
+            {
+                "config": {},
+                "name": "divvy.action.mark_non_compliant",
+                "run_when_result_is": false
+            }
+        ],
+        "filters": [
+            {
+                "config": {
+                    "case_sensitive": "",
+                    "tags_list": [
+                        "Environment",
+                        "POC"
+                    ]
+                },
+                "name": "divvy.filter.has_all_tags",
+                "negate": false
+            },
+            {
+                "config": {
+                    "case_sensitive": "",
+                    "tag_key": "Environment",
+                    "tag_values": [
+                        "Production",
+                        "QA",
+                        "Development",
+                        "Staging"
+                    ]
+                },
+                "name": "divvy.filter.validate_tag_value",
+                "negate": false
+            }
+        ],
+        "groups": [],
+        "hookpoints": [
+            "divvycloud.resource.created"
+        ],
+        "ondemand_enabled": true,
+        "resource_types": [
+            "instance",
+            "storagecontainer",
+            "privatenetwork",
+            "mcinstance",
+            "dbinstance"
+        ],
+        "schedule": {
+            "_type": "Daily",
+            "time_of_day": {"_type": "TimeOfDay", "second": 0, "minute": 0, "hour": 3},
+            "exclude_days": []
+        }
+    }
+}

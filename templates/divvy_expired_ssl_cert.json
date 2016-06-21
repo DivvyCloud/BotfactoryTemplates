@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.database_multiaz",
-    "name": "Database Is Multi-AZ",
-    "category": "Best Practices",
-    "description": "Ensures that databases are configured with multi-az for resillency",
+    "uuid": "divvy.expired_ssl_certs",
+    "name": "Expired SSL Certificates",
+    "category": "Security",
+    "description": "Identify expired/soon to expire SSL certificates",
     "instructions": {
         "actions": [
             {
@@ -13,22 +13,22 @@
         ],
         "filters": [
             {
-                "config": {},
-                "name": "divvy.filter.database_instance_multi_az",
+                "config": {
+                    "days": 14
+                },
+                "name": "divvy.filter.expiring_ssl_certificates",
                 "negate": false
             }
         ],
         "groups": [],
-        "hookpoints": [
-            "divvycloud.resource.created"
-        ],
+        "hookpoints": [],
         "ondemand_enabled": true,
         "resource_types": [
-            "dbinstance"
+            "servicecertificate"
         ],
         "schedule": {
             "_type": "Daily",
-            "time_of_day": {"_type": "TimeOfDay", "second": 0, "minute": 0, "hour": 4},
+            "time_of_day": {"_type": "TimeOfDay", "second": 0, "minute": 0, "hour": 3},
             "exclude_days": []
         }
     }

@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.database_multiaz",
-    "name": "Database Is Multi-AZ",
-    "category": "Best Practices",
-    "description": "Ensures that databases are configured with multi-az for resillency",
+    "uuid": "divvy.subnet_exceeds_maximum_netblock",
+    "name": "Subnet CIDR exceeds maximum netblock",
+    "category": "Optimization",
+    "description": "Identify subnets where the number of IP's exceeds a defined limit",
     "instructions": {
         "actions": [
             {
@@ -13,8 +13,10 @@
         ],
         "filters": [
             {
-                "config": {},
-                "name": "divvy.filter.database_instance_multi_az",
+                "config": {
+                    "limit": 1024
+                },
+                "name": "divvy.filter.subnet_exceeds_ip_limit",
                 "negate": false
             }
         ],
@@ -24,7 +26,7 @@
         ],
         "ondemand_enabled": true,
         "resource_types": [
-            "dbinstance"
+            "privatesubnet"
         ],
         "schedule": {
             "_type": "Daily",

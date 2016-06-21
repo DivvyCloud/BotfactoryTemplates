@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.database_multiaz",
-    "name": "Database Is Multi-AZ",
-    "category": "Best Practices",
-    "description": "Ensures that databases are configured with multi-az for resillency",
+    "uuid": "divvy.orphaned_public_ips",
+    "name": "Orphaned Public IP addresses",
+    "category": "Optimization",
+    "description": "Identifies unattached IP addresses which can incur cost",
     "instructions": {
         "actions": [
             {
@@ -14,17 +14,15 @@
         "filters": [
             {
                 "config": {},
-                "name": "divvy.filter.database_instance_multi_az",
+                "name": "divvy.filter.orphaned_ip_network_or_instances",
                 "negate": false
             }
         ],
         "groups": [],
-        "hookpoints": [
-            "divvycloud.resource.created"
-        ],
+        "hookpoints": [],
         "ondemand_enabled": true,
         "resource_types": [
-            "dbinstance"
+            "publicip"
         ],
         "schedule": {
             "_type": "Daily",

@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.database_multiaz",
-    "name": "Database Is Multi-AZ",
-    "category": "Best Practices",
-    "description": "Ensures that databases are configured with multi-az for resillency",
+    "uuid": "divvy.unattached_volumes",
+    "name": "Unattached Volumes",
+    "category": "Optimization",
+    "description": "Identifies unattached volumes",
     "instructions": {
         "actions": [
             {
@@ -14,17 +14,15 @@
         "filters": [
             {
                 "config": {},
-                "name": "divvy.filter.database_instance_multi_az",
+                "name": "divvy.filter.orphaned_volume",
                 "negate": false
             }
         ],
         "groups": [],
-        "hookpoints": [
-            "divvycloud.resource.created"
-        ],
+        "hookpoints": [],
         "ondemand_enabled": true,
         "resource_types": [
-            "dbinstance"
+            "volume"
         ],
         "schedule": {
             "_type": "Daily",

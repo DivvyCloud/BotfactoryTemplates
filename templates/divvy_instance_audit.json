@@ -1,0 +1,46 @@
+{
+    "uuid": "divvy.instance_audit",
+    "name": "Compute Instance Type Audit",
+    "category": "Optimization",
+    "description": "Audit compute instance types against select clouds",
+    "instructions": {
+        "actions": [
+            {
+                "config": {},
+                "name": "divvy.action.mark_non_compliant",
+                "run_when_result_is": false
+            }
+        ],
+        "filters": [
+            {
+                "config": {
+                    "instance_types": [
+                        "m4.xlarge",
+                        "m4.10xlarge",
+                        "c4.8xlarge",
+                        "c3.8xlarge",
+                        "r3.8xlarge",
+                        "g2.8xlarge",
+                        "i2.8xlarge",
+                        "x1.32xlarge"
+                    ]
+                },
+                "name": "divvy.filter.instance_type",
+                "negate": false
+            }
+        ],
+        "groups": [],
+        "hookpoints": [
+            "divvycloud.resource.created"
+        ],
+        "ondemand_enabled": true,
+        "resource_types": [
+            "instance"
+        ],
+        "schedule": {
+            "_type": "Daily",
+            "time_of_day": {"_type": "TimeOfDay", "second": 0, "minute": 0, "hour": 3},
+            "exclude_days": []
+        }
+    }
+}

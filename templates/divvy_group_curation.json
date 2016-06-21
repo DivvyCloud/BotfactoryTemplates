@@ -1,0 +1,38 @@
+{
+    "uuid": "divvy.group_curation",
+    "name": "Resource Group Curation",
+    "category": "Curation",
+    "description": "Curate target resources into one or more resource groups",
+    "instructions": {
+        "actions": [
+            {
+                "config": {
+                    "resource_group_id": ""
+                },
+                "name": "divvy.action.curate",
+                "run_when_result_is": true
+            }
+        ],
+        "filters": [
+            {
+                "config": {
+                    "regex": ""
+                },
+                "name": "divvy.filter.resource_name_regex",
+                "negate": false
+            }        ],
+        "groups": [],
+        "hookpoints": ["divvycloud.resource.created"],
+        "ondemand_enabled": true,
+        "resource_types": [
+            "instance",
+            "dbinstance",
+            "mcinstance"
+        ],
+        "schedule": {
+            "_type": "Daily",
+            "time_of_day": {"_type": "TimeOfDay", "second": 0, "minute": 0, "hour": 6},
+            "exclude_days": []
+        }
+    }
+}

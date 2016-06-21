@@ -61,7 +61,6 @@
         "resource_types": [
             "resourceaccesslistrule"
         ],
-        "schedule": null,
-        "schedule_description": null
+        "schedule": null
     }
 }

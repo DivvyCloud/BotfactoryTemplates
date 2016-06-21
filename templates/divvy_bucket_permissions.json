@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.database_multiaz",
-    "name": "Database Is Multi-AZ",
-    "category": "Best Practices",
-    "description": "Ensures that databases are configured with multi-az for resillency",
+    "uuid": "divvy.bucket_permissions",
+    "name": "S3 Bucket Permissions",
+    "category": "Security",
+    "description": "Identify buckets exposing data with permissive access lists",
     "instructions": {
         "actions": [
             {
@@ -13,18 +13,25 @@
         ],
         "filters": [
             {
-                "config": {},
-                "name": "divvy.filter.database_instance_multi_az",
+                "config": {
+                    "permissions_list": [
+                        "FULL_CONTROL",
+                        "WRITE",
+                        "READ"
+                    ]
+                },
+                "name": "divvy.filter.bucket_permissions_list",
                 "negate": false
             }
         ],
         "groups": [],
         "hookpoints": [
-            "divvycloud.resource.created"
+            "divvycloud.resource.created",
+            "divvycloud.resource.modified"
         ],
         "ondemand_enabled": true,
         "resource_types": [
-            "dbinstance"
+            "storagecontainer"
         ],
         "schedule": {
             "_type": "Daily",

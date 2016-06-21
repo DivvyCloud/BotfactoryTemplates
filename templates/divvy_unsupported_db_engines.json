@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.database_multiaz",
-    "name": "Database Is Multi-AZ",
+    "uuid": "divvy.unsupported_db_engines",
+    "name": "Database Engine Types",
     "category": "Best Practices",
-    "description": "Ensures that databases are configured with multi-az for resillency",
+    "description": "Identify unsupported/blacklisted database engines",
     "instructions": {
         "actions": [
             {
@@ -13,8 +13,14 @@
         ],
         "filters": [
             {
-                "config": {},
-                "name": "divvy.filter.database_instance_multi_az",
+                "config": {
+                    "db_engines": [
+                        "oracle",
+                        "aurora",
+                        "mariadb"
+                    ]
+                },
+                "name": "divvy.filter.database_engine",
                 "negate": false
             }
         ],
