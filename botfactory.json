@@ -110,7 +110,7 @@
             "category": "Optimization",
             "description": "Identifies unattached IP addresses which can incur cost",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_ophaned_public_ips.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_orphaned_public_ips.json"
         },
         {
             "uuid": "divvy.ensure_2fa_enabled",
@@ -126,7 +126,7 @@
             "category": "Optimization",
             "description": "Identifies orphaned load balancers with no instance associations",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_ophaned_load_balancers.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_orphaned_load_balancers.json"
         },
         {
             "uuid": "divvy.unsupported_db_engines",
