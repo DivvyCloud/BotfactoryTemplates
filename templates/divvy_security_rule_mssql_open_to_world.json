@@ -43,7 +43,7 @@
             {
                 "config": {
                     "ports": [
-                        "443"
+                        "1443"
                     ]
                 },
                 "name": "divvy.filter.access_rule_ports",
