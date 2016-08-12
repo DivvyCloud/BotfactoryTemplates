@@ -1,0 +1,30 @@
+{
+    "uuid": "divvy.redshift_30_day_retention_policy",
+    "name": "Redshift Retention Policy",
+    "category": "Security",
+    "description": "Identify Redshift instances with a retention policy less than or equal to 30 days",
+    "instructions": {
+        "actions": [
+            {
+                "config": {},
+                "name": "divvy.action.mark_non_compliant",
+                "run_when_result_is": false
+            }
+        ],
+        "filters": [
+            {
+                "config": {
+                    "maximum_days": 30
+                },
+                "name": "divvy.filter.big_data_instance_retention",
+                "negate": false
+            }
+        ],
+        "groups": [],
+        "hookpoints": [],
+        "ondemand_enabled": true,
+        "resource_types": [
+            "bigdatainstance"
+        ]
+    }
+}
