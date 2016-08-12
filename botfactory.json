@@ -161,6 +161,38 @@
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_orphaned_security_groups.json"
         },
         {
+            "uuid": "divvy.redshift_instance_encrypted",
+            "category": "Security",
+            "name": "Redshift Encryption Enabled",
+            "description": "Identify Redshift instances which do not have encryption enabled",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_redshift_instance_encrypted.json"
+        },
+        {
+            "uuid": "divvy.redshift_master_username",
+            "category": "Security",
+            "name": "Redshift Username Audit",
+            "description": "Identify Redshift instances running noncompliant usernames for the master account",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_redshift_instance_encrypted.json"
+        },
+        {
+            "uuid": "divvy.redshift_publicly_accessible",
+            "category": "Security",
+            "name": "Redshift Publicly Accessible",
+            "description": "Identify Redshift instances which are accessible to the public",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_redshift_publicly_acessible.json"
+        },
+        {
+            "uuid": "divvy.redshift_retention_policy",
+            "category": "Security",
+            "name": "Redshift Retention Policy",
+            "description": "Identify Redshift instances with a retention policy less than or equal to 30 days",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_redshift_publicly_acessible.json"
+        },
+        {
             "uuid": "divvy.security_rule_cifs_open_to_world",
             "category": "Security",
             "name": "Global CIFS port open to the world",
