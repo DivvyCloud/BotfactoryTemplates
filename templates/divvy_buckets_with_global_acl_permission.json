@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.bucket_permissions",
-    "name": "S3 Bucket Permissions",
+    "uuid": "divvy.bucket_global_acl_permission",
+    "name": "S3 Bucket Global ACL Permissions",
     "category": "Security",
-    "description": "Identify buckets exposing data with permissive access lists",
+    "description": "Identify buckets where the world can view/modify bucket access list policies",
     "instructions": {
         "actions": [
             {
@@ -15,9 +15,8 @@
             {
                 "config": {
                     "permissions_list": [
-                        "FULL_CONTROL",
-                        "WRITE",
-                        "READ"
+                        "READ_ACP",
+                        "WRITE_ACP"
                     ]
                 },
                 "name": "divvy.filter.bucket_permissions_list",
