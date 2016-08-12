@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.snapshot_age",
-    "name": "Snapshot Age",
+    "uuid": "divvy.snapshots_90_days_old",
+    "name": "Snapshots older than 90 days",
     "category": "Optimization",
-    "description": "Identify snapshots older than X days",
+    "description": "Identify snapshots which are older than 90 days",
     "instructions": {
         "actions": [
             {
@@ -14,7 +14,7 @@
         "filters": [
             {
                 "config": {
-                    "days": 90
+                    "days": 60
                 },
                 "name": "divvy.filter.snapshot_of_age",
                 "negate": false

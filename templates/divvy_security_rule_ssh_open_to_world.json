@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.sg_security_rule_ssh_open_to_world",
-    "name": "Global SSH (Security Groups)",
+    "uuid": "divvy.security_rule_ssh_open_to_world",
+    "name": "Global SSH (Security Group/Network ACL Rules)",
     "category": "Security",
-    "description": "Identify select ports such as SSH open to the world ",
+    "description": "Identify TCP port 22 open to the world ",
     "instructions": {
         "actions": [
             {
@@ -24,10 +24,20 @@
             {
                 "config": {
                     "access_list_types": [
-                        "security_group"
+                        "security_group",
+                        "network_acl"
                     ]
                 },
                 "name": "divvy.filter.access_list_type",
+                "negate": false
+            },
+            {
+                "config": {
+                    "protocols": [
+                        "tcp"
+                    ]
+                },
+                "name": "divvy.filter.access_rule_ip_protocol",
                 "negate": false
             },
             {

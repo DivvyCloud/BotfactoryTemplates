@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.sg_security_rule_ssh_open_to_world",
-    "name": "Global SSH (Security Groups)",
+    "uuid": "divvy.security_rule_rpc_open_to_world",
+    "name": "Globally Accessible Administrative Port: Windows RPC",
     "category": "Security",
-    "description": "Identify select ports such as SSH open to the world ",
+    "description": "Identify TCP port 135 open to the world ",
     "instructions": {
         "actions": [
             {
@@ -24,7 +24,8 @@
             {
                 "config": {
                     "access_list_types": [
-                        "security_group"
+                        "security_group",
+                        "network_acl"
                     ]
                 },
                 "name": "divvy.filter.access_list_type",
@@ -32,8 +33,17 @@
             },
             {
                 "config": {
+                    "protocols": [
+                        "tcp"
+                    ]
+                },
+                "name": "divvy.filter.access_rule_ip_protocol",
+                "negate": false
+            },
+            {
+                "config": {
                     "ports": [
-                        "22"
+                        "135"
                     ]
                 },
                 "name": "divvy.filter.access_rule_ports",

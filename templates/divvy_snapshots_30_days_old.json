@@ -1,0 +1,35 @@
+{
+    "uuid": "divvy.snapshots_30_days_old",
+    "name": "Snapshots older than 30 days",
+    "category": "Optimization",
+    "description": "Identify snapshots which are older than 30 days",
+    "instructions": {
+        "actions": [
+            {
+                "config": {},
+                "name": "divvy.action.mark_non_compliant",
+                "run_when_result_is": true
+            }
+        ],
+        "filters": [
+            {
+                "config": {
+                    "days": 30
+                },
+                "name": "divvy.filter.snapshot_of_age",
+                "negate": false
+            }
+        ],
+        "groups": [],
+        "hookpoints": [],
+        "ondemand_enabled": true,
+        "resource_types": [
+            "snapshot"
+        ],
+        "schedule": {
+            "_type": "Daily",
+            "time_of_day": {"_type": "TimeOfDay", "second": 0, "minute": 0, "hour": 3},
+            "exclude_days": []
+        }
+    }
+}
