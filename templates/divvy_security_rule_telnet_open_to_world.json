@@ -1,8 +1,8 @@
 {
     "uuid": "divvy.security_rule_telnet_open_to_world",
-    "name": "Global Telnet  Access",
+    "name": "Global Telnet Access",
     "category": "Security",
-    "description": "Identify TCP port 23 open to the world ",
+    "description": "Identify TCP port 23 open to the world",
     "instructions": {
         "actions": [
             {

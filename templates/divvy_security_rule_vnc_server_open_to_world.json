@@ -1,8 +1,8 @@
 {
     "uuid": "divvy.security_rule_vnc_server_open_to_world",
-    "name": "Global VNCServer Access",
+    "name": "Global VNC Server Access",
     "category": "Security",
-    "description": "Identify TCP port 5900 open to the world ",
+    "description": "Identify TCP port 5900 open to the world",
     "instructions": {
         "actions": [
             {

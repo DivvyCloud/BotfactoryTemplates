@@ -1,8 +1,8 @@
 {
     "uuid": "divvy.security_rule_vnc_listener_open_to_world",
-    "name": "Global VNCServer Access",
+    "name": "Global VNC Listener Access",
     "category": "Security",
-    "description": "Identify TCP port 5500 open to the world ",
+    "description": "Identify TCP port 5500 open to the world",
     "instructions": {
         "actions": [
             {
