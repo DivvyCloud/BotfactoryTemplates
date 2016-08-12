@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.bucket_permissions",
-    "name": "S3 Bucket Permissions",
+    "uuid": "divvy.bucket_global_delete_permission",
+    "name": "S3 Bucket Global Delete Permissions",
     "category": "Security",
-    "description": "Identify buckets exposing data with permissive access lists",
+    "description": "Identify buckets exposing delete permissions to the world",
     "instructions": {
         "actions": [
             {
@@ -15,9 +15,8 @@
             {
                 "config": {
                     "permissions_list": [
-                        "FULL_CONTROL",
                         "WRITE",
-                        "READ"
+                        "FULL_CONTROL"
                     ]
                 },
                 "name": "divvy.filter.bucket_permissions_list",

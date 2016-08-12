@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.bucket_permissions",
-    "name": "S3 Bucket Permissions",
+    "uuid": "divvy.volume_not_encrypted",
+    "name": "Volumes without encryption enabled",
     "category": "Security",
-    "description": "Identify buckets exposing data with permissive access lists",
+    "description": "Identify volumes without encryption enabled",
     "instructions": {
         "actions": [
             {
@@ -13,14 +13,8 @@
         ],
         "filters": [
             {
-                "config": {
-                    "permissions_list": [
-                        "FULL_CONTROL",
-                        "WRITE",
-                        "READ"
-                    ]
-                },
-                "name": "divvy.filter.bucket_permissions_list",
+                "config": {}
+                "name": "divvy.filter.volume_not_encrypted",
                 "negate": false
             }
         ],
@@ -31,7 +25,7 @@
         ],
         "ondemand_enabled": true,
         "resource_types": [
-            "storagecontainer"
+            "volume"
         ]
     }
 }

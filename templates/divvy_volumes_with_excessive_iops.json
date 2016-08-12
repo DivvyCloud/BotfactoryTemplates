@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.bucket_permissions",
-    "name": "S3 Bucket Permissions",
-    "category": "Security",
-    "description": "Identify buckets exposing data with permissive access lists",
+    "uuid": "divvy.volumes_with_excessive_iops",
+    "name": "Excessive Volume IOPS",
+    "category": "Best Practices",
+    "description": "Identify volumes with an excessively high number of IOPS",
     "instructions": {
         "actions": [
             {
@@ -14,13 +14,9 @@
         "filters": [
             {
                 "config": {
-                    "permissions_list": [
-                        "FULL_CONTROL",
-                        "WRITE",
-                        "READ"
-                    ]
+                    "iops": 5000
                 },
-                "name": "divvy.filter.bucket_permissions_list",
+                "name": "divvy.filter.volume_iops",
                 "negate": false
             }
         ],
@@ -31,7 +27,7 @@
         ],
         "ondemand_enabled": true,
         "resource_types": [
-            "storagecontainer"
+            "volume"
         ]
     }
 }

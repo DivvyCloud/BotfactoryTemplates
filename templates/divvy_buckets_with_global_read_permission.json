@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.bucket_permissions",
-    "name": "S3 Bucket Permissions",
+    "uuid": "divvy.bucket_global_read_permission",
+    "name": "S3 Bucket Global Read Permissions",
     "category": "Security",
-    "description": "Identify buckets exposing data with permissive access lists",
+    "description": "Identify buckets exposing read (GET) permissions to the world",
     "instructions": {
         "actions": [
             {
@@ -15,8 +15,6 @@
             {
                 "config": {
                     "permissions_list": [
-                        "FULL_CONTROL",
-                        "WRITE",
                         "READ"
                     ]
                 },
