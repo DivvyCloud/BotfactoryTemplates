@@ -2,7 +2,7 @@
     "uuid": "divvy.security_rule_icmp_open_to_world",
     "name": "Global ICMP open to the world",
     "category": "Security",
-    "description": "Identify ICMP open to the world ",
+    "description": "Identify ICMP open to the world",
     "instructions": {
         "actions": [
             {
@@ -54,7 +54,7 @@
             }
         ],
         "groups": [],
-        "hookpoints": ["divvy.resource.created"],
+        "hookpoints": ["divvycloud.resource.created"],
         "ondemand_enabled": true,
         "resource_types": [
             "resourceaccesslistrule"

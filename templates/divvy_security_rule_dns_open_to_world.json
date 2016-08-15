@@ -2,7 +2,7 @@
     "uuid": "divvy.security_rule_dns_open_to_world",
     "name": "Global DNS ports open to the world",
     "category": "Security",
-    "description": "Identify TCP/UDP port 53 open to the world ",
+    "description": "Identify TCP/UDP port 53 open to the world",
     "instructions": {
         "actions": [
             {
@@ -64,7 +64,7 @@
             }
         ],
         "groups": [],
-        "hookpoints": ["divvy.resource.created"],
+        "hookpoints": ["divvycloud.resource.created"],
         "ondemand_enabled": true,
         "resource_types": [
             "resourceaccesslistrule"

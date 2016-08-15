@@ -2,7 +2,7 @@
     "uuid": "divvy.security_rule_ftp_open_to_world",
     "name": "Global FTP (Security Group/Network ACL Rules)",
     "category": "Security",
-    "description": "Identify TCP port 21 open to the world ",
+    "description": "Identify TCP port 21 open to the world",
     "instructions": {
         "actions": [
             {
@@ -63,7 +63,7 @@
             }
         ],
         "groups": [],
-        "hookpoints": ["divvy.resource.created"],
+        "hookpoints": ["divvycloud.resource.created"],
         "ondemand_enabled": true,
         "resource_types": [
             "resourceaccesslistrule"

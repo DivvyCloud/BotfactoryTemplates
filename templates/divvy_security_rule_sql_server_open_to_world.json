@@ -2,7 +2,7 @@
     "uuid": "divvy.security_rule_sql_server_open_to_world",
     "name": "Global SQL Server (Security Group/Network ACL Rules)",
     "category": "Security",
-    "description": "Identify TCP port 1433/1434 open to the world ",
+    "description": "Identify TCP port 1433/1434 open to the world",
     "instructions": {
         "actions": [
             {
@@ -64,7 +64,7 @@
             }
         ],
         "groups": [],
-        "hookpoints": ["divvy.resource.created"],
+        "hookpoints": ["divvycloud.resource.created"],
         "ondemand_enabled": true,
         "resource_types": [
             "resourceaccesslistrule"

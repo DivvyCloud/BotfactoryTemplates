@@ -2,7 +2,7 @@
     "uuid": "divvy.security_rule_netbios_open_to_world",
     "name": "Globally Accessible NetBIOS",
     "category": "Security",
-    "description": "Identify UDP 137/138 open to the world ",
+    "description": "Identify UDP 137/138 open to the world",
     "instructions": {
         "actions": [
             {
@@ -64,7 +64,7 @@
             }
         ],
         "groups": [],
-        "hookpoints": ["divvy.resource.created"],
+        "hookpoints": ["divvycloud.resource.created"],
         "ondemand_enabled": true,
         "resource_types": [
             "resourceaccesslistrule"
