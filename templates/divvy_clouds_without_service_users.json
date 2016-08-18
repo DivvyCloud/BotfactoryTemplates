@@ -1,0 +1,33 @@
+{
+    "uuid": "divvy.clouds_without_service_users",
+    "name": "Clouds Without Service Users",
+    "category": "Security",
+    "description": "Identifies accounts without any active service users",
+    "instructions": {
+        "actions": [
+            {
+                "config": {},
+                "name": "divvy.action.mark_non_compliant",
+                "run_when_result_is": false
+            }
+        ],
+        "filters": [
+            {
+                "config": {},
+                "name": "divvy.filter.empty_service_users",
+                "negate": false
+            }
+        ],
+        "groups": [],
+        "hookpoints": [],
+        "ondemand_enabled": true,
+        "resource_types": [
+            "organizationservice"
+        ],
+        "schedule": {
+            "_type": "Daily",
+            "time_of_day": {"_type": "TimeOfDay", "second": 0, "minute": 0, "hour": 4},
+            "exclude_days": []
+        }
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "uuid": "divvy.clouds_with_active_root_account",
+    "name": "Cloud Root Accounts Without MFA",
+    "category": "Best Practices",
+    "description": "Identify accounts which still have the root account active",
+    "instructions": {
+        "actions": [
+            {
+                "config": {},
+                "name": "divvy.action.mark_non_compliant",
+                "run_when_result_is": true
+            }
+        ],
+        "filters": [
+            {
+                "config": {},
+                "name": "divvy.filter.cloud_root_credentials_enabled",
+                "negate": false
+            }
+        ],
+        "groups": [],
+        "hookpoints": [],
+        "ondemand_enabled": true,
+        "resource_types": [
+            "organizationservice"
+        ],
+        "schedule": {
+            "_type": "Daily",
+            "time_of_day": {"_type": "TimeOfDay", "second": 0, "minute": 0, "hour": 4},
+            "exclude_days": []
+        }
+    }
+}

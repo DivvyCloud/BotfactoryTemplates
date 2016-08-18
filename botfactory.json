@@ -1,20 +1,84 @@
 {
     "templates": [
         {
+            "uuid": "divvy.clouds_with_active_root_account",
+            "name": "Clouds With Active Root Account",
+            "category": "Best Practices",
+            "description": "Identify accounts which still have the root account active",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_clouds_with_active_root_account.json"
+        },
+        {
+            "uuid": "divvy.clouds_without_root_mfa_enabled",
+            "name": "Clouds With Weak Password Policy",
+            "category": "Best Practices",
+            "description": "Identify accounts with a weak/missing password policy",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_clouds_with_weak_password_policy.json"
+        },
+        {
+            "uuid": "divvy.clouds_with_weak_password_policy",
+            "name": "Clouds Without Protected Root Account",
+            "category": "Best Practices",
+            "description": "Identify accounts which still have the root account and it is not two-factor enabled",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_clouds_without_root_mfa_enabled.json"
+        },
+        {
+            "uuid": "divvy.clouds_without_api_accounting",
+            "name": "Clouds Without Global API Accounting",
+            "category": "Security",
+            "description": "Identifies accounts with API accounting such as AWS CloudTrail inactive/disabled across all regions",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_clouds_without_api_accounting.json"
+        },
+        {
+            "uuid": "divvy.clouds_without_service_users",
+            "name": "Clouds Without Service Users",
+            "category": "Security",
+            "description": "Identifies accounts without any active service users",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_clouds_without_service_users.json"
+        },
+        {
             "uuid": "divvy.security_rule_audit",
             "name": "Audit Security Rules",
             "category": "Security",
             "description": "Identify select ports such as SSH open to the world",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_security_rule_audit.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_security_rule_audit.json"
         },
         {
-            "uuid": "divvy.database_multiaz",
-            "name": "Database Is Multi-AZ",
+            "uuid": "divvy.database_instance_multiaz",
+            "name": "Database is Multi-AZ",
             "category": "Best Practices",
-            "description": "Ensures that databases are configured with multi-az for resilience",
+            "description": "Ensures that databases are configured across multiple availablity zones for resiliency",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_database_multiaz.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_database_instance_multiaz.json"
+        },
+        {
+            "uuid": "divvy.database_instance_retention_policy",
+            "name": "Database Retention Policy",
+            "category": "Best Practices",
+            "description": "Identifies database instances with a retention policy that is too low",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_database_instance_retention_policy.json"
+        },
+        {
+            "uuid": "divvy.database_instance_manual_snapshots",
+            "name": "Database Recently Snapshot",
+            "category": "Best Practices",
+            "description": "Identifies database instances with a recent manual snapshot",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_database_instance_manual_snapshots.json"
+        },
+        {
+            "uuid": "divvy.database_instance_master_username_audit",
+            "name": "Database Instance Username Audit",
+            "category": "Security",
+            "description": "Identify database instances running noncompliant usernames for the master account",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_database_instance_master_username_audit.json"
         },
         {
             "uuid": "divvy.scheduled_instances",
@@ -22,7 +86,7 @@
             "name": "Scheduled Instances",
             "description": "Scheduled instance stop/start across one or more clouds/resource groups",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_scheduled_instances.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_scheduled_instances.json"
         },
         {
             "uuid": "divvy.group_curation",
@@ -30,7 +94,7 @@
             "category": "Curation",
             "description": "Curate target resources into one or more resource groups",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_group_curation.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_group_curation.json"
         },
         {
             "uuid": "divvy.snapshot_age",
@@ -38,7 +102,7 @@
             "category": "Optimization",
             "description": "Identify snapshots older than X days",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_snapshot_age.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_snapshot_age.json"
         },
         {
             "uuid": "divvy.region_audit",
@@ -46,7 +110,7 @@
             "category": "Best Practices",
             "description": "Audit select resource types across specific cloud regions",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_region_audit.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_region_audit.json"
         },
         {
             "uuid": "divvy.instance_audit",
@@ -54,7 +118,7 @@
             "category": "Optimization",
             "description": "Audit compute instance types against select clouds",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_instance_audit.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_instance_audit.json"
         },
         {
             "uuid": "divvy.database_instance_audit",
@@ -62,7 +126,7 @@
             "category": "Optimization",
             "description": "Audit database instance types against select clouds",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_database_instance_audit.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_database_instance_audit.json"
         },
         {
             "uuid": "divvy.memcache_instance_audit",
@@ -70,7 +134,7 @@
             "category": "Optimization",
             "description": "Audit memcache instance types against select clouds",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_memcache_instance_audit.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_memcache_instance_audit.json"
         },
         {
             "uuid": "divvy.expired_ssl_certs",
@@ -78,7 +142,7 @@
             "category": "Security",
             "description": "Identify expired/soon to expire SSL certificates",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_expired_ssl_cert.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_expired_ssl_cert.json"
         },
         {
             "uuid": "divvy.tag_audit",
@@ -86,7 +150,7 @@
             "category": "Best Practices",
             "description": "Enforce tagging standards and policy across select resource types",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_tag_audit.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_tag_audit.json"
         },
         {
             "uuid": "divvy.bucket_permissions",
@@ -94,7 +158,7 @@
             "category": "Security",
             "description": "Identify buckets exposing data with permissive access lists",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_bucket_permissions.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_bucket_permissions.json"
         },
         {
             "uuid": "divvy.unattached_volumes",
@@ -102,7 +166,7 @@
             "category": "Optimization",
             "description": "Identifies unattached volumes",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_unattached_volumes.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_unattached_volumes.json"
         },
         {
             "uuid": "divvy.orphaned_public_ips",
@@ -110,7 +174,7 @@
             "category": "Optimization",
             "description": "Identifies unattached IP addresses which can incur cost",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_orphaned_public_ips.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_orphaned_public_ips.json"
         },
         {
             "uuid": "divvy.ensure_2fa_enabled",
@@ -118,7 +182,7 @@
             "category": "Security",
             "description": "Identify cloud users without two-factor (MFA) enabled",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_ensure_2fa_enabled.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_ensure_2fa_enabled.json"
         },
         {
             "uuid": "divvy.orphaned_load_balancers",
@@ -126,7 +190,7 @@
             "category": "Optimization",
             "description": "Identifies orphaned load balancers with no instance associations",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_orphaned_load_balancers.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_orphaned_load_balancers.json"
         },
         {
             "uuid": "divvy.unsupported_db_engines",
@@ -134,7 +198,7 @@
             "category": "Best Practices",
             "description": "Identify unsupported/blacklisted database engines",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_unsupported_db_engines.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_unsupported_db_engines.json"
         },
         {
             "uuid": "divvy.buckets_without_permissions",
@@ -142,7 +206,7 @@
             "category": "Security",
             "description": "Identifies buckets without any permission sets",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_buckets_without_permissions.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_buckets_without_permissions.json"
         },
         {
             "uuid": "divvy.subnet_exceeds_maximum_netblock",
@@ -150,7 +214,7 @@
             "category": "Optimization",
             "description": "Identify subnets where the number of IP's exceeds a defined limit",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_subnet_exceeds_maximum_netblock.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_subnet_exceeds_maximum_netblock.json"
         },
         {
             "uuid": "divvy.orphaned_security_groups",
@@ -158,7 +222,7 @@
             "name": "Orphaned Security Groups",
             "description": "Security groups unattached to instances",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_orphaned_security_groups.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_orphaned_security_groups.json"
         },
         {
             "uuid": "divvy.bucket_global_delete_permission",
@@ -166,7 +230,7 @@
             "name": "S3 Bucket Global Delete Permissions",
             "description": "Identify buckets exposing delete permissions to the world",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_buckets_with_global_delete_permissions.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_buckets_with_global_delete_permissions.json"
         },
         {
             "uuid": "divvy.bucket_global_read_permission",
@@ -174,7 +238,7 @@
             "name": "S3 Bucket Global Read (GET) Permissions",
             "description": "Identify buckets exposing read permissions to the world",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_buckets_with_global_get_permissions.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_buckets_with_global_get_permissions.json"
         },
         {
             "uuid": "divvy.bucket_global_write_permission",
@@ -182,7 +246,23 @@
             "name": "S3 Bucket Global Write (PUT) Permissions",
             "description": "Identify buckets exposing write permissions to the world",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_buckets_with_global_write_permissions.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_buckets_with_global_write_permissions.json"
+        },
+        {
+            "uuid": "divvy.buckets_without_object_versioning",
+            "category": "Security",
+            "name": "S3 Bucket Versioning",
+            "description": "Identify buckets without object versioning enabled",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_buckets_without_object_versioning.json"
+        },
+        {
+            "uuid": "divvy.buckets_without_logging",
+            "category": "Security",
+            "name": "S3 Bucket Logging",
+            "description": "Identify buckets without logging enabled",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_buckets_without_logging.json"
         },
         {
             "uuid": "divvy.redshift_instance_encrypted",
@@ -190,7 +270,7 @@
             "name": "Redshift Encryption Enabled",
             "description": "Identify Redshift instances which do not have encryption enabled",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_redshift_instance_encrypted.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_redshift_instance_encrypted.json"
         },
         {
             "uuid": "divvy.redshift_master_username",
@@ -198,7 +278,7 @@
             "name": "Redshift Username Audit",
             "description": "Identify Redshift instances running noncompliant usernames for the master account",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_redshift_instance_encrypted.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_redshift_instance_encrypted.json"
         },
         {
             "uuid": "divvy.redshift_publicly_accessible",
@@ -206,7 +286,7 @@
             "name": "Redshift Publicly Accessible",
             "description": "Identify Redshift instances which are accessible to the public",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_redshift_publicly_acessible.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_redshift_publicly_acessible.json"
         },
         {
             "uuid": "divvy.redshift_retention_policy",
@@ -214,7 +294,7 @@
             "name": "Redshift Retention Policy",
             "description": "Identify Redshift instances with a retention policy less than or equal to 30 days",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_redshift_publicly_acessible.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_redshift_publicly_acessible.json"
         },
         {
             "uuid": "divvy.security_rule_cifs_open_to_world",
@@ -222,7 +302,7 @@
             "name": "Global CIFS port open to the world",
             "description": "Identify TCP/UDP port 445 open to the world",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_security_rule_cifs_open_to_world.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_security_rule_cifs_open_to_world.json"
         },
         {
             "uuid": "divvy.security_rule_dns_web_to_world",
@@ -230,7 +310,7 @@
             "name": "Global DNS ports open to the world",
             "description": "Identify TCP/UDP port 53 open to the world",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_security_rule_dns_open_to_world.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_security_rule_dns_open_to_world.json"
         },
         {
             "uuid": "divvy.security_rule_ftp_open_to_world",
@@ -238,7 +318,7 @@
             "name": "Global FTP (Security Group/Network ACL Rules)",
             "description": "Identify TCP port 21 open to the world",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_security_rule_ftp_open_to_world.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_security_rule_ftp_open_to_world.json"
         },
         {
             "uuid": "divvy.security_rule_icmp_open_to_world",
@@ -246,7 +326,7 @@
             "name": "Global ICMP open to the world",
             "description": "Identify ICMP open to the world",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_security_rule_icmp_open_to_world.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_security_rule_icmp_open_to_world.json"
         },
         {
             "uuid": "divvy.security_rule_mssql_open_to_world",
@@ -254,7 +334,7 @@
             "name": "Global Microsoft SQL (Security Group/Network ACL Rules)",
             "description": "Identify TCP port 1443 open to the world",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_security_rule_mssql_open_to_world.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_security_rule_mssql_open_to_world.json"
         },
         {
             "uuid": "divvy.security_rule_mysql_open_to_world",
@@ -262,7 +342,7 @@
             "name": "Global MySQL (Security Group/Network ACL Rules)",
             "description": "Identify TCP port 3306 open to the world",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_security_rule_mysql_open_to_world.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_security_rule_mysql_open_to_world.json"
         },
         {
             "uuid": "divvy.security_rule_netbios_open_to_world",
@@ -270,7 +350,7 @@
             "name": "Globally Accessible NetBIOS",
             "description": "Identify UDP 137/138 open to the world",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_security_rule_netbios_open_to_world.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_security_rule_netbios_open_to_world.json"
         },
         {
             "uuid": "divvy.security_rule_non_web_open_to_world",
@@ -278,7 +358,7 @@
             "name": "Global Non-Web Ports",
             "description": "Identify TCP ports other than 80/443 open to the world",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_security_rule_non_web_open_to_world.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_security_rule_non_web_open_to_world.json"
         },
         {
             "uuid": "divvy.security_rule_postgresql_open_to_world",
@@ -286,7 +366,7 @@
             "name": "Global PostgresSQL (Security Group/Network ACL Rules)",
             "description": "Identify TCP port 5432 open to the world",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_security_rule_postgresql_open_to_world.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_security_rule_postgresql_open_to_world.json"
         },
         {
             "uuid": "divvy.security_rule_rdc_open_to_world",
@@ -294,7 +374,7 @@
             "name": "Globally Accessible Administrative Port: Windows RDP",
             "description": "Identify TCP port 3389 open to the world",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_security_rule_rdc_open_to_world.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_security_rule_rdc_open_to_world.json"
         },
         {
             "uuid": "divvy.security_rule_rpc_open_to_world",
@@ -302,7 +382,7 @@
             "name": "Globally Accessible Administrative Port: Windows RPC",
             "description": "Identify TCP port 135 open to the world",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_security_rule_rpc_open_to_world.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_security_rule_rpc_open_to_world.json"
         },
         {
             "uuid": "divvy.security_rule_smb_open_to_world",
@@ -310,7 +390,7 @@
             "name": "Globally Accessible Administrative Port: SMB over TCP",
             "description": "Identify TCP port 445 open to the world",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_security_rule_smb_open_to_world.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_security_rule_smb_open_to_world.json"
         },
         {
             "uuid": "divvy.security_rule_smtp_open_to_world",
@@ -318,7 +398,7 @@
             "name": "Global SMTP Access",
             "description": "Identify TCP port 25 open to the world",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_security_rule_smtp_open_to_world.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_security_rule_smtp_open_to_world.json"
         },
         {
             "uuid": "divvy.security_rule_sql_open_to_world",
@@ -326,7 +406,7 @@
             "name": "Global SQL Server",
             "description": "Identify TCP port 1433/1434 open to the world",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_security_rule_sql_server_open_to_world.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_security_rule_sql_server_open_to_world.json"
         },
         {
             "uuid": "divvy.security_rule_ssh_open_to_world",
@@ -334,7 +414,7 @@
             "name": "Global SSH Access",
             "description": "Identify TCP port 22 open to the world",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_security_rule_ssh_open_to_world.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_security_rule_ssh_open_to_world.json"
         },
         {
             "uuid": "divvy.security_rule_telnet_open_to_world",
@@ -342,7 +422,7 @@
             "name": "Global Telnet Access",
             "description": "Identify TCP port 23 open to the world",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_security_rule_telnet_open_to_world.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_security_rule_telnet_open_to_world.json"
         },
         {
             "uuid": "divvy.security_rule_vnc_listener_open_to_world",
@@ -350,7 +430,7 @@
             "name": "Global VNC Listener Access",
             "description": "Identify TCP port 5500 open to the world",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_security_rule_vnc_listener_open_to_world.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_security_rule_vnc_listener_open_to_world.json"
         },
         {
             "uuid": "divvy.security_rule_vnc_server_open_to_world",
@@ -358,7 +438,7 @@
             "name": "Global VNC Server Access",
             "description": "Identify TCP port 5900 open to the world",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_security_rule_vnc_server_open_to_world.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_security_rule_vnc_server_open_to_world.json"
         },
         {
             "uuid": "divvy.snapshots_30_days_old",
@@ -366,7 +446,7 @@
             "name": "Snapshots older than 30 days",
             "description": "Identify snapshots which are older than 30 days",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_snapshots_30_days_old.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_snapshots_30_days_old.json"
         },
         {
             "uuid": "divvy.snapshots_60_days_old",
@@ -374,7 +454,7 @@
             "name": "Snapshots older than 60 days",
             "description": "Identify snapshots which are older than 60 days",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_snapshots_60_days_old.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_snapshots_60_days_old.json"
         },
         {
             "uuid": "divvy.snapshots_90_days_old",
@@ -382,7 +462,7 @@
             "name": "Snapshots older than 90 days",
             "description": "Identify snapshots which are older than 90 days",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_snapshots_90_days_old.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_snapshots_90_days_old.json"
         },
         {
             "uuid": "divvy.volumes_delete_on_termination",
@@ -390,7 +470,7 @@
             "name": "Volume Auto-Termination",
             "description": "Identify volumes set to automatically delete when the parent instance is terminated",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_volumes_delete_on_termination.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_volumes_delete_on_termination.json"
         },
         {
             "uuid": "divvy.volumes_not_encrypted",
@@ -398,7 +478,7 @@
             "name": "Volumes without encryption enabled",
             "description": "Identify volumes without encryption enabled",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_volumes_not_encrypted.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_volumes_not_encrypted.json"
         },
         {
             "uuid": "divvy.volumes_with_excessive_iops",
@@ -406,7 +486,7 @@
             "name": "Excessive Volume IOPS",
             "description": "Identify volumes with an excessively high number of IOPS",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_volumes_with_excessive_iops.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_volumes_with_excessive_iops.json"
         }
 
     ]
