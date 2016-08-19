@@ -174,7 +174,7 @@
             "name": "S3 Bucket Global Read (GET) Permission",
             "description": "Identify buckets exposing read permissions to the world",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_buckets_with_global_get_permission.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_buckets_with_global_read_permission.json"
         },
         {
             "uuid": "divvy.bucket_global_write_permission",
