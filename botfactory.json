@@ -161,28 +161,36 @@
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_orphaned_security_groups.json"
         },
         {
+            "uuid": "divvy.bucket_global_acl_permission",
+            "category": "Security",
+            "name": "S3 Bucket Global ACL Permission",
+            "description": "Identify buckets exposing access list permissions to the world",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_buckets_with_global_acl_permission.json"
+        },
+        {
             "uuid": "divvy.bucket_global_delete_permission",
             "category": "Security",
-            "name": "S3 Bucket Global Delete Permissions",
+            "name": "S3 Bucket Global Delete Permission",
             "description": "Identify buckets exposing delete permissions to the world",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_buckets_with_global_delete_permissions.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_buckets_with_global_delete_permission.json"
         },
         {
             "uuid": "divvy.bucket_global_read_permission",
             "category": "Security",
-            "name": "S3 Bucket Global Read (GET) Permissions",
+            "name": "S3 Bucket Global Read (GET) Permission",
             "description": "Identify buckets exposing read permissions to the world",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_buckets_with_global_get_permissions.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_buckets_with_global_get_permission.json"
         },
         {
             "uuid": "divvy.bucket_global_write_permission",
             "category": "Security",
-            "name": "S3 Bucket Global Write (PUT) Permissions",
+            "name": "S3 Bucket Global Write (PUT) Permission",
             "description": "Identify buckets exposing write permissions to the world",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_buckets_with_global_write_permissions.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_buckets_with_global_write_permission.json"
         },
         {
             "uuid": "divvy.redshift_instance_encrypted",
