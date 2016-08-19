@@ -33,14 +33,6 @@
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_group_curation.json"
         },
         {
-            "uuid": "divvy.snapshot_age",
-            "name": "Snapshot Age",
-            "category": "Optimization",
-            "description": "Identify snapshots older than X days",
-            "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_snapshot_age.json"
-        },
-        {
             "uuid": "divvy.region_audit",
             "name": "Region Audit",
             "category": "Best Practices",
