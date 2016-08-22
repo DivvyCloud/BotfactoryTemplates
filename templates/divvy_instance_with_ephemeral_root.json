@@ -1,0 +1,30 @@
+{
+    "uuid": "divvy.instance_with_ephemeral_root",
+    "name": "Instance Has Ephemeral Root Volume",
+    "category": "Optimization",
+    "description": "Match instances with an ephemeral root volume",
+    "instructions": {
+        "actions": [
+            {
+                "config": {},
+                "name": "divvy.action.mark_non_compliant",
+                "run_when_result_is": true
+            }
+        ],
+        "filters": [
+            {
+                "config": {},
+                "name": "divvy.filter.instance_root_volume",
+                "negate": false
+            }
+        ],
+        "groups": [],
+        "hookpoints": [
+            "divvycloud.resource.created"
+        ],
+        "ondemand_enabled": true,
+        "resource_types": [
+            "instance"
+        ]
+    }
+}

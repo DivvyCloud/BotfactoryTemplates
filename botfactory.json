@@ -65,6 +65,22 @@
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_database_instance_retention_policy.json"
         },
         {
+            "uuid": "divvy.database_instance_publicly_accessible",
+            "category": "Security",
+            "name": "Database Instance Publicly Accessible",
+            "description": "Identify database instances which are accessible to the public",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_database_instance_publicly_accessible.json"
+        },
+        {
+            "uuid": "divvy.database_instance_encrypted",
+            "name": "Database Instance Encrypted",
+            "category": "Security",
+            "description": "Identify database instances which are not encrypted",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_database_instance_encrypted.json"
+        },
+        {
             "uuid": "divvy.database_instance_manual_snapshots",
             "name": "Database Recently Snapshot",
             "category": "Best Practices",
@@ -115,10 +131,58 @@
         {
             "uuid": "divvy.instance_audit",
             "name": "Compute Instance Type Audit",
+            "category": "Best Practices",
+            "description": "Match instances with an ephemeral root volume",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_instance_with_ephemeral_root.json"
+        },
+        {
+            "uuid": "divvy.instance_with_ephemeral_root",
+            "name": "Instance Has Ephemeral Root Volume",
             "category": "Optimization",
-            "description": "Audit compute instance types against select clouds",
+            "description": "Match instances with an ephemeral root volume",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_instance_audit.json"
+        },
+        {
+            "uuid": "divvy.instance_golden_image_ids",
+            "name": "Instance Running Unauthorized Image",
+            "category": "Best Practices",
+            "description": "Match instances which were created with an unauthorized image",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_instance_golden_image_ids.json"
+        },
+        {
+            "uuid": "divvy.instance_authorized_key_pair",
+            "name": "Instance Using Unauthorized Root Key Pair",
+            "category": "Security",
+            "description": "Match instances based on the SSH key pair they were created with",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_instance_authorized_key_pair.json"
+        },
+        {
+            "uuid": "divvy.instance_with_ephemeral_public_ip",
+            "name": "Instance Has Ephemeral Public IP",
+            "category": "Optimization",
+            "description": "Match instances with an ephemeral public facing IP address",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_instance_with_ephemeral_public_ip.json"
+        },
+        {
+            "uuid": "divvy.instance_with_failed_status_checks",
+            "name": "Instance With Failed Status Checks",
+            "category": "Best Practices",
+            "description": "Match instances which fail the system/reachability status checks",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_instance_with_failed_status_checks.json"
+        },
+        {
+            "uuid": "divvy.instance_without_name",
+            "name": "Instance With No Name",
+            "category": "Best Practices",
+            "description": "Match instances which have not been supplied a name",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_instance_without_name.json"
         },
         {
             "uuid": "divvy.database_instance_audit",
@@ -151,6 +215,22 @@
             "description": "Enforce tagging standards and policy across select resource types",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_tag_audit.json"
+        },
+        {
+            "uuid": "divvy.bucket_max_objects",
+            "name": "S3 Bucket Max Objects",
+            "category": "Optimization",
+            "description": "Identify buckets which exceed a total of 10,000 objects",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_bucket_max_objects.json"
+        },
+        {
+            "uuid": "divvy.bucket_max_size",
+            "name": "S3 Bucket Max Size",
+            "category": "Optimization",
+            "description": "Identify buckets which exceed a total size of 1TB",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_bucket_max_size.json"
         },
         {
             "uuid": "divvy.bucket_permissions",
@@ -286,7 +366,7 @@
             "name": "Redshift Publicly Accessible",
             "description": "Identify Redshift instances which are accessible to the public",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_redshift_publicly_acessible.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_redshift_publicly_accessible.json"
         },
         {
             "uuid": "divvy.redshift_retention_policy",
@@ -487,7 +567,22 @@
             "description": "Identify volumes with an excessively high number of IOPS",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_volumes_with_excessive_iops.json"
+        },
+        {
+            "uuid": "divvy.volume_type_audit",
+            "category": "Optimization",
+            "name": "Volume Type Audit",
+            "description": "Identify volumes running unapproved types",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_volume_type_audit.json"
+        },
+        {
+            "uuid": "divvy.volumes_without_recent_snapshot",
+            "category": "Optimization",
+            "name": "Volumes Without A Recent Snapshot",
+            "description": "Identify volumes without a snapshot in the past fourteen days",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_volumes_without_recent_snapshot.json"
         }
-
     ]
 }

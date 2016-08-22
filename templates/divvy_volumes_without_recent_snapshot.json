@@ -1,0 +1,32 @@
+{
+    "uuid": "divvy.volumes_without_recent_snapshot",
+    "name": "Volumes Without A Recent Snapshot",
+    "category": "Best Practices",
+    "description": "Identify volumes without a snapshot in the past fourteen days",
+    "instructions": {
+        "actions": [
+            {
+                "config": {},
+                "name": "divvy.action.mark_non_compliant",
+                "run_when_result_is": false
+            }
+        ],
+        "filters": [
+            {
+                "config": {
+                    "days": 14,
+                },
+                "name": "divvy.filter.recent_volume_snapshots",
+                "negate": false
+            }
+        ],
+        "groups": [],
+        "hookpoints": [
+            "divvycloud.resource.created"
+        ],
+        "ondemand_enabled": true,
+        "resource_types": [
+            "volume"
+        ]
+    }
+}
