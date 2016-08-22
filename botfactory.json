@@ -321,6 +321,14 @@
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_subnet_exceeds_maximum_netblock.json"
         },
         {
+            "uuid": "divvy.subnet_nearing_capacity",
+            "name": "Subnet Running Out Of Space",
+            "category": "Best Practices",
+            "description": "Identify subnets with less than 10% of their block available for use",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_subnet_nearing_capacity.json"
+        },
+        {
             "uuid": "divvy.orphaned_security_groups",
             "category": "Security",
             "name": "Orphaned Security Groups",
@@ -631,6 +639,30 @@
             "description": "Identify cloud users with API key credentials which should be rotated",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_user_stale_access_keys.json"
+        },
+        {
+            "uuid": "divvy.region_with_no_default_network",
+            "category": "Best Practices",
+            "name": "Region Without Default Network",
+            "description": "Match regions without a default network",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_region_with_no_default_network.json"
+        },
+        {
+            "uuid": "divvy.region_with_no_default_network",
+            "category": "Best Practices",
+            "name": "Region Without Default Network",
+            "description": "Match regions without a default network",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_region_with_no_default_network.json"
+        },
+        {
+            "uuid": "divvy.region_with_impaired_availability_zone",
+            "category": "Best Practices",
+            "name": "Region With Impaired Availability Zone",
+            "description": "Match regions with one or more zones in an impaired state",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_region_with_impaired_availability_zone.json"
         }
     ]
 }

@@ -1,0 +1,30 @@
+{
+    "uuid": "divvy.region_with_no_default_network",
+    "name": "Region Without Default Network",
+    "category": "Optimization",
+    "description": "Match regions without a default network",
+    "instructions": {
+        "actions": [
+            {
+                "config": {},
+                "name": "divvy.action.mark_non_compliant",
+                "run_when_result_is": true
+            }
+        ],
+        "filters": [
+            {
+                "config": {},
+                "name": "divvy.filter.region_without_default_network",
+                "negate": false
+            }
+        ],
+        "groups": [],
+        "hookpoints": [
+            "divvycloud.resource.modified"
+        ],
+        "ondemand_enabled": true,
+        "resource_types": [
+            "serviceregion"
+        ]
+    }
+}
