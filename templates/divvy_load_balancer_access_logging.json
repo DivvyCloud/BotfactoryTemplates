@@ -1,0 +1,31 @@
+{
+    "uuid": "divvy.load_balancer_access_logging",
+    "name": "Load Balancer Access Logging Disabled",
+    "category": "Security",
+    "description": "Match load balancers that do not have access logging enabled",
+    "instructions": {
+        "actions": [
+            {
+                "config": {},
+                "name": "divvy.action.mark_non_compliant",
+                "run_when_result_is": true
+            }
+        ],
+        "filters": [
+            {
+                "config": {},
+                "name": "divvy.filter.load_balancer_access_logging",
+                "negate": true
+            }
+        ],
+        "groups": [],
+        "hookpoints": [
+            "divvycloud.resource.created",
+            "divvycloud.resource.modified"
+        ],
+        "ondemand_enabled": true,
+        "resource_types": [
+            "instance"
+        ]
+    }
+}

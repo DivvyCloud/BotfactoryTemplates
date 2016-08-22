@@ -265,6 +265,30 @@
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_ensure_2fa_enabled.json"
         },
         {
+            "uuid": "divvy.load_balancer_access_logging",
+            "name": "Load Balancer Access Logging Disabled",
+            "category": "Security",
+            "description": "Match all Load Balancers that have access logging disabled",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_load_balancer_access_logging.json"
+        },
+        {
+            "uuid": "divvy.load_balancer_cross_zone_balancing",
+            "name": "Load Balancer Cross Zone Balancing Disabled",
+            "category": "Best Practices",
+            "description": "Match all Load Balancers that have cross zone balancing disabled",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_load_balancer_cross_zone_balancing.json"
+        },
+        {
+            "uuid": "divvy.load_balancer_connection_draining",
+            "name": "Load Balancer Connection Draining Disabled",
+            "category": "Best Practices",
+            "description": "Match all Load Balancers that have connection draining disabled",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_load_balancer_connection_draining.json"
+        },
+        {
             "uuid": "divvy.orphaned_load_balancers",
             "name": "Load balancers with no instances",
             "category": "Optimization",
@@ -583,6 +607,30 @@
             "description": "Identify volumes without a snapshot in the past fourteen days",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_volumes_without_recent_snapshot.json"
+        },
+        {
+            "uuid": "divvy.user_policy_audit",
+            "category": "Security",
+            "name": "Cloud User Policy Audit",
+            "description": "Identify cloud users running unauthorized policies",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_user_policy_audit.json"
+        },
+        {
+            "uuid": "divvy.user_activity_audit",
+            "category": "Best Practices",
+            "name": "Cloud User Activity Audit",
+            "description": "Identify inactive cloud users who have not logged in recently",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_user_inactive_audit.json"
+        },
+        {
+            "uuid": "divvy.user_stale_access_keys",
+            "category": "Best Practices",
+            "name": "Cloud User API Key Audit",
+            "description": "Identify cloud users with API key credentials which should be rotated",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_user_stale_access_keys.json"
         }
     ]
 }

@@ -1,0 +1,31 @@
+{
+    "uuid": "divvy.load_balancer_connection_draining",
+    "name": "Load Balancer Connection Draining Disabled",
+    "category": "Best Practices",
+    "description": "Match load balancers that do not have connection draining enabled",
+    "instructions": {
+        "actions": [
+            {
+                "config": {},
+                "name": "divvy.action.mark_non_compliant",
+                "run_when_result_is": true
+            }
+        ],
+        "filters": [
+            {
+                "config": {},
+                "name": "divvy.filter.load_balancer_connection_draining",
+                "negate": true
+            }
+        ],
+        "groups": [],
+        "hookpoints": [
+            "divvycloud.resource.created",
+            "divvycloud.resource.modified"
+        ],
+        "ondemand_enabled": true,
+        "resource_types": [
+            "instance"
+        ]
+    }
+}
