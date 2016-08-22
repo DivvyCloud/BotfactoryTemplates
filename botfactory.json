@@ -663,6 +663,30 @@
             "description": "Match regions with one or more zones in an impaired state",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_region_with_impaired_availability_zone.json"
+        },
+        {
+            "uuid": "divvy.hypervisor_without_instances",
+            "category": "Optimization",
+            "name": "Hypervisors With No Instances",
+            "description": "Hypervisors which are orphaned and contain zero instances",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_hypervisor_without_instances.json"
+        },
+        {
+            "uuid": "divvy.hypervisor_in_service",
+            "category": "Optimization",
+            "name": "Hypervisors Not In Service",
+            "description": "Match hypervisors which are not in a functional state",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_hypervisor_in_service.json"
+        },
+        {
+            "uuid": "divvy.hypervisor_nearing_saturation",
+            "category": "Optimization",
+            "name": "Hypervisors Nearing Saturation",
+            "description": "Match hypervisors with at most the supplied percentage for instance usage",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_hypervisor_nearing_saturation.json"
         }
     ]
 }
