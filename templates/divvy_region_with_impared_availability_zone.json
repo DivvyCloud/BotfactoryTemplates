@@ -1,0 +1,30 @@
+{
+    "uuid": "divvy.region_with_impaired_availability_zone",
+    "name": "Region With Impaired Availability Zone",
+    "category": "Best Practices",
+    "description": "Match regions with one or more zones in an impaired state",
+    "instructions": {
+        "actions": [
+            {
+                "config": {},
+                "name": "divvy.action.mark_non_compliant",
+                "run_when_result_is": true
+            }
+        ],
+        "filters": [
+            {
+                "config": {},
+                "name": "divvy.filter.region_with_impaired_zones",
+                "negate": false
+            }
+        ],
+        "groups": [],
+        "hookpoints": [
+            "divvycloud.resource.modified"
+        ],
+        "ondemand_enabled": true,
+        "resource_types": [
+            "serviceregion"
+        ]
+    }
+}

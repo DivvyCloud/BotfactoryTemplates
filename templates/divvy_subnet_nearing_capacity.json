@@ -1,0 +1,32 @@
+{
+    "uuid": "divvy.subnet_nearing_capacity",
+    "name": "Subnets Running Out Of Space",
+    "category": "Optimization",
+    "description": "Identify subnets with less than 10% of their block available for use",
+    "instructions": {
+        "actions": [
+            {
+                "config": {},
+                "name": "divvy.action.mark_non_compliant",
+                "run_when_result_is": false
+            }
+        ],
+        "filters": [
+            {
+                "config": {
+                    "limit": 10
+                },
+                "name": "divvy.filter.subnet_ip_availability_percentage_at_least",
+                "negate": false
+            }
+        ],
+        "groups": [],
+        "hookpoints": [
+            "divvycloud.resource.created"
+        ],
+        "ondemand_enabled": true,
+        "resource_types": [
+            "privatesubnet"
+        ]
+    }
+}

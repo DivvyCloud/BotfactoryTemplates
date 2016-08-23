@@ -1,0 +1,33 @@
+{
+    "uuid": "divvy.user_activity_audit",
+    "name": "Cloud User Activity Audit",
+    "category": "Best Practices",
+    "description": "Identify cloud users who have not logged in recently",
+    "instructions": {
+        "actions": [
+            {
+                "config": {},
+                "name": "divvy.action.mark_non_compliant",
+                "run_when_result_is": true
+            }
+        ],
+        "filters": [
+            {
+                "config": {
+                    "last_logon_days": 45
+                },
+                "name": "divvy.filter.user_password_last_used",
+                "negate": false
+            }
+        ],
+        "groups": [],
+        "hookpoints": [
+            "divvycloud.resource.created",
+            "divvycloud.resource.modified"
+        ],
+        "ondemand_enabled": true,
+        "resource_types": [
+            "serviceuser"
+        ]
+    }
+}

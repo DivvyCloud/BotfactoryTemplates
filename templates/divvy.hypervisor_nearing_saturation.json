@@ -1,0 +1,33 @@
+{
+    "uuid": "divvy.hypervisor_usage_at_most",
+    "name": "Hypervisors Nearing Saturation",
+    "category": "Optimization",
+    "description": "Match hypervisors with at most the supplied percentage for instance usage",
+    "instructions": {
+        "actions": [
+            {
+                "config": {},
+                "name": "divvy.action.mark_non_compliant",
+                "run_when_result_is": true
+            }
+        ],
+        "filters": [
+            {
+                "config": {
+                    "usage_percentage": 90
+                },
+                "name": "divvy.filter.hypervisor_usage_at_most",
+                "negate": false
+            }
+        ],
+        "groups": [],
+        "hookpoints": [
+            "divvycloud.resource.created".
+            "divvycloud.resource.modified"
+        ],
+        "ondemand_enabled": true,
+        "resource_types": [
+            "hypervisor"
+        ]
+    }
+}

@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.database_multiaz",
-    "name": "Database Is Multi-AZ",
+    "uuid": "divvy.database_instance_multiaz",
+    "name": "Database is Multi-AZ",
     "category": "Best Practices",
-    "description": "Ensures that databases are configured with multi-az for resillency",
+    "description": "Ensures that databases are configured across multiple availablity zones for resiliency",
     "instructions": {
         "actions": [
             {

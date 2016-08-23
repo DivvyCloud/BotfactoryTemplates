@@ -1,0 +1,40 @@
+{
+    "uuid": "divvy.resource_age",
+    "name": "Resource Of Age",
+    "category": "Optimization",
+    "description": "Identify resources based on their age"
+    "instructions": {
+        "actions": [
+            {
+                "config": {},
+                "name": "divvy.action.mark_non_compliant",
+                "run_when_result_is": true
+            }
+        ],
+        "filters": [
+            {
+                "config": {
+                    "hours": 720
+                },
+                "name": "divvy.filter.resource_recently_created",
+                "negate": false
+            }
+        ],
+        "groups": [],
+        "hookpoints": [
+            "divvycloud.resource.created",
+            "divvycloud.resource.modified"
+        ],
+        "ondemand_enabled": true,
+        "resource_types": [
+            "snapshot",
+            "volume",
+            "instance",
+            "dbinstance",
+            "mcinstance",
+            "bigdatainstance",
+            "loadbalancer",
+            "storagecontainer"
+        ]
+    }
+}

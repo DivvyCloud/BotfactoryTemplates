@@ -1,0 +1,32 @@
+{
+    "uuid": "divvy.bucket_max_objects",
+    "name": "S3 Bucket Max Objects",
+    "category": "Optimization",
+    "description": "Identify buckets which exceed a total of 10,000 objects",
+    "instructions": {
+        "actions": [
+            {
+                "config": {},
+                "name": "divvy.action.mark_non_compliant",
+                "run_when_result_is": false
+            }
+        ],
+        "filters": [
+            {
+                "config": {
+                    "object_count": 10000
+                },
+                "name": "divvy.filter.storage_container_object_count_at_most",
+                "negate": false
+            }
+        ],
+        "groups": [],
+        "hookpoints": [
+            "divvycloud.resource.modified"
+        ],
+        "ondemand_enabled": true,
+        "resource_types": [
+            "storagecontainer"
+        ]
+    }
+}
