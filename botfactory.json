@@ -132,7 +132,7 @@
             "uuid": "divvy.instance_audit",
             "name": "Compute Instance Type Audit",
             "category": "Best Practices",
-            "description": "Match instances with an ephemeral root volume",
+            "description": "Audit compute instance types against select clouds",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_instance_with_ephemeral_root.json"
         },
