@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.resource_age",
-    "name": "Resource Of Age",
+    "uuid": "divvy.region_public_ip_limit_threshold",
+    "name": "Region Public IP Capacity Audit",
     "category": "Optimization",
-    "description": "Identify resources based on their age",
+    "description": "Match regions within 80% or more of the public IP address threshold",
     "instructions": {
         "actions": [
             {
@@ -14,28 +14,19 @@
         "filters": [
             {
                 "config": {
-                    "hours": 720
+                    "threshold": 80
                 },
-                "name": "divvy.filter.resource_recently_created_or_discovered",
+                "name": "divvy.filter.serviceregion_public_ip_limit",
                 "negate": false
             }
         ],
         "groups": [],
         "hookpoints": [
-            "divvycloud.resource.created",
             "divvycloud.resource.modified"
         ],
         "ondemand_enabled": true,
         "resource_types": [
-            "snapshot",
-            "volume",
-            "instance",
-            "dbinstance",
-            "mcinstance",
-            "hypervisor",
-            "bigdatainstance",
-            "loadbalancer",
-            "storagecontainer"
+            "serviceregion"
         ]
     }
 }

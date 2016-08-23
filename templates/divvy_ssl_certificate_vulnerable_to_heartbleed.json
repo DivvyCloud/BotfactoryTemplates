@@ -1,0 +1,33 @@
+{
+    "uuid": "divvy.ssl_certificate_vulnerable_to_heartbleed",
+    "name": "SSL Certificate Heartbleed Vulnerability",
+    "category": "Security",
+    "description": "Identify SSL certificates which may be vulnerable to SSL Heartbleed",
+    "instructions": {
+        "actions": [
+            {
+                "config": {},
+                "name": "divvy.action.mark_non_compliant",
+                "run_when_result_is": false
+            }
+        ],
+        "filters": [
+            {
+                "config": {
+                    "date": "2014-04-03 00:00:00"
+                },
+                "name": "divvy.filter.ssl_certificate_older_than",
+                "negate": false
+            }
+        ],
+        "groups": [],
+        "hookpoints": [
+            "divvycloud.resource.created",
+            "divvycloud.resource.modified"
+        ],
+        "ondemand_enabled": true,
+        "resource_types": [
+            "servicecertificate"
+        ]
+    }
+}

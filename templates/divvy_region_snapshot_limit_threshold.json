@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.resource_age",
-    "name": "Resource Of Age",
+    "uuid": "divvy.region_snapshot_limit_threshold",
+    "name": "Region Snapshot Capacity Audit",
     "category": "Optimization",
-    "description": "Identify resources based on their age",
+    "description": "Match regions within 80% or more of the snapshot threshold",
     "instructions": {
         "actions": [
             {
@@ -14,28 +14,19 @@
         "filters": [
             {
                 "config": {
-                    "hours": 720
+                    "threshold": 80
                 },
-                "name": "divvy.filter.resource_recently_created_or_discovered",
+                "name": "divvy.filter.serviceregion_volume_snapshot_limit",
                 "negate": false
             }
         ],
         "groups": [],
         "hookpoints": [
-            "divvycloud.resource.created",
             "divvycloud.resource.modified"
         ],
         "ondemand_enabled": true,
         "resource_types": [
-            "snapshot",
-            "volume",
-            "instance",
-            "dbinstance",
-            "mcinstance",
-            "hypervisor",
-            "bigdatainstance",
-            "loadbalancer",
-            "storagecontainer"
+            "serviceregion"
         ]
     }
 }

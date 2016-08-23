@@ -1,0 +1,95 @@
+{
+    "uuid": "divvy.region_limit_threshold",
+    "name": "Region Limit Threshold Audit",
+    "category": "Optimization",
+    "description": "Match regions within 80% or more of the threshold for any resource type",
+    "instructions": {
+        "actions": [
+            {
+                "config": {},
+                "name": "divvy.action.mark_non_compliant",
+                "run_when_result_is": true
+            }
+        ],
+        "filters": [
+            {
+                "config": {
+                    "threshold": 80
+                },
+                "name": "divvy.filter.serviceregion_cache_instance_limit",
+                "negate": false
+            },
+            {
+                "config": {
+                    "threshold": 80
+                },
+                "name": "divvy.filter.serviceregion_database_instance_limit",
+                "negate": false
+            },
+            {
+                "config": {
+                    "threshold": 80
+                },
+                "name": "divvy.filter.serviceregion_compute_instance_limit",
+                "negate": false
+            },
+                {
+                "config": {
+                    "threshold": 80
+                },
+                "name": "divvy.filter.serviceregion_internet_gateway_limit",
+                "negate": false
+            },
+            {
+                "config": {
+                    "threshold": 80
+                },
+                "name": "divvy.filter.serviceregion_private_network_limit",
+                "negate": false
+            },
+            {
+                "config": {
+                    "threshold": 80
+                },
+                "name": "divvy.filter.serviceregion_public_ip_limit",
+                "negate": false
+            },
+            {
+                "config": {
+                    "threshold": 80
+                },
+                "name": "divvy.filter.serviceregion_security_group_limit",
+                "negate": false
+            },
+            {
+                "config": {
+                    "threshold": 80
+                },
+                "name": "divvy.filter.serviceregion_volume_snapshot_limit",
+                "negate": false
+            },
+            {
+                "config": {
+                    "threshold": 80
+                },
+                "name": "divvy.filter.serviceregion_storage_container_limit",
+                "negate": false
+            },
+            {
+                "config": {
+                    "threshold": 80
+                },
+                "name": "divvy.filter.serviceregion_volume_limit",
+                "negate": false
+            }
+        ],
+        "groups": [],
+        "hookpoints": [
+            "divvycloud.resource.modified"
+        ],
+        "ondemand_enabled": true,
+        "resource_types": [
+            "serviceregion"
+        ]
+    }
+}
