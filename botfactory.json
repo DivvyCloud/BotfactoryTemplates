@@ -113,26 +113,26 @@
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_group_curation.json"
         },
         {
-            "uuid": "divvy.snapshot_age",
-            "name": "Snapshot Age",
-            "category": "Optimization",
-            "description": "Identify snapshots older than X days",
+            "uuid": "divvy.region_audit",
+            "name": "Clouds Without Service Users",
+            "category": "Security",
+            "description": "Identifies accounts without any active service users",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_snapshot_age.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_region_audit.json"
         },
         {
-            "uuid": "divvy.region_audit",
+            "uuid": "divvy.clouds_without_service_users",
             "name": "Region Audit",
             "category": "Best Practices",
             "description": "Audit select resource types across specific cloud regions",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_region_audit.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_clouds_without_service_users.json"
         },
         {
             "uuid": "divvy.instance_audit",
             "name": "Compute Instance Type Audit",
             "category": "Best Practices",
-            "description": "Match instances with an ephemeral root volume",
+            "description": "Audit compute instance types against select clouds",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_instance_with_ephemeral_root.json"
         },
@@ -337,9 +337,17 @@
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_orphaned_security_groups.json"
         },
         {
+            "uuid": "divvy.bucket_global_acl_permission",
+            "category": "Security",
+            "name": "S3 Bucket Global ACL Permission",
+            "description": "Identify buckets exposing access list permissions to the world",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_buckets_with_global_acl_permission.json"
+        },
+        {
             "uuid": "divvy.bucket_global_delete_permission",
             "category": "Security",
-            "name": "S3 Bucket Global Delete Permissions",
+            "name": "S3 Bucket Global Delete Permission",
             "description": "Identify buckets exposing delete permissions to the world",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_buckets_with_global_delete_permissions.json"
@@ -347,7 +355,7 @@
         {
             "uuid": "divvy.bucket_global_read_permission",
             "category": "Security",
-            "name": "S3 Bucket Global Read (GET) Permissions",
+            "name": "S3 Bucket Global Read (GET) Permission",
             "description": "Identify buckets exposing read permissions to the world",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_buckets_with_global_get_permissions.json"
@@ -355,7 +363,7 @@
         {
             "uuid": "divvy.bucket_global_write_permission",
             "category": "Security",
-            "name": "S3 Bucket Global Write (PUT) Permissions",
+            "name": "S3 Bucket Global Write (PUT) Permission",
             "description": "Identify buckets exposing write permissions to the world",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_buckets_with_global_write_permissions.json"
@@ -618,7 +626,7 @@
         },
         {
             "uuid": "divvy.user_policy_audit",
-            "category": "Security",
+            "category": "Best Practices",
             "name": "Cloud User Policy Audit",
             "description": "Identify cloud users running unauthorized policies",
             "version": "0.1.0",
