@@ -393,6 +393,14 @@
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_volumes_delete_on_termination.json"
         },
         {
+            "uuid": "divvy.redshift_publicly_accessible",
+            "category": "Security",
+            "name": "Redshift Publicly Accessible",
+            "description": "Identify Redshift instances which are accessible to the public",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_redshift_publicly_accessible.json"
+        },
+        {
             "uuid": "divvy.volumes_not_encrypted",
             "category": "Optimization",
             "name": "Volumes without encryption enabled",
