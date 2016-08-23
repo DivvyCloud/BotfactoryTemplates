@@ -626,7 +626,7 @@
         },
         {
             "uuid": "divvy.user_policy_audit",
-            "category": "Security",
+            "category": "Best Practices",
             "name": "Cloud User Policy Audit",
             "description": "Identify cloud users running unauthorized policies",
             "version": "0.1.0",
