@@ -481,7 +481,7 @@
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_security_rule_postgresql_open_to_world.json"
         },
         {
-            "uuid": "divvy.security_rule_rdc_open_to_world",
+            "uuid": "divvy.security_rule_rpc_open_to_world",
             "category": "Security",
             "name": "Globally Accessible Administrative Port: Windows RDP",
             "description": "Identify TCP port 3389 open to the world",

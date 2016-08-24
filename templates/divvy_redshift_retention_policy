@@ -16,7 +16,7 @@
                 "config": {
                     "maximum_days": 30
                 },
-                "name": "divvy.filter.big_data_instance_retention",
+                "name": "divvy.filter.filter_big_data_instance_retention",
                 "negate": false
             }
         ],
