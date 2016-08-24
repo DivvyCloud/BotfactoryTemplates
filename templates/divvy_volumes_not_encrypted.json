@@ -13,7 +13,7 @@
         ],
         "filters": [
             {
-                "config": {}
+                "config": {},
                 "name": "divvy.filter.volume_not_encrypted",
                 "negate": false
             }
