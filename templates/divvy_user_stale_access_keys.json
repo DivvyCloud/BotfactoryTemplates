@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.user_policy_audit",
-    "name": "Cloud User Policy Audit",
+    "uuid": "divvy.user_stale_access_keys",
+    "name": "Cloud User API Key Audit",
     "category": "Best Practices",
-    "description": "Identify cloud users running unauthorized policies",
+    "description": "Identify cloud users with API key credentials which should be rotated",
     "instructions": {
         "actions": [
             {
@@ -19,7 +19,7 @@
                         "PowerUser"
                     ]
                 },
-                "name": "divvy.filter.service_user_policies",
+                "name": "divvy.filter.service_user_access_key_age_at_least",
                 "negate": false
             }
         ],
