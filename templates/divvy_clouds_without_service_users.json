@@ -14,7 +14,7 @@
         "filters": [
             {
                 "config": {},
-                "name": "divvy.filter.cloud_with_no_service_users",
+                "name": "divvy.filter.cloud_without_service_users",
                 "negate": false
             }
         ],
