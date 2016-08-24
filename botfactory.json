@@ -610,7 +610,7 @@
         },
         {
             "uuid": "divvy.volume_type_audit",
-            "category": "Optimization",
+            "category": "Best Practices",
             "name": "Volume Type Audit",
             "description": "Identify volumes running unapproved types",
             "version": "0.1.0",
