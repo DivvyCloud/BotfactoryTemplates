@@ -1,5 +1,5 @@
 {
-    "uuid": "divvy.load_balancer_cross_zone_balancing",
+    "uuid": "divvy.load_balancer_zone_balancing",
     "name": "Load Balancer Cross Zone Balancing Disabled",
     "category": "Best Practices",
     "description": "Match load balancers that do not have cross zone balancing enabled",
@@ -14,7 +14,7 @@
         "filters": [
             {
                 "config": {},
-                "name": "divvy.filter.load_balancer_cross_zone_balancing",
+                "name": "divvy.filter.load_balancer_zone_balancing",
                 "negate": true
             }
         ],

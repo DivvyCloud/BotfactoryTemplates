@@ -265,7 +265,7 @@
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_load_balancer_access_logging.json"
         },
         {
-            "uuid": "divvy.load_balancer_cross_zone_balancing",
+            "uuid": "divvy.load_balancer_zone_balancing",
             "name": "Load Balancer Cross Zone Balancing Disabled",
             "category": "Best Practices",
             "description": "Match all Load Balancers that have cross zone balancing disabled",
