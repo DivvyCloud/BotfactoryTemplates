@@ -20,7 +20,7 @@
         ],
         "groups": [],
         "hookpoints": [
-            "divvycloud.resource.created".
+            "divvycloud.resource.created", 
             "divvycloud.resource.modified"
         ],
         "ondemand_enabled": true,
