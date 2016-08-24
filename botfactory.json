@@ -81,7 +81,7 @@
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_database_instance_manual_snapshots.json"
         },
         {
-            "uuid": "divvy.database_instance_master_username_audit",
+            "uuid": "divvy.database_instance_master_username",
             "name": "Database Instance Username Audit",
             "category": "Security",
             "description": "Identify database instances running noncompliant usernames for the master account",
