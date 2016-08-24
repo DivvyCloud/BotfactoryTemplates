@@ -1,5 +1,5 @@
 {
-    "uuid": "divvy.redshift_30_day_retention_policy",
+    "uuid": "divvy.big_data_instance_retention",
     "name": "Redshift Retention Policy",
     "category": "Security",
     "description": "Identify Redshift instances with a retention policy less than or equal to 30 days",
