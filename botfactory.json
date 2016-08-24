@@ -334,7 +334,7 @@
             "name": "S3 Bucket Global ACL Permission",
             "description": "Identify buckets exposing access list permissions to the world",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_buckets_with_global_acl_permission.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_buckets_with_global_acl_permission.json"
         },
         {
             "uuid": "divvy.bucket_global_delete_permission",
