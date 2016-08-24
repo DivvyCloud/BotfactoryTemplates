@@ -19,7 +19,7 @@
                         "PowerUser"
                     ]
                 },
-                "name": "divvy.filter.service_user_policies",
+                "name": "divvy.filter.filter_iam_users",
                 "negate": false
             }
         ],
