@@ -1,5 +1,5 @@
 {
-    "uuid": "divvy.database_instance_master_username_audit",
+    "uuid": "divvy.database_instance_master_username",
     "name": "Database Instance Username Audit",
     "category": "Security",
     "description": "Identify database instances running noncompliant usernames for the master account",
