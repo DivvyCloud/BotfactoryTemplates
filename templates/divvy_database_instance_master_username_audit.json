@@ -30,7 +30,7 @@
         ],
         "ondemand_enabled": true,
         "resource_types": [
-            "dbdatainstance"
+            "dbinstance"
         ]
     }
 }
