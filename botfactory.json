@@ -342,7 +342,7 @@
             "name": "S3 Bucket Global Delete Permission",
             "description": "Identify buckets exposing delete permissions to the world",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_buckets_with_global_delete_permissions.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_buckets_with_global_delete_permission.json"
         },
         {
             "uuid": "divvy.bucket_global_read_permission",
@@ -358,7 +358,7 @@
             "name": "S3 Bucket Global Write (PUT) Permission",
             "description": "Identify buckets exposing write permissions to the world",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_buckets_with_global_write_permissions.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_buckets_with_global_write_permission.json"
         },
         {
             "uuid": "divvy.buckets_without_object_versioning",
