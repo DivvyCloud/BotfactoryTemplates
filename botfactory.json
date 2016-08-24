@@ -94,7 +94,7 @@
             "category": "Security",
             "description": "Identify database instances running noncompliant usernames for the master account",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_database_instance_master_username_audit.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/database_instance_master_username_audit.json"
         },
         {
             "uuid": "divvy.scheduled_instances",
