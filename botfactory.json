@@ -113,7 +113,7 @@
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_region_audit.json"
         },
         {
-            "uuid": "divvy.cloud_without_service_users",
+            "uuid": "divvy.cloud_no_service_users",
             "name": "Clouds Without Service Users",
             "category": "Best Practices",
             "description": "Identifies accounts without any active service users",

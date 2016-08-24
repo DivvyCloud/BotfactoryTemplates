@@ -1,6 +1,6 @@
 {
-    "uuid": "divvy.cloud_without_service_users",
-    "name": "Clouds With No Service Users",
+    "uuid": "divvy.cloud_no_service_users",
+    "name": "Clouds Without Service Users",
     "category": "Best Practices",
     "description": "Identifies accounts without any active service users",
     "instructions": {
@@ -14,7 +14,7 @@
         "filters": [
             {
                 "config": {},
-                "name": "divvy.filter.cloud_without_service_users",
+                "name": "divvy.filter.cloud_with_no_service_users",
                 "negate": false
             }
         ],
