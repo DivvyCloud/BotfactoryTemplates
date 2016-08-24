@@ -406,7 +406,7 @@
             "name": "Redshift Retention Policy",
             "description": "Identify Redshift instances with a retention policy less than or equal to 30 days",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_redshift_publicly_acessible.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_redshift_retention_policy.json"
         },
         {
             "uuid": "divvy.security_rule_cifs_open_to_world",
