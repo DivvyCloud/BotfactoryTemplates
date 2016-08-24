@@ -657,14 +657,6 @@
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_region_with_no_default_network.json"
         },
         {
-            "uuid": "divvy.region_with_no_default_network",
-            "category": "Best Practices",
-            "name": "Region Without Default Network",
-            "description": "Match regions without a default network",
-            "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_region_with_no_default_network.json"
-        },
-        {
             "uuid": "divvy.region_with_impaired_availability_zone",
             "category": "Best Practices",
             "name": "Region With Impaired Availability Zone",
