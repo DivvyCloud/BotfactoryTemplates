@@ -25,7 +25,7 @@
         ],
         "ondemand_enabled": true,
         "resource_types": [
-            "instance"
+            "loadbalancer"
         ]
     }
 }
