@@ -16,7 +16,7 @@
                 "config": {
                     "last_logon_days": 45
                 },
-                "name": "divvy.filter.user_password_last_used",
+                "name": "divvy.filter.",
                 "negate": false
             }
         ],
