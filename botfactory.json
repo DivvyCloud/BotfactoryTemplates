@@ -33,14 +33,6 @@
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_clouds_without_api_accounting.json"
         },
         {
-            "uuid": "divvy.clouds_without_service_users",
-            "name": "Clouds Without Service Users",
-            "category": "Security",
-            "description": "Identifies accounts without any active service users",
-            "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_clouds_without_service_users.json"
-        },
-        {
             "uuid": "divvy.security_rule_audit",
             "name": "Audit Security Rules",
             "category": "Security",
