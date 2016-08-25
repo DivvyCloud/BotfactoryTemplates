@@ -13,7 +13,9 @@
         ],
         "filters": [
             {
-                "config": {},
+                "config": {
+                    "days": 0
+                    },
                 "name": "divvy.filter.database_instance_retention",
                 "negate": false
             }
