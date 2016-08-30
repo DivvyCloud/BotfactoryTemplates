@@ -377,6 +377,14 @@
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_buckets_without_logging.json"
         },
         {
+            "uuid": "divvy.redshift_master_username_audit",
+            "category": "Security",
+            "name": "Redshift Username Audit",
+            "description": "Identify Redshift instances running noncompliant usernames for the master account",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_redshift_master_username_audit.json"
+        },
+        {
             "uuid": "divvy.big_data_instance_audit",
             "category": "Best Practices",
             "name": "Redshift Instance Audit",
