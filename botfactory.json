@@ -113,7 +113,7 @@
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_region_audit.json"
         },
         {
-            "uuid": "divvy.divvy.clouds_without_service_users",
+            "uuid": "divvy.clouds_without_service_users",
             "name": "Clouds Without Service Users",
             "category": "Best Practices",
             "description": "Identifies accounts without any active service users",
@@ -375,6 +375,14 @@
             "description": "Identify buckets without logging enabled",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_buckets_without_logging.json"
+        },
+        {
+            "uuid": "divvy.big_data_instance_audit",
+            "category": "Best Practices",
+            "name": "Redshift Instance Audit",
+            "description": "Identify Redshift instances running unapproved instance types",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_big_data_instance_audit.json"
         },
         {
             "uuid": "divvy.redshift_instance_encrypted",
@@ -639,6 +647,14 @@
             "description": "Identify cloud users with API key credentials which should be rotated",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_user_stale_access_keys.json"
+        },
+        {
+            "uuid": "divvy.network_without_internet_gateway",
+            "category": "Best Practices",
+            "name": "Networks Without Internet Access",
+            "description": "Identify networks without an attached Internet gateway",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_network_without_internet_gateway.json"
         },
         {
             "uuid": "divvy.region_with_no_default_network",
