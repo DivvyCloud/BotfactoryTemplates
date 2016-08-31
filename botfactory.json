@@ -401,14 +401,6 @@
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_redshift_instance_encrypted.json"
         },
         {
-            "uuid": "divvy.redshift_master_username",
-            "category": "Security",
-            "name": "Redshift Encryption Enabled",
-            "description": "Identify Redshift instances running noncompliant usernames for the master account",
-            "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/16.06/templates/divvy_redshift_instance_encrypted.json"
-        },
-        {
             "uuid": "divvy.redshift_publicly_accessible",
             "category": "Security",
             "name": "Redshift Publicly Accessible",
