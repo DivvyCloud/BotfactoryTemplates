@@ -15,7 +15,7 @@
             {
                 "config": {
                     "instance_types": [
-                        "dc1.large",
+                        "dc1.large"
                     ]
                 },
                 "name": "divvy.filter.bigdata_instance_type",

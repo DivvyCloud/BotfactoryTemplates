@@ -386,7 +386,7 @@
         },
         {
             "uuid": "divvy.big_data_instance_audit",
-            "category": "Best Practices",
+            "category": "Optimization",
             "name": "Redshift Instance Audit",
             "description": "Identify Redshift instances running unapproved instance types",
             "version": "0.1.0",
