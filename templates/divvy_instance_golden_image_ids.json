@@ -16,7 +16,7 @@
                 "config": {
                     "image_ids": []
                 },
-                "name": "divvy.filter.authorized_image_id",
+                "name": "divvy.filter.instance_authorized_image_id",
                 "negate": true
             }
         ],
