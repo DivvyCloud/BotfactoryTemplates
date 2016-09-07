@@ -14,7 +14,7 @@
         "filters": [
             {
                 "config": {
-                    "key_pair_namess": []
+                    "key_pair_names": []
                 },
                 "name": "divvy.filter.authorized_key_pair",
                 "negate": true
