@@ -14,7 +14,7 @@
         "filters": [
             {
                 "config": {
-                    "image_ids": []
+                    "image_ids": ["ami-173d747e"]
                 },
                 "name": "divvy.filter.authorized_image_id",
                 "negate": true
