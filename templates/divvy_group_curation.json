@@ -7,7 +7,7 @@
         "actions": [
             {
                 "config": {
-                    "resource_group_id": ""
+                    "resource_group_id": "237"
                 },
                 "name": "divvy.action.curate",
                 "run_when_result_is": true
