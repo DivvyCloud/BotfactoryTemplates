@@ -38,7 +38,7 @@
             "_type": "Daily",
             "time_of_day": {"_type": "TimeOfDay", "second": 0, "minute": 0, "hour": 6},
             "exclude_days": [], 
-            "exclude_weekends": True
+            "exclude_weekends": true
         },
         "ondemand_enabled": true
     }
