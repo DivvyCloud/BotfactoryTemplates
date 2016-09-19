@@ -37,8 +37,7 @@
         "schedule": {
             "_type": "Daily",
             "time_of_day": {"_type": "TimeOfDay", "second": 0, "minute": 0, "hour": 6},
-            "exclude_days": [], 
-            "exclude_weekends": true
+            "exclude_days": []
         },
         "ondemand_enabled": true
     }
