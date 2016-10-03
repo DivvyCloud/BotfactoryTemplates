@@ -15,7 +15,7 @@
             {
                 "config": {
                     "db_engines": [
-                        "oracle",
+                        "mysql",
                         "aurora",
                         "mariadb"
                     ]
