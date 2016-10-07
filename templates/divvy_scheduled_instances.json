@@ -15,7 +15,9 @@
             {
                 "run_when_result_is": true,
                 "config": {
-                    "time_of_day": "1970-01-01 00:00:00",
+                    "hour": "0",
+		    "minute": "20",
+                    "timezone": "UTC",
                     "exclude_days": ["6","7"]
                  },
                 "name": "divvy.action.periodic_stop"
@@ -23,7 +25,9 @@
             {
                 "run_when_result_is": true,
                 "config": {
-                    "time_of_day": "1970-01-01 00:00:00",
+                    "hour": "10",
+		    "minute": "0",
+                    "timezone": "UTC",
                     "exclude_days": ["6","7"]
                 },
                 "name": "divvy.action.periodic_start"
@@ -34,11 +38,6 @@
         "resource_types": [
             "instance"
         ],
-        "schedule": {
-            "_type": "Daily",
-            "time_of_day": {"_type": "TimeOfDay", "second": 0, "minute": 0, "hour": 6},
-            "exclude_days": []
-        },
         "ondemand_enabled": true
     }
 }
