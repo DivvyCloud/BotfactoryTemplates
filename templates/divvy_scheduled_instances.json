@@ -15,8 +15,8 @@
             {
                 "run_when_result_is": true,
                 "config": {
-                    "hour": "0",
-		    "minute": "20",
+                    "hour": 0,
+                    "minute": 20,
                     "timezone": "UTC",
                     "exclude_days": ["6","7"]
                  },
@@ -25,8 +25,8 @@
             {
                 "run_when_result_is": true,
                 "config": {
-                    "hour": "10",
-		    "minute": "0",
+                    "hour": 10,
+                    "minute": 0,
                     "timezone": "UTC",
                     "exclude_days": ["6","7"]
                 },
