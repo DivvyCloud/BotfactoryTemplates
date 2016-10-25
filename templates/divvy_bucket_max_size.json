@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.buckets_without_permissions",
-    "name": "S3 buckets with no permissions",
-    "category": "Security",
-    "description": "Identifies buckets without any permission sets",
+    "uuid": "divvy.bucket_max_size",
+    "name": "S3 Bucket Max Size",
+    "category": "Optimization",
+    "description": "Identify buckets which exceed a total size of 1TB",
     "instructions": {
         "actions": [
             {
@@ -13,8 +13,10 @@
         ],
         "filters": [
             {
-                "config": {},
-                "name": "divvy.filter.bucket_without_permissions",
+                "config": {
+                    "container_size": 1024
+                },
+                "name": "divvy.filter.bucket_supports_logging",
                 "negate": false
             }
         ],
@@ -25,11 +27,6 @@
         "ondemand_enabled": true,
         "resource_types": [
             "storagecontainer"
-        ],
-        "schedule": {
-            "_type": "Daily",
-            "time_of_day": {"_type": "TimeOfDay", "second": 0, "minute": 0, "hour": 4},
-            "exclude_days": []
-        }
+        ]
     }
 }

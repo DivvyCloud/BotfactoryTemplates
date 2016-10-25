@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.volume_not_encrypted",
-    "name": "Volumes without encryption enabled",
-    "category": "Security",
-    "description": "Identify volumes without encryption enabled",
+    "uuid": "divvy.instance_with_failed_status_checks",
+    "name": "Instance With Failed Status Checks",
+    "category": "Best Practices",
+    "description": "Match instances which fail the system/reachability status checks",
     "instructions": {
         "actions": [
             {
@@ -14,8 +14,8 @@
         "filters": [
             {
                 "config": {},
-                "name": "divvy.filter.volume_not_encrypted",
-                "negate": false
+                "name": "divvy.filter.instance_fails_status_checks",
+                "negate": true
             }
         ],
         "groups": [],
@@ -25,7 +25,7 @@
         ],
         "ondemand_enabled": true,
         "resource_types": [
-            "volume"
+            "instance"
         ]
     }
 }

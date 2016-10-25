@@ -1,0 +1,32 @@
+{
+    "uuid": "divvy.instance_golden_image_ids",
+    "name": "Instance Running Unauthorized Image",
+    "category": "Best Practices",
+    "description": "Match instances which were created with an unauthorized image",
+    "instructions": {
+        "actions": [
+            {
+                "config": {},
+                "name": "divvy.action.mark_non_compliant",
+                "run_when_result_is": true
+            }
+        ],
+        "filters": [
+            {
+                "config": {
+                    "image_ids": ["ami-173d747e"]
+                },
+                "name": "divvy.filter.authorized_image_id",
+                "negate": true
+            }
+        ],
+        "groups": [],
+        "hookpoints": [
+            "divvycloud.resource.created"
+        ],
+        "ondemand_enabled": true,
+        "resource_types": [
+            "instance"
+        ]
+    }
+}

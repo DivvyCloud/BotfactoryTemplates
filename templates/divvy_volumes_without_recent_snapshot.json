@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.redshift_retention_policy",
-    "name": "Redshift Retention Policy",
-    "category": "Security",
-    "description": "Identify Redshift instances with a retention policy less than or equal to 30 days",
+    "uuid": "divvy.volumes_without_recent_snapshot",
+    "name": "Volumes Without A Recent Snapshot",
+    "category": "Best Practices",
+    "description": "Identify volumes without a snapshot in the past fourteen days",
     "instructions": {
         "actions": [
             {
@@ -14,17 +14,19 @@
         "filters": [
             {
                 "config": {
-                    "maximum_days": 30
+                    "days": 14
                 },
-                "name": "divvy.filter.big_data_instance_retention",
+                "name": "divvy.filter.recent_volume_snapshots",
                 "negate": false
             }
         ],
         "groups": [],
-        "hookpoints": [],
+        "hookpoints": [
+            "divvycloud.resource.created"
+        ],
         "ondemand_enabled": true,
         "resource_types": [
-            "bigdatainstance"
+            "volume"
         ]
     }
 }

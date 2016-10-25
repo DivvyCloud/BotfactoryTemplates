@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.buckets_without_permissions",
-    "name": "S3 buckets with no permissions",
-    "category": "Security",
-    "description": "Identifies buckets without any permission sets",
+    "uuid": "divvy.hypervisor_without_instances",
+    "name": "Hypervisors With No Instances",
+    "category": "Optimization",
+    "description": "Match hypervisors which are orphaned and contain zero instances",
     "instructions": {
         "actions": [
             {
@@ -14,22 +14,18 @@
         "filters": [
             {
                 "config": {},
-                "name": "divvy.filter.bucket_without_permissions",
+                "name": "divvy.filter.orphaned_hypervisor",
                 "negate": false
             }
         ],
         "groups": [],
         "hookpoints": [
+            "divvycloud.resource.created", 
             "divvycloud.resource.modified"
         ],
         "ondemand_enabled": true,
         "resource_types": [
-            "storagecontainer"
-        ],
-        "schedule": {
-            "_type": "Daily",
-            "time_of_day": {"_type": "TimeOfDay", "second": 0, "minute": 0, "hour": 4},
-            "exclude_days": []
-        }
+            "hypervisor"
+        ]
     }
 }

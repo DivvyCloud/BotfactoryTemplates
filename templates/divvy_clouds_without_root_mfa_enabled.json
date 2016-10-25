@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.buckets_without_permissions",
-    "name": "S3 buckets with no permissions",
+    "uuid": "divvy.clouds_without_root_mfa",
+    "name": "Clouds Without Protected Root Account",
     "category": "Security",
-    "description": "Identifies buckets without any permission sets",
+    "description": "Identify accounts which still have the root account and it is not two-factor enabled",
     "instructions": {
         "actions": [
             {
@@ -14,17 +14,20 @@
         "filters": [
             {
                 "config": {},
-                "name": "divvy.filter.bucket_without_permissions",
+                "name": "divvy.filter.cloud_root_credentials_enabled",
                 "negate": false
+            },
+            {
+                "config": {},
+                "name": "divvy.filter.cloud_root_account_mfa_enabled",
+                "negate": true
             }
         ],
         "groups": [],
-        "hookpoints": [
-            "divvycloud.resource.modified"
-        ],
+        "hookpoints": [],
         "ondemand_enabled": true,
         "resource_types": [
-            "storagecontainer"
+            "organizationservice"
         ],
         "schedule": {
             "_type": "Daily",

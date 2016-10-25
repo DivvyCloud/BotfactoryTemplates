@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.volume_not_encrypted",
-    "name": "Volumes without encryption enabled",
-    "category": "Security",
-    "description": "Identify volumes without encryption enabled",
+    "uuid": "divvy.region_instance_limit_threshold",
+    "name": "Region Instance Capacity Audit",
+    "category": "Optimization",
+    "description": "Match regions within 80% or more of the instance threshold",
     "instructions": {
         "actions": [
             {
@@ -13,19 +13,20 @@
         ],
         "filters": [
             {
-                "config": {},
-                "name": "divvy.filter.volume_not_encrypted",
+                "config": {
+                    "threshold": 80
+                },
+                "name": "divvy.filter.serviceregion_compute_instance_limit",
                 "negate": false
             }
         ],
         "groups": [],
         "hookpoints": [
-            "divvycloud.resource.created",
             "divvycloud.resource.modified"
         ],
         "ondemand_enabled": true,
         "resource_types": [
-            "volume"
+            "serviceregion"
         ]
     }
 }

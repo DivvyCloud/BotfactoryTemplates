@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.redshift_retention_policy",
-    "name": "Redshift Retention Policy",
-    "category": "Security",
-    "description": "Identify Redshift instances with a retention policy less than or equal to 30 days",
+    "uuid": "divvy.subnet_nearing_capacity",
+    "name": "Subnets Running Out Of Space",
+    "category": "Optimization",
+    "description": "Identify subnets with less than 10% of their block available for use",
     "instructions": {
         "actions": [
             {
@@ -14,17 +14,19 @@
         "filters": [
             {
                 "config": {
-                    "maximum_days": 30
+                    "limit": 10
                 },
-                "name": "divvy.filter.big_data_instance_retention",
+                "name": "divvy.filter.subnet_ip_availability_percentage_at_least",
                 "negate": false
             }
         ],
         "groups": [],
-        "hookpoints": [],
+        "hookpoints": [
+            "divvycloud.resource.created"
+        ],
         "ondemand_enabled": true,
         "resource_types": [
-            "bigdatainstance"
+            "privatesubnet"
         ]
     }
 }

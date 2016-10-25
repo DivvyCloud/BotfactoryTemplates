@@ -1,20 +1,20 @@
 {
-    "uuid": "divvy.volume_not_encrypted",
-    "name": "Volumes without encryption enabled",
-    "category": "Security",
-    "description": "Identify volumes without encryption enabled",
+    "uuid": "divvy.network_without_internet_gateway",
+    "name": "Networks Without Internet Gateways",
+    "category": "Optimization",
+    "description": "Identify networks without an attached Internet gateway",
     "instructions": {
         "actions": [
             {
                 "config": {},
                 "name": "divvy.action.mark_non_compliant",
-                "run_when_result_is": true
+                "run_when_result_is": false
             }
         ],
         "filters": [
             {
                 "config": {},
-                "name": "divvy.filter.volume_not_encrypted",
+                "name": "divvy.filter.has_no_network_gateway",
                 "negate": false
             }
         ],
@@ -25,7 +25,7 @@
         ],
         "ondemand_enabled": true,
         "resource_types": [
-            "volume"
+            "privatenetwork"
         ]
     }
 }

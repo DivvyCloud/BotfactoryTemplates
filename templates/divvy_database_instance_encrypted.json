@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.redshift_retention_policy",
-    "name": "Redshift Retention Policy",
+    "uuid": "divvy.database_instance_unencrypted",
+    "name": "Database Instance Encrypted",
     "category": "Security",
-    "description": "Identify Redshift instances with a retention policy less than or equal to 30 days",
+    "description": "Identify database instances which are not encrypted",
     "instructions": {
         "actions": [
             {
@@ -13,18 +13,19 @@
         ],
         "filters": [
             {
-                "config": {
-                    "maximum_days": 30
-                },
-                "name": "divvy.filter.big_data_instance_retention",
+                "config": {},
+                "name": "divvy.filter.database_instance_encrypted",
                 "negate": false
             }
         ],
         "groups": [],
-        "hookpoints": [],
+        "hookpoints": [
+            "divvycloud.resource.created",
+            "divvycloud.resource.modified"
+        ],
         "ondemand_enabled": true,
         "resource_types": [
-            "bigdatainstance"
+            "dbinstance"
         ]
     }
 }

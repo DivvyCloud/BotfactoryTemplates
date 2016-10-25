@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.volume_not_encrypted",
-    "name": "Volumes without encryption enabled",
-    "category": "Security",
-    "description": "Identify volumes without encryption enabled",
+    "uuid": "divvy.user_activity_audit",
+    "name": "Cloud User Activity Audit",
+    "category": "Best Practices",
+    "description": "Identify cloud users who have not logged in recently",
     "instructions": {
         "actions": [
             {
@@ -13,8 +13,10 @@
         ],
         "filters": [
             {
-                "config": {},
-                "name": "divvy.filter.volume_not_encrypted",
+                "config": {
+                    "last_logon_days": 45
+                },
+                "name": "divvy.filter.service_user_password_last_used",
                 "negate": false
             }
         ],
@@ -25,7 +27,7 @@
         ],
         "ondemand_enabled": true,
         "resource_types": [
-            "volume"
+            "serviceuser"
         ]
     }
 }

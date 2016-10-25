@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.redshift_retention_policy",
-    "name": "Redshift Retention Policy",
+    "uuid": "divvy.ssl_certificate_vulnerable_to_heartbleed",
+    "name": "SSL Certificate Heartbleed Vulnerability",
     "category": "Security",
-    "description": "Identify Redshift instances with a retention policy less than or equal to 30 days",
+    "description": "Identify SSL certificates which may be vulnerable to SSL Heartbleed",
     "instructions": {
         "actions": [
             {
@@ -14,17 +14,20 @@
         "filters": [
             {
                 "config": {
-                    "maximum_days": 30
+                    "date": "2014-04-03 00:00:00"
                 },
-                "name": "divvy.filter.big_data_instance_retention",
+                "name": "divvy.filter.ssl_certificate_older_than",
                 "negate": false
             }
         ],
         "groups": [],
-        "hookpoints": [],
+        "hookpoints": [
+            "divvycloud.resource.created",
+            "divvycloud.resource.modified"
+        ],
         "ondemand_enabled": true,
         "resource_types": [
-            "bigdatainstance"
+            "servicecertificate"
         ]
     }
 }

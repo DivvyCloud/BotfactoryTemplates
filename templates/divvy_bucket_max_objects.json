@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.redshift_retention_policy",
-    "name": "Redshift Retention Policy",
-    "category": "Security",
-    "description": "Identify Redshift instances with a retention policy less than or equal to 30 days",
+    "uuid": "divvy.bucket_max_objects",
+    "name": "S3 Bucket Max Objects",
+    "category": "Optimization",
+    "description": "Identify buckets which exceed a total of 10,000 objects",
     "instructions": {
         "actions": [
             {
@@ -14,17 +14,19 @@
         "filters": [
             {
                 "config": {
-                    "maximum_days": 30
+                    "object_count": 10000
                 },
-                "name": "divvy.filter.big_data_instance_retention",
+                "name": "divvy.filter.storage_container_object_count_at_most",
                 "negate": false
             }
         ],
         "groups": [],
-        "hookpoints": [],
+        "hookpoints": [
+            "divvycloud.resource.modified"
+        ],
         "ondemand_enabled": true,
         "resource_types": [
-            "bigdatainstance"
+            "storagecontainer"
         ]
     }
 }

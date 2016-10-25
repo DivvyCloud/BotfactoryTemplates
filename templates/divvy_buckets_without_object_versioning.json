@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.redshift_retention_policy",
-    "name": "Redshift Retention Policy",
+    "uuid": "divvy.buckets_without_object_versioning",
+    "name": "S3 Bucket Versioning",
     "category": "Security",
-    "description": "Identify Redshift instances with a retention policy less than or equal to 30 days",
+    "description": "Identify buckets without object versioning enabled",
     "instructions": {
         "actions": [
             {
@@ -13,18 +13,19 @@
         ],
         "filters": [
             {
-                "config": {
-                    "maximum_days": 30
-                },
-                "name": "divvy.filter.big_data_instance_retention",
+                "config": {},
+                "name": "divvy.filter.bucket_supports_versioning",
                 "negate": false
             }
         ],
         "groups": [],
-        "hookpoints": [],
+        "hookpoints": [
+            "divvycloud.resource.created",
+            "divvycloud.resource.modified"
+        ],
         "ondemand_enabled": true,
         "resource_types": [
-            "bigdatainstance"
+            "storagecontainer"
         ]
     }
 }

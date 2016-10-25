@@ -14,9 +14,9 @@
         "filters": [
             {
                 "config": {
-                    "limit": 1024
+                    "block_size": 1024
                 },
-                "name": "divvy.filter.subnet_exceeds_ip_limit",
+                "name": "divvy.filter.subnet_ip_block_size_at_least",
                 "negate": false
             }
         ],

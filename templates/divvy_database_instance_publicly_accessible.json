@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.buckets_without_permissions",
-    "name": "S3 buckets with no permissions",
+    "uuid": "divvy.database_instance_publicly_accessible",
+    "name": "Database Instance Publicly Accessible",
     "category": "Security",
-    "description": "Identifies buckets without any permission sets",
+    "description": "Identify database instances which are accessible to the public",
     "instructions": {
         "actions": [
             {
@@ -14,22 +14,18 @@
         "filters": [
             {
                 "config": {},
-                "name": "divvy.filter.bucket_without_permissions",
+                "name": "divvy.filter.database_instance_public_access",
                 "negate": false
             }
         ],
         "groups": [],
         "hookpoints": [
+            "divvycloud.resource.created",
             "divvycloud.resource.modified"
         ],
         "ondemand_enabled": true,
         "resource_types": [
-            "storagecontainer"
-        ],
-        "schedule": {
-            "_type": "Daily",
-            "time_of_day": {"_type": "TimeOfDay", "second": 0, "minute": 0, "hour": 4},
-            "exclude_days": []
-        }
+            "dbinstance"
+        ]
     }
 }

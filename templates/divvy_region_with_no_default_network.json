@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.buckets_without_permissions",
-    "name": "S3 buckets with no permissions",
-    "category": "Security",
-    "description": "Identifies buckets without any permission sets",
+    "uuid": "divvy.region_with_no_default_network",
+    "name": "Region Without Default Network",
+    "category": "Optimization",
+    "description": "Match regions without a default network",
     "instructions": {
         "actions": [
             {
@@ -14,7 +14,7 @@
         "filters": [
             {
                 "config": {},
-                "name": "divvy.filter.bucket_without_permissions",
+                "name": "divvy.filter.region_without_default_network",
                 "negate": false
             }
         ],
@@ -24,12 +24,7 @@
         ],
         "ondemand_enabled": true,
         "resource_types": [
-            "storagecontainer"
-        ],
-        "schedule": {
-            "_type": "Daily",
-            "time_of_day": {"_type": "TimeOfDay", "second": 0, "minute": 0, "hour": 4},
-            "exclude_days": []
-        }
+            "serviceregion"
+        ]
     }
 }

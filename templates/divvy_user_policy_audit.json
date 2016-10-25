@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.volume_not_encrypted",
-    "name": "Volumes without encryption enabled",
-    "category": "Security",
-    "description": "Identify volumes without encryption enabled",
+    "uuid": "divvy.user_policy_audit",
+    "name": "Cloud User Policy Audit",
+    "category": "Best Practices",
+    "description": "Identify cloud users running unauthorized policies",
     "instructions": {
         "actions": [
             {
@@ -13,8 +13,13 @@
         ],
         "filters": [
             {
-                "config": {},
-                "name": "divvy.filter.volume_not_encrypted",
+                "config": {
+                    "policy_names": [
+                        "AdministratorAccess",
+                        "PowerUser"
+                    ]
+                },
+                "name": "divvy.filter.iam_users",
                 "negate": false
             }
         ],
@@ -25,7 +30,7 @@
         ],
         "ondemand_enabled": true,
         "resource_types": [
-            "volume"
+            "serviceuser"
         ]
     }
 }

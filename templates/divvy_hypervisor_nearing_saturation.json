@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.volume_not_encrypted",
-    "name": "Volumes without encryption enabled",
-    "category": "Security",
-    "description": "Identify volumes without encryption enabled",
+    "uuid": "divvy.hypervisor_usage_at_most",
+    "name": "Hypervisors Nearing Saturation",
+    "category": "Optimization",
+    "description": "Match hypervisors with at most the supplied percentage for instance usage",
     "instructions": {
         "actions": [
             {
@@ -13,8 +13,10 @@
         ],
         "filters": [
             {
-                "config": {},
-                "name": "divvy.filter.volume_not_encrypted",
+                "config": {
+                    "usage_percentage": 90
+                },
+                "name": "divvy.filter.hypervisor_usage_at_most",
                 "negate": false
             }
         ],
@@ -25,7 +27,7 @@
         ],
         "ondemand_enabled": true,
         "resource_types": [
-            "volume"
+            "hypervisor"
         ]
     }
 }

@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.volume_not_encrypted",
-    "name": "Volumes without encryption enabled",
-    "category": "Security",
-    "description": "Identify volumes without encryption enabled",
+    "uuid": "divvy.instance_with_ephemeral_root",
+    "name": "Instance Has Ephemeral Root Volume",
+    "category": "Optimization",
+    "description": "Match instances with an ephemeral root volume",
     "instructions": {
         "actions": [
             {
@@ -14,18 +14,17 @@
         "filters": [
             {
                 "config": {},
-                "name": "divvy.filter.volume_not_encrypted",
+                "name": "divvy.filter.instance_root_volume",
                 "negate": false
             }
         ],
         "groups": [],
         "hookpoints": [
-            "divvycloud.resource.created",
-            "divvycloud.resource.modified"
+            "divvycloud.resource.created"
         ],
         "ondemand_enabled": true,
         "resource_types": [
-            "volume"
+            "instance"
         ]
     }
 }

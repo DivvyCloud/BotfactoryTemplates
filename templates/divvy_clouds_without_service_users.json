@@ -1,30 +1,30 @@
 {
-    "uuid": "divvy.buckets_without_permissions",
-    "name": "S3 buckets with no permissions",
-    "category": "Security",
-    "description": "Identifies buckets without any permission sets",
+    "uuid": "divvy.clouds_without_service_users",
+    "name": "Clouds Without Service Users",
+    "category": "Best Practices",
+    "description": "Identifies accounts without any active service users",
     "instructions": {
         "actions": [
             {
                 "config": {},
                 "name": "divvy.action.mark_non_compliant",
-                "run_when_result_is": true
+                "run_when_result_is": false
             }
         ],
         "filters": [
             {
-                "config": {},
-                "name": "divvy.filter.bucket_without_permissions",
+                "config": {
+                    "ignore_disabled":false
+                    },
+                "name": "divvy.filter.cloud_with_no_service_users",
                 "negate": false
             }
         ],
         "groups": [],
-        "hookpoints": [
-            "divvycloud.resource.modified"
-        ],
+        "hookpoints": [],
         "ondemand_enabled": true,
         "resource_types": [
-            "storagecontainer"
+            "organizationservice"
         ],
         "schedule": {
             "_type": "Daily",

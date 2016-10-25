@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.volume_not_encrypted",
-    "name": "Volumes without encryption enabled",
-    "category": "Security",
-    "description": "Identify volumes without encryption enabled",
+    "uuid": "divvy.load_balancer_connection_draining",
+    "name": "Load Balancer Connection Draining Disabled",
+    "category": "Best Practices",
+    "description": "Match load balancers that do not have connection draining enabled",
     "instructions": {
         "actions": [
             {
@@ -14,8 +14,8 @@
         "filters": [
             {
                 "config": {},
-                "name": "divvy.filter.volume_not_encrypted",
-                "negate": false
+                "name": "divvy.filter.load_balancer_connection_draining",
+                "negate": true
             }
         ],
         "groups": [],
@@ -25,7 +25,7 @@
         ],
         "ondemand_enabled": true,
         "resource_types": [
-            "volume"
+            "loadbalancer"
         ]
     }
 }

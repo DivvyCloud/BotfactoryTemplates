@@ -1,0 +1,36 @@
+{
+    "uuid": "divvy.database_instance_master_username",
+    "name": "Database Instance Username Audit",
+    "category": "Security",
+    "description": "Identify database instances running noncompliant usernames for the master account",
+    "instructions": {
+        "actions": [
+            {
+                "config": {},
+                "name": "divvy.action.mark_non_compliant",
+                "run_when_result_is": false
+            }
+        ],
+        "filters": [
+            {
+                "config": {
+                    "username_list": [
+                        "root",
+                        "admin"
+                    ]
+                },
+                "name": "divvy.filter.database_instance_master_username",
+                "negate": false
+            }
+        ],
+        "groups": [],
+        "hookpoints": [
+            "divvycloud.resource.created",
+            "divvycloud.resource.modified"
+        ],
+        "ondemand_enabled": true,
+        "resource_types": [
+            "dbinstance"
+        ]
+    }
+}
