@@ -28,7 +28,7 @@
         ],
         "schedule": {
             "_type": "Daily",
-            "time_of_day": {"_type": "TimeOfDay", "second": 0, "minute": 0, "hour": 4},
+            "time_of_day": {"_type": "TimeOfDay", "tz": "UTC", "second": 0, "minute": 0, "hour": 4},
             "exclude_days": []
         }
     }
