@@ -24,7 +24,7 @@
         "hookpoints": [],
         "ondemand_enabled": true,
         "resource_types": [
-            "organizationservice"
+            "divvyorganizationservice"
         ],
         "schedule": {
             "_type": "Daily",
