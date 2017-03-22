@@ -30,7 +30,7 @@
         ],
         "ondemand_enabled": true,
         "resource_types": [
-            "instance"
+            "mcinstance"
         ],
         "schedule": {
             "_type": "Daily",
