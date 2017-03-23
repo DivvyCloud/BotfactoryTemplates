@@ -20,7 +20,7 @@
                         "db.r3.4xlarge"
                     ]
                 },
-                "name": "divvy.filter.instance_type",
+                "name": "divvy.filter.db_instance_type",
                 "negate": false
             }
         ],

@@ -20,7 +20,7 @@
                         "cache.m2.2xlarge"
                     ]
                 },
-                "name": "divvy.filter.instance_type",
+                "name": "divvy.filter.mc_instance_type",
                 "negate": false
             }
         ],
