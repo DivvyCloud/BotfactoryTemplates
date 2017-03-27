@@ -32,14 +32,15 @@
                 "negate": false
             },
             {
+                "negate": false,
                 "config": {
                     "ports": [
-                        "443",
-                        "80"
+                        "1-79",
+                        "81-442",
+                        "444-65535"
                     ]
                 },
-                "name": "divvy.filter.access_rule_ports",
-                "negate": true
+                "name": "divvy.filter.access_rule_ports"
             },
             {
                 "config": {
