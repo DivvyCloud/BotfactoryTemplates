@@ -106,7 +106,7 @@
         },
         {
             "uuid": "divvy.region_audit",
-            "name": " Region Audit",
+            "name": "Region Audit",
             "category": "Security",
             "description": "Audit select resource types across specific cloud regions ",
             "version": "0.1.0",
