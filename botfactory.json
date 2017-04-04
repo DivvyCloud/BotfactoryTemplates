@@ -644,7 +644,7 @@
             "uuid": "divvy.user_activity_audit",
             "category": "Best Practices",
             "name": "Cloud User Activity Audit",
-            "description": "Identify inactive cloud users who have not logged in recently",
+            "description": "Identify inactive cloud service users who have not logged into the cloud provider console recently",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_user_inactive_audit.json"
         },
