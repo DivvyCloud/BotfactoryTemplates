@@ -14,11 +14,6 @@
         "filters": [
             {
                 "config": {},
-                "name": "divvy.filter.cloud_root_credentials_enabled",
-                "negate": false
-            },
-            {
-                "config": {},
                 "name": "divvy.filter.cloud_root_account_mfa_enabled",
                 "negate": true
             }
