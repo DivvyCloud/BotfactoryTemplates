@@ -723,7 +723,7 @@
         {
             "uuid": "divvy.region_volume_limit_threshold",
             "category": "Optimization",
-            "name": "Region Volume Capacity Audit",
+            "name": "Region Limits -- Volumes",
             "description": "Identify regions within 80% or more of the volume threshold",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_region_volume_limit_threshold.json"
@@ -731,7 +731,7 @@
         {
             "uuid": "divvy.region_storage_container_limit_threshold",
             "category": "Optimization",
-            "name": "Region Storage Container Capacity Audit",
+            "name": "Region Limits -- Storage Containers",
             "description": "Identify regions within 80% or more of the storage container threshold",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_region_storage_container_limit_threshold.json"
@@ -739,7 +739,7 @@
         {
             "uuid": "divvy.region_snapshot_limit_threshold",
             "category": "Optimization",
-            "name": "Region Snapshot Capacity Audit",
+            "name": "Region Limits -- Snapshots",
             "description": "Identify regions within 80% or more of the snapshot threshold",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_region_snapshot_limit_threshold.json"
@@ -747,7 +747,7 @@
         {
             "uuid": "divvy.region_security_group_limit_threshold",
             "category": "Optimization",
-            "name": "Region Security Group Audit",
+            "name": "Region Limits -- Security Groups",
             "description": "Identify regions within 80% or more of the security group threshold",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_region_security_group_limit_threshold.json"
@@ -755,7 +755,7 @@
         {
             "uuid": "divvy.region_public_ip_limit_threshold",
             "category": "Optimization",
-            "name": "Region Public IP Audit",
+            "name": "Region Limits -- Public IPs",
             "description": "Identify regions within 80% or more of the public IP threshold",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_region_public_ip_limit_threshold.json"
@@ -763,7 +763,7 @@
         {
             "uuid": "divvy.region_private_network_limit_threshold",
             "category": "Optimization",
-            "name": "Region Private Network Audit",
+            "name": "Region Limits -- Private Networks",
             "description": "Identify regions within 80% or more of the private network threshold",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_region_private_network_limit_threshold.json"
@@ -771,7 +771,7 @@
         {
             "uuid": "divvy.region_internet_gateway_limit_threshold",
             "category": "Optimization",
-            "name": "Region Internet Gateway Audit",
+            "name": "Region Limits -- Internet Gateways",
             "description": "Identify regions within 80% or more of the Internet gateway threshold",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_region_internet_gateway_limit_threshold.json"
@@ -779,7 +779,7 @@
         {
             "uuid": "divvy.region_instance_limit_threshold",
             "category": "Optimization",
-            "name": "Region Compute Instance Audit",
+            "name": "Region Limits -- Compute Instances",
             "description": "Identify regions within 80% or more of the compute instance threshold",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_region_instance_limit_threshold.json"
@@ -787,7 +787,7 @@
         {
             "uuid": "divvy.region_database_instance_limit_threshold",
             "category": "Optimization",
-            "name": "Region Database Instance Audit",
+            "name": "Region Limits -- Database Instances",
             "description": "Identify regions within 80% or more of the database instance threshold",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_region_database_instance_limit_threshold.json"
@@ -795,7 +795,7 @@
         {
             "uuid": "divvy.region_cache_instance_limit_threshold",
             "category": "Optimization",
-            "name": "Region Cache Instance Audit",
+            "name": "Region Limits -- Cache Instances",
             "description": "Identify regions within 80% or more of the cache instance threshold",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_region_cache_instance_limit_threshold.json"
@@ -803,7 +803,7 @@
         {
             "uuid": "divvy.region_region_limit_threshold",
             "category": "Optimization",
-            "name": "Region Resource Audit",
+            "name": "Region Limits",
             "description": "Identify regions within 80% or more of the threshold for any resource type",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_region_limit_threshold.json"
