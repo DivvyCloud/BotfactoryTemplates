@@ -91,7 +91,7 @@
         {
             "uuid": "divvy.scheduled_instances",
             "category": "Optimization",
-            "name": "Scheduled Instances",
+            "name": "Instance Scheduler",
             "description": "Schedule instance stop/start across one or more clouds/resource groups",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_scheduled_instances.json"
@@ -379,40 +379,40 @@
         {
             "uuid": "divvy.redshift_master_username_audit",
             "category": "Security",
-            "name": "Redshift Username Audit",
-            "description": "Identify Redshift instances running noncompliant usernames for the master account",
+            "name": "Big Data Username Audit",
+            "description": "Identify Big Data instances running noncompliant usernames for the master account",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_redshift_master_username_audit.json"
         },
         {
             "uuid": "divvy.big_data_instance_audit",
             "category": "Optimization",
-            "name": "Redshift Instance Audit",
-            "description": "Identify Redshift instances running unapproved instance types",
+            "name": "Big Data Instance Audit",
+            "description": "Identify Big Data instances running unapproved instance types",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_big_data_instance_audit.json"
         },
         {
             "uuid": "divvy.redshift_instance_encrypted",
             "category": "Security",
-            "name": "Redshift Encryption Enabled",
-            "description": "Identify Redshift instances that do not have encryption enabled",
+            "name": "Big Data Encryption Enabled",
+            "description": "Identify Big Data instances that do not have encryption enabled",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_redshift_instance_encrypted.json"
         },
         {
             "uuid": "divvy.redshift_publicly_accessible",
             "category": "Security",
-            "name": "Redshift Publicly Accessible",
-            "description": "Identify Redshift instances that are accessible to the public",
+            "name": "Big Data Publicly Accessible",
+            "description": "Identify Big Data instances that are accessible to the public",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_redshift_publicly_accessible.json"
         },
         {
             "uuid": "divvy.redshift_retention_policy",
             "category": "Security",
-            "name": "Redshift Retention Policy",
-            "description": "Identify Redshift instances with a retention policy less than or equal to 30 days",
+            "name": "Big Data Retention Policy",
+            "description": "Identify Big Data instances with a retention policy less than or equal to 30 days",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_redshift_retention_policy.json"
         },
@@ -595,8 +595,8 @@
         {
             "uuid": "divvy.redshift_publicly_accessible",
             "category": "Security",
-            "name": "Redshift Publicly Accessible",
-            "description": "Identify Redshift instances that are accessible to the public",
+            "name": "Big Data Publicly Accessible",
+            "description": "Identify Big Data instances that are accessible to the public",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_redshift_publicly_accessible.json"
         },
