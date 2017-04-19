@@ -210,25 +210,25 @@
         },
         {
             "uuid": "divvy.bucket_max_objects",
-            "name": "S3 Bucket Max Objects",
+            "name": "Storage Container Exceeds Max Objects",
             "category": "Optimization",
-            "description": "Identify buckets that exceed a total of 10,000 objects",
+            "description": "Identify storage containers that exceed a total number of objects (10,000 objects by default)",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_bucket_max_objects.json"
         },
         {
             "uuid": "divvy.bucket_max_size",
-            "name": "S3 Bucket Max Size",
+            "name": "Storage Container Exceeds Max Size",
             "category": "Optimization",
-            "description": "Identify buckets that exceed a total size of 1TB",
+            "description": "Identify storage containers that exceed a total size (1TB by default)",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_bucket_max_size.json"
         },
         {
             "uuid": "divvy.bucket_permissions",
-            "name": "S3 Bucket Permissions",
+            "name": "Storage Container Permissions Check",
             "category": "Security",
-            "description": "Identify buckets exposing data with permissive access lists",
+            "description": "Identify storage containers exposing data with permissive access lists",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_bucket_permissions.json"
         },
@@ -298,9 +298,9 @@
         },
         {
             "uuid": "divvy.buckets_without_permissions",
-            "name": "S3 buckets with no permissions",
+            "name": "Storage Container Without Permissions",
             "category": "Security",
-            "description": "Identify buckets without any permission sets",
+            "description": "Identify storage containers without any permission sets",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_buckets_without_permissions.json"
         },
@@ -331,48 +331,48 @@
         {
             "uuid": "divvy.bucket_global_acl_permission",
             "category": "Security",
-            "name": "S3 Bucket Global ACL Permission",
-            "description": "Identify buckets exposing access list permissions to the world",
+            "name": "Storage Container ACL Permissions Check",
+            "description": "Identify storage containers exposing access list permissions to the world",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_buckets_with_global_acl_permission.json"
         },
         {
             "uuid": "divvy.bucket_global_delete_permission",
             "category": "Security",
-            "name": "S3 Bucket Global Delete Permission",
-            "description": "Identify buckets exposing delete permissions to the world",
+            "name": "Storage Container Delete Permissions Check",
+            "description": "Identify storage containers exposing delete permissions to the world",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_buckets_with_global_delete_permission.json"
         },
         {
             "uuid": "divvy.bucket_global_read_permission",
             "category": "Security",
-            "name": "S3 Bucket Global Read (GET) Permission",
-            "description": "Identify buckets exposing read permissions to the world",
+            "name": "Storage Container Read (GET) Permissions Check",
+            "description": "Identify storage containers exposing read permissions to the world",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_buckets_with_global_read_permission.json"
         },
         {
             "uuid": "divvy.bucket_global_write_permission",
             "category": "Security",
-            "name": "S3 Bucket Global Write (PUT) Permission",
-            "description": "Identify buckets exposing write permissions to the world",
+            "name": "Storage Containers Write (PUT) Permissions Check",
+            "description": "Identify storage containers exposing write permissions to the world",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_buckets_with_global_write_permission.json"
         },
         {
             "uuid": "divvy.buckets_without_object_versioning",
             "category": "Security",
-            "name": "S3 Bucket Versioning",
-            "description": "Identify buckets without object versioning enabled",
+            "name": "Storage Container Versioning",
+            "description": "Identify storage containers without object versioning enabled",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_buckets_without_object_versioning.json"
         },
         {
             "uuid": "divvy.buckets_without_logging",
             "category": "Security",
-            "name": "S3 Bucket Logging",
-            "description": "Identify buckets without logging enabled",
+            "name": "Storage Container Logging",
+            "description": "Identify storage containers without logging enabled",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_buckets_without_logging.json"
         },
