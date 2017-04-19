@@ -34,7 +34,7 @@
         },
         {
             "uuid": "divvy.security_rule_audit",
-            "name": "Audit Security Rules",
+            "name": "Security Rules Audit",
             "category": "Security",
             "description": "Identify access lists with ports open to the world (SSH as default)",
             "version": "0.1.0",
@@ -194,7 +194,7 @@
         },
         {
             "uuid": "divvy.expired_ssl_certs",
-            "name": "Expired SSL Certificates",
+            "name": "SSL Certificates Expired",
             "category": "Security",
             "description": "Identify SSL certificates that have expired or will expire soon (14 days by default)",
             "version": "0.1.0",
@@ -234,7 +234,7 @@
         },
         {
             "uuid": "divvy.unattached_volumes",
-            "name": "Unattached Volumes",
+            "name": "Volumes Unattached",
             "category": "Optimization",
             "description": "Identify unattached volumes",
             "version": "0.1.0",
@@ -242,7 +242,7 @@
         },
         {
             "uuid": "divvy.orphaned_public_ips",
-            "name": "Orphaned Public IP addresses",
+            "name": "Public IP Addresses Orphaned",
             "category": "Optimization",
             "description": "Identify unattached IP addresses to reduce costs",
             "version": "0.1.0",
@@ -250,7 +250,7 @@
         },
         {
             "uuid": "divvy.ensure_2fa_enabled",
-            "name": "Ensure MFA enabled on user accounts",
+            "name": "Cloud Users MFA-enabled",
             "category": "Security",
             "description": "Identify cloud users without two-factor (MFA) enabled",
             "version": "0.1.0",
@@ -282,7 +282,7 @@
         },
         {
             "uuid": "divvy.orphaned_load_balancers",
-            "name": "Load balancers with no instances",
+            "name": "Load Balancers With No Instances",
             "category": "Optimization",
             "description": "Identify load balancers with no instance associations",
             "version": "0.1.0",
@@ -306,7 +306,7 @@
         },
         {
             "uuid": "divvy.subnet_exceeds_maximum_netblock",
-            "name": "Subnet CIDR exceeds maximum netblock",
+            "name": "Subnet CIDR Exceeds Maximum Netblock",
             "category": "Optimization",
             "description": "Identify subnets where the number of IPs exceeds a defined limit",
             "version": "0.1.0",
@@ -323,7 +323,7 @@
         {
             "uuid": "divvy.orphaned_security_groups",
             "category": "Security",
-            "name": "Orphaned Security Groups",
+            "name": "Security Groups Orphaned",
             "description": "Identify security groups unattached to instances",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_orphaned_security_groups.json"
@@ -603,7 +603,7 @@
         {
             "uuid": "divvy.volumes_not_encrypted",
             "category": "Optimization",
-            "name": "Volumes without encryption enabled",
+            "name": "Volumes Without Encryption Enabled",
             "description": "Identify volumes without encryption enabled",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_volumes_not_encrypted.json"
@@ -611,7 +611,7 @@
         {
             "uuid": "divvy.volumes_with_excessive_iops",
             "category": "Optimization",
-            "name": "Excessive Volume IOPS",
+            "name": "Volumes With Excessive IOPS",
             "description": "Identify volumes with an excessively high number of IOPS",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_volumes_with_excessive_iops.json"
