@@ -42,7 +42,7 @@
         },
         {
             "uuid": "divvy.database_instance_multiaz",
-            "name": "Database is Multi-AZ",
+            "name": "Databases Not Multi-AZ",
             "category": "Best Practices",
             "description": "Identify databases that are not configured across multiple availablity zones for resiliency",
             "version": "0.1.0",
@@ -50,7 +50,7 @@
         },
         {
             "uuid": "divvy.database_instance_retention_policy",
-            "name": "Database Retention Policy",
+            "name": "Databases With Low Retention Policy",
             "category": "Best Practices",
             "description": "Identify database instances with a retention policy that is too low",
             "version": "0.1.0",
@@ -59,14 +59,14 @@
         {
             "uuid": "divvy.database_instance_publicly_accessible",
             "category": "Security",
-            "name": "Database Instance Publicly Accessible",
+            "name": "Database Instances Publicly Accessible",
             "description": "Identify database instances that are accessible to the public",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_database_instance_publicly_accessible.json"
         },
         {
             "uuid": "divvy.database_instance_encrypted",
-            "name": "Database Instance Encrypted",
+            "name": "Database Instances Not Encrypted",
             "category": "Security",
             "description": "Identify database instances that are not encrypted",
             "version": "0.1.0",
@@ -74,7 +74,7 @@
         },
         {
             "uuid": "divvy.database_instance_manual_snapshots",
-            "name": "Database Recently Snapshot",
+            "name": "Database Instances Recently Snapshot",
             "category": "Best Practices",
             "description": "Identify database instances with a recent manual snapshot",
             "version": "0.1.0",
@@ -82,7 +82,7 @@
         },
         {
             "uuid": "divvy.database_instance_master_username",
-            "name": "Database Instance Username Audit",
+            "name": "Database Instances Username Audit",
             "category": "Security",
             "description": "Identify database instances running noncompliant usernames for the master account",
             "version": "0.1.0",
@@ -91,7 +91,7 @@
         {
             "uuid": "divvy.scheduled_instances",
             "category": "Optimization",
-            "name": "Instance Scheduler",
+            "name": "Instances Scheduler",
             "description": "Schedule instance stop/start across one or more clouds/resource groups",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_scheduled_instances.json"
@@ -108,7 +108,7 @@
             "uuid": "divvy.region_audit",
             "name": "Region Audit",
             "category": "Security",
-            "description": "Audit select resource types across specific cloud regions ",
+            "description": "Audit select resource types across specific cloud regions",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_region_audit.json"
         },
@@ -130,7 +130,7 @@
         },
         {
             "uuid": "divvy.instance_with_ephemeral_root",
-            "name": "Instance Has Ephemeral Root Volume",
+            "name": "Instances With Ephemeral Root Volume",
             "category": "Optimization",
             "description": "Identify instances with an ephemeral root volume",
             "version": "0.1.0",
@@ -138,7 +138,7 @@
         },
         {
             "uuid": "divvy.instance_golden_image_ids",
-            "name": "Instance Running Unauthorized Image",
+            "name": "Instances Running Unauthorized Image",
             "category": "Best Practices",
             "description": "Identify instances that were created with an unauthorized image",
             "version": "0.1.0",
@@ -146,23 +146,23 @@
         },
         {
             "uuid": "divvy.instance_authorized_key_pair",
-            "name": "Instance Using Unauthorized Root Key Pair",
+            "name": "Instances Using Unauthorized Root Key Pair",
             "category": "Security",
-            "description": "Identify instances created with specific SSH key pairs",
+            "description": "Identify instances created without specific SSH key pairs",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_instance_authorized_key_pair.json"
         },
         {
             "uuid": "divvy.instance_with_ephemeral_public_ip",
-            "name": "Instance Has Ephemeral Public IP",
+            "name": "Instances With Ephemeral Public IP",
             "category": "Optimization",
-            "description": "Identify instances with an ephemeral public facing IP address",
+            "description": "Identify instances with an ephemeral public-facing IP address",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_instance_with_ephemeral_public_ip.json"
         },
         {
             "uuid": "divvy.instance_with_failed_status_checks",
-            "name": "Instance With Failed Status Checks",
+            "name": "Instances With Failed Status Checks",
             "category": "Best Practices",
             "description": "Identify instances that fail the system/reachability status checks",
             "version": "0.1.0",
@@ -170,7 +170,7 @@
         },
         {
             "uuid": "divvy.instance_without_name",
-            "name": "Instance With No Name",
+            "name": "Instances With No Name",
             "category": "Best Practices",
             "description": "Identify instances that are missing a name",
             "version": "0.1.0",
@@ -210,7 +210,7 @@
         },
         {
             "uuid": "divvy.bucket_max_objects",
-            "name": "Storage Container Exceeds Max Objects",
+            "name": "Storage Containers Exceeding Max Objects",
             "category": "Optimization",
             "description": "Identify storage containers that exceed a total number of objects (10,000 objects by default)",
             "version": "0.1.0",
@@ -218,7 +218,7 @@
         },
         {
             "uuid": "divvy.bucket_max_size",
-            "name": "Storage Container Exceeds Max Size",
+            "name": "Storage Containers Exceeding Max Size",
             "category": "Optimization",
             "description": "Identify storage containers that exceed a total size (1TB by default)",
             "version": "0.1.0",
@@ -226,7 +226,7 @@
         },
         {
             "uuid": "divvy.bucket_permissions",
-            "name": "Storage Container Permissions Check",
+            "name": "Storage Containers Permissions Check",
             "category": "Security",
             "description": "Identify storage containers exposing data with permissive access lists",
             "version": "0.1.0",
@@ -244,13 +244,13 @@
             "uuid": "divvy.orphaned_public_ips",
             "name": "Public IP Addresses Orphaned",
             "category": "Optimization",
-            "description": "Identify unattached IP addresses to reduce costs",
+            "description": "Identify unattached IP addresses",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_orphaned_public_ips.json"
         },
         {
             "uuid": "divvy.ensure_2fa_enabled",
-            "name": "Cloud Users MFA-enabled",
+            "name": "Cloud Users Without MFA Enabled",
             "category": "Security",
             "description": "Identify cloud users without two-factor (MFA) enabled",
             "version": "0.1.0",
@@ -258,7 +258,7 @@
         },
         {
             "uuid": "divvy.load_balancer_access_logging",
-            "name": "Load Balancer Access Logging Disabled",
+            "name": "Load Balancers With Access Logging Disabled",
             "category": "Security",
             "description": "Identify load balancers that have access logging disabled",
             "version": "0.1.0",
@@ -266,7 +266,7 @@
         },
         {
             "uuid": "divvy.load_balancer_zone_balancing",
-            "name": "Load Balancer Cross Zone Balancing Disabled",
+            "name": "Load Balancers With Cross Zone Balancing Disabled",
             "category": "Best Practices",
             "description": "Identify load balancers that have cross zone balancing disabled",
             "version": "0.1.0",
@@ -274,7 +274,7 @@
         },
         {
             "uuid": "divvy.load_balancer_connection_draining",
-            "name": "Load Balancer Connection Draining Disabled",
+            "name": "Load Balancers With Connection Draining Disabled",
             "category": "Best Practices",
             "description": "Identify load balancers that have connection draining disabled",
             "version": "0.1.0",
@@ -298,7 +298,7 @@
         },
         {
             "uuid": "divvy.buckets_without_permissions",
-            "name": "Storage Container Without Permissions",
+            "name": "Storage Containers Without Permissions",
             "category": "Security",
             "description": "Identify storage containers without any permission sets",
             "version": "0.1.0",
@@ -314,9 +314,9 @@
         },
         {
             "uuid": "divvy.subnet_nearing_capacity",
-            "name": "Subnet Running Out Of Space",
+            "name": "Subnets Running Out Of Space",
             "category": "Best Practices",
-            "description": "Identify subnets with less than 10% of their block available for use",
+            "description": "Identify subnets with limited IP block available for use",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_subnet_nearing_capacity.json"
         },
@@ -331,7 +331,7 @@
         {
             "uuid": "divvy.bucket_global_acl_permission",
             "category": "Security",
-            "name": "Storage Container ACL Permissions Check",
+            "name": "Storage Containers ACL Permissions Check",
             "description": "Identify storage containers exposing access list permissions to the world",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_buckets_with_global_acl_permission.json"
@@ -339,7 +339,7 @@
         {
             "uuid": "divvy.bucket_global_delete_permission",
             "category": "Security",
-            "name": "Storage Container Delete Permissions Check",
+            "name": "Storage Containers Delete Permissions Check",
             "description": "Identify storage containers exposing delete permissions to the world",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_buckets_with_global_delete_permission.json"
@@ -347,7 +347,7 @@
         {
             "uuid": "divvy.bucket_global_read_permission",
             "category": "Security",
-            "name": "Storage Container Read (GET) Permissions Check",
+            "name": "Storage Containers Read (GET) Permissions Check",
             "description": "Identify storage containers exposing read permissions to the world",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_buckets_with_global_read_permission.json"
@@ -363,7 +363,7 @@
         {
             "uuid": "divvy.buckets_without_object_versioning",
             "category": "Security",
-            "name": "Storage Container Versioning",
+            "name": "Storage Containers Without Versioning",
             "description": "Identify storage containers without object versioning enabled",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_buckets_without_object_versioning.json"
@@ -371,7 +371,7 @@
         {
             "uuid": "divvy.buckets_without_logging",
             "category": "Security",
-            "name": "Storage Container Logging",
+            "name": "Storage Containers Without Logging",
             "description": "Identify storage containers without logging enabled",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_buckets_without_logging.json"
@@ -395,7 +395,7 @@
         {
             "uuid": "divvy.redshift_instance_encrypted",
             "category": "Security",
-            "name": "Big Data Encryption Enabled",
+            "name": "Big Data Instances Without Encryption Enabled",
             "description": "Identify Big Data instances that do not have encryption enabled",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_redshift_instance_encrypted.json"
@@ -403,7 +403,7 @@
         {
             "uuid": "divvy.redshift_publicly_accessible",
             "category": "Security",
-            "name": "Big Data Publicly Accessible",
+            "name": "Big Data Instances Publicly Accessible",
             "description": "Identify Big Data instances that are accessible to the public",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_redshift_publicly_accessible.json"
@@ -411,8 +411,8 @@
         {
             "uuid": "divvy.redshift_retention_policy",
             "category": "Security",
-            "name": "Big Data Retention Policy",
-            "description": "Identify Big Data instances with a retention policy less than or equal to 30 days",
+            "name": "Big Data Instances With Low Retention Policy",
+            "description": "Identify Big Data instances with a retention policy below a threshold (30 days by default)",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_redshift_retention_policy.json"
         },
@@ -563,7 +563,7 @@
         {
             "uuid": "divvy.snapshots_30_days_old",
             "category": "Optimization",
-            "name": "Snapshots older than 30 days",
+            "name": "Snapshots Older Than 30 Days",
             "description": "Identify snapshots that are older than 30 days",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_snapshots_30_days_old.json"
@@ -571,7 +571,7 @@
         {
             "uuid": "divvy.snapshots_60_days_old",
             "category": "Optimization",
-            "name": "Snapshots older than 60 days",
+            "name": "Snapshots Older Than 60 Days",
             "description": "Identify snapshots that are older than 60 days",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_snapshots_60_days_old.json"
@@ -579,7 +579,7 @@
         {
             "uuid": "divvy.snapshots_90_days_old",
             "category": "Optimization",
-            "name": "Snapshots older than 90 days",
+            "name": "Snapshots Older Than 90 Days",
             "description": "Identify snapshots that are older than 90 days",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_snapshots_90_days_old.json"
@@ -587,18 +587,10 @@
         {
             "uuid": "divvy.volumes_delete_on_termination",
             "category": "Best Practices",
-            "name": "Volume Auto-Termination",
+            "name": "Volumes With Auto-Termination",
             "description": "Identify volumes set to automatically delete when the parent instance is terminated",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_volumes_delete_on_termination.json"
-        },
-        {
-            "uuid": "divvy.redshift_publicly_accessible",
-            "category": "Security",
-            "name": "Big Data Publicly Accessible",
-            "description": "Identify Big Data instances that are accessible to the public",
-            "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_redshift_publicly_accessible.json"
         },
         {
             "uuid": "divvy.volumes_not_encrypted",
@@ -635,7 +627,7 @@
         {
             "uuid": "divvy.user_policy_audit",
             "category": "Best Practices",
-            "name": "Cloud User Policy Audit",
+            "name": "Cloud Users With Unauthorized Policies",
             "description": "Identify cloud users running unauthorized policies",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_user_policy_audit.json"
@@ -643,16 +635,16 @@
         {
             "uuid": "divvy.user_activity_audit",
             "category": "Best Practices",
-            "name": "Cloud User Activity Audit",
-            "description": "Identify inactive cloud service users who have not logged into the cloud provider console recently",
+            "name": "Cloud Users With Inactive Accounts",
+            "description": "Identify inactive cloud service users who have not logged into the cloud provider console recently (45 days by default)",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_user_inactive_audit.json"
         },
         {
             "uuid": "divvy.user_stale_access_keys",
             "category": "Best Practices",
-            "name": "Cloud User API Key Audit",
-            "description": "Identify cloud users with API key credentials that should be rotated",
+            "name": "Cloud Users With Older API Keys",
+            "description": "Identify cloud users with older API key credentials that should be rotated (90 days by default)",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_user_stale_access_keys.json"
         },
@@ -667,7 +659,7 @@
         {
             "uuid": "divvy.region_with_no_default_network",
             "category": "Best Practices",
-            "name": "Region Without Default Network",
+            "name": "Regions Without Default Network",
             "description": "Identify regions without a default network",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_region_with_no_default_network.json"
@@ -675,7 +667,7 @@
         {
             "uuid": "divvy.region_with_impaired_availability_zone",
             "category": "Best Practices",
-            "name": "Region With Impaired Availability Zone",
+            "name": "Regions With Impaired Availability Zone",
             "description": "Identify regions with one or more zones in an impaired state",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_region_with_impaired_availability_zone.json"
@@ -707,7 +699,7 @@
         {
             "uuid": "divvy.ssl_certificate_vulnerable_to_heartbleed",
             "category": "Security",
-            "name": "SSL Certificate Heartbleed Vulnerability",
+            "name": "SSL Certificates With Heartbleed Vulnerability",
             "description": "Identify SSL certificates that may be vulnerable to SSL Heartbleed",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.02/templates/divvy_ssl_certificate_vulnerable_to_heartbleed.json"
