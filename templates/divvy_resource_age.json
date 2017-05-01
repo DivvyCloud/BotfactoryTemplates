@@ -17,7 +17,7 @@
                     "hours": 720
                 },
                 "name": "divvy.filter.resource_recently_created_or_discovered",
-                "negate": false
+                "negate": true
             }
         ],
         "groups": [],
