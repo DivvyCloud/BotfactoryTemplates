@@ -14,7 +14,7 @@
         "filters": [
             {
                 "config": {
-                    "db_engines": [
+                    "engines": [
                         "mysql",
                         "aurora",
                         "mariadb"
