@@ -14,8 +14,7 @@
         "filters": [
             {
                 "config": {},
-                "name": "divvy.filter.region_without_default_network",
-                "negate": false
+                "name": "divvy.filter.region_without_default_network"
             }
         ],
         "groups": [],

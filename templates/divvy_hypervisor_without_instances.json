@@ -14,13 +14,12 @@
         "filters": [
             {
                 "config": {},
-                "name": "divvy.filter.orphaned_hypervisor",
-                "negate": false
+                "name": "divvy.filter.orphaned_hypervisors"
             }
         ],
         "groups": [],
         "hookpoints": [
-            "divvycloud.resource.created", 
+            "divvycloud.resource.created",
             "divvycloud.resource.modified"
         ],
         "ondemand_enabled": true,

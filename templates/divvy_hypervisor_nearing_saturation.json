@@ -16,8 +16,7 @@
                 "config": {
                     "usage_percentage": 90
                 },
-                "name": "divvy.filter.hypervisor_usage_at_most",
-                "negate": false
+                "name": "divvy.filter.hypervisor_usage_at_most"
             }
         ],
         "groups": [],

@@ -16,8 +16,7 @@
                 "config": {
                     "days": 30
                 },
-                "name": "divvy.filter.snapshot_of_age",
-                "negate": false
+                "name": "divvy.filter.snapshot_of_age"
             }
         ],
         "groups": [],

@@ -6,7 +6,6 @@
     "instructions": {
         "filters": [
             {
-                "negate": false,
                 "config": {},
                 "name": "divvy.filter.always_match"
             }

@@ -18,8 +18,7 @@
                 "config": {
                     "regex": ""
                 },
-                "name": "divvy.filter.resource_name_regex",
-                "negate": false
+                "name": "divvy.filter.resource_name_regex"
             }        ],
         "groups": [],
         "hookpoints": ["divvycloud.resource.created"],

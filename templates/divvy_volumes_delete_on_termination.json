@@ -14,8 +14,7 @@
         "filters": [
             {
                 "config": {},
-                "name": "divvy.filter.volume_delete_on_termination",
-                "negate": false
+                "name": "divvy.filter.volume_delete_on_termination"
             }
         ],
         "groups": [],

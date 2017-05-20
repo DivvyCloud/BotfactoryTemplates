@@ -14,8 +14,7 @@
         "filters": [
             {
                 "config": {},
-                "name": "divvy.filter.cloud_root_account_mfa_enabled",
-                "negate": true
+                "name": "divvy.query.clouds_without_root_mfa""
             }
         ],
         "groups": [],

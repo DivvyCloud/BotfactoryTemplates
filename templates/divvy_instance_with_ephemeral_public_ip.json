@@ -14,8 +14,7 @@
         "filters": [
             {
                 "config": {},
-                "name": "divvy.filter.instance_with_ephemeral_public_ip",
-                "negate": false
+                "name": "divvy.filter.instance_with_ephemeral_public_ip"
             }
         ],
         "groups": [],

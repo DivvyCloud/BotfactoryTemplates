@@ -16,8 +16,7 @@
                 "config": {
                     "maximum_days": 14
                 },
-                "name": "divvy.filter.database_instance_manual_snapshots",
-                "negate": false
+                "name": "divvy.filter.database_instance_manual_snapshots"
             }
         ],
         "groups": [],

@@ -16,8 +16,7 @@
                 "config": {
                     "threshold": 80
                 },
-                "name": "divvy.filter.serviceregion_cache_instance_limit",
-                "negate": false
+                "name": "divvy.filter.serviceregion_cache_instance_limit"
             }
         ],
         "groups": [],

@@ -14,8 +14,7 @@
         "filters": [
             {
                 "config": {},
-                "name": "divvy.filter.has_no_network_gateway",
-                "negate": false
+                "name": "divvy.query.network_has_no_gateway"
             }
         ],
         "groups": [],

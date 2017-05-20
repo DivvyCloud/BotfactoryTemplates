@@ -16,8 +16,7 @@
                 "config": {
                     "key_pair_names": ["default"]
                 },
-                "name": "divvy.filter.authorized_key_pair",
-                "negate": true
+                "name": "divvy.filter.unauthorized_key_pair"
             }
         ],
         "groups": [],

@@ -16,8 +16,7 @@
                 "config": {
                     "iops": 5000
                 },
-                "name": "divvy.filter.volume_iops",
-                "negate": false
+                "name": "divvy.query.volume_iops"
             }
         ],
         "groups": [],

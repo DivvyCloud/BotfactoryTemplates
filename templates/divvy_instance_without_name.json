@@ -14,8 +14,7 @@
         "filters": [
             {
                 "config": {},
-                "name": "divvy.filter.instance_without_name",
-                "negate": false
+                "name": "divvy.filter.instance_without_name"
             }
         ],
         "groups": [],

@@ -19,8 +19,7 @@
                         "PowerUser"
                     ]
                 },
-                "name": "divvy.filter.iam_users",
-                "negate": false
+                "name": "divvy.filter.iam_users"
             }
         ],
         "groups": [],

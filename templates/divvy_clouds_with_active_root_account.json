@@ -14,8 +14,7 @@
         "filters": [
             {
                 "config": {},
-                "name": "divvy.filter.cloud_root_credentials_enabled",
-                "negate": false
+                "name": "divvy.filter.cloud_root_credentials_enabled"
             }
         ],
         "groups": [],

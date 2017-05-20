@@ -16,8 +16,7 @@
                 "config": {
                     "days": 90
                 },
-                "name": "divvy.filter.service_user_access_key_age_at_least",
-                "negate": false
+                "name": "divvy.filter.service_user_access_key_age_at_least"
             }
         ],
         "groups": [],

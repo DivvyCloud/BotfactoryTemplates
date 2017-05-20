@@ -25,8 +25,7 @@
                         "x1.32xlarge"
                     ]
                 },
-                "name": "divvy.filter.instance_type",
-                "negate": false
+                "name": "divvy.filter.instance_type"
             }
         ],
         "groups": [],

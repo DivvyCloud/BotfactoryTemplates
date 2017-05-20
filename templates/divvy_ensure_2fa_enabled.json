@@ -14,13 +14,11 @@
         "filters": [
             {
                 "config": {},
-                "name": "divvy.filter.service_user_login_profile",
-                "negate": false
+                "name": "divvy.filter.service_user_login_profile"
             },
             {
                 "config": {},
-                "name": "divvy.filter.user_has_two_factor_enabled",
-                "negate": true
+                "name": "divvy.query.users_without_mfa"
             }
         ],
         "groups": [],

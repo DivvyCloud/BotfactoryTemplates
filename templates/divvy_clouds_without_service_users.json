@@ -16,8 +16,7 @@
                 "config": {
                     "ignore_disabled":false
                     },
-                "name": "divvy.filter.cloud_with_no_service_users",
-                "negate": false
+                "name": "divvy.filter.cloud_with_no_service_users"
             }
         ],
         "groups": [],

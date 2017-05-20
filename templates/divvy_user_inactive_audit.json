@@ -14,10 +14,9 @@
         "filters": [
             {
                 "config": {
-                    "last_logon_days": 45
+                    "days": 45
                 },
-                "name": "divvy.filter.service_user_password_last_used",
-                "negate": false
+                "name": "divvy.filter.service_user_password_last_used"
             }
         ],
         "groups": [],

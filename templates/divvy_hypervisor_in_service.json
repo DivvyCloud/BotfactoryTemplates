@@ -14,8 +14,7 @@
         "filters": [
             {
                 "config": {},
-                "name": "divvy.filter.hypervisor_in_service",
-                "negate": false
+                "name": "divvy.filter.hypervisor_in_service"
             }
         ],
         "groups": [],

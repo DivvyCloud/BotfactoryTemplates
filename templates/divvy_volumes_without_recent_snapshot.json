@@ -16,8 +16,7 @@
                 "config": {
                     "days": 14
                 },
-                "name": "divvy.filter.recent_volume_snapshots",
-                "negate": false
+                "name": "divvy.filter.recent_volume_snapshots"
             }
         ],
         "groups": [],

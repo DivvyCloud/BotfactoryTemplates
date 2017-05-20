@@ -14,8 +14,7 @@
         "filters": [
             {
                 "config": {},
-                "name": "divvy.filter.cloud_trail_in_all_regions",
-                "negate": false
+                "name": "divvy.filter.cloud_trail_in_all_regions"
             }
         ],
         "groups": [],

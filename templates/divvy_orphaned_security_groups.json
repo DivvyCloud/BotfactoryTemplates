@@ -14,8 +14,7 @@
         "filters": [
             {
                 "config": {},
-                "name": "divvy.filter.orphaned_security_groups",
-                "negate": false
+                "name": "divvy.filter.orphaned_security_groups"
             }
         ],
         "groups": [],

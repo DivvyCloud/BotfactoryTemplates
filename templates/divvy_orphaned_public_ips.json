@@ -14,8 +14,7 @@
         "filters": [
             {
                 "config": {},
-                "name": "divvy.filter.orphaned_ip_network_or_instances",
-                "negate": false
+                "name": "divvy.filter.orphaned_ip_network_or_instances"
             }
         ],
         "groups": [],

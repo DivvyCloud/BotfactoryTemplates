@@ -14,10 +14,9 @@
         "filters": [
             {
                 "config": {
-                    "days": 0
-                    },
-                "name": "divvy.filter.database_instance_retention",
-                "negate": false
+                    "days": 7
+                },
+                "name": "divvy.query.database_data_retention_policy_at_least"
             }
         ],
         "groups": [],

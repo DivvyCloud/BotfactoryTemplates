@@ -16,8 +16,7 @@
                 "config": {
                     "days": 14
                 },
-                "name": "divvy.filter.expiring_ssl_certificates",
-                "negate": false
+                "name": "divvy.filter.expiring_ssl_certificates"
             }
         ],
         "groups": [],

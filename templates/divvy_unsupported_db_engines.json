@@ -20,8 +20,7 @@
                         "mariadb"
                     ]
                 },
-                "name": "divvy.filter.database_engine",
-                "negate": false
+                "name": "divvy.filter.database_engine"
             }
         ],
         "groups": [],
