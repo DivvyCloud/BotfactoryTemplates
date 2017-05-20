@@ -14,7 +14,7 @@
         "filters": [
             {
                 "config": {},
-                "name": "divvy.query.orphaned_hypervisors"
+                "name": "divvy.filter_orphaned_hypervisor"
             }
         ],
         "groups": [],
