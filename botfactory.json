@@ -331,7 +331,7 @@
         {
             "uuid": "divvy.bucket_global_acl_permission",
             "category": "Security",
-            "name": "Storage Containers ACL Permissions Check",
+            "name": "Storage Containers Permissions Check -- ACL",
             "description": "Identify storage containers exposing access list permissions to the world",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.03/templates/divvy_buckets_with_global_acl_permission.json"
@@ -339,7 +339,7 @@
         {
             "uuid": "divvy.bucket_global_delete_permission",
             "category": "Security",
-            "name": "Storage Containers Delete Permissions Check",
+            "name": "Storage Containers Permissions Check -- Delete",
             "description": "Identify storage containers exposing delete permissions to the world",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.03/templates/divvy_buckets_with_global_delete_permission.json"
@@ -347,7 +347,7 @@
         {
             "uuid": "divvy.bucket_global_read_permission",
             "category": "Security",
-            "name": "Storage Containers Read (GET) Permissions Check",
+            "name": "Storage Containers Permissions Check -- Read (GET)",
             "description": "Identify storage containers exposing read permissions to the world",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.03/templates/divvy_buckets_with_global_read_permission.json"
@@ -355,7 +355,7 @@
         {
             "uuid": "divvy.bucket_global_write_permission",
             "category": "Security",
-            "name": "Storage Containers Write (PUT) Permissions Check",
+            "name": "Storage Containers Permissions Check -- Write (PUT)",
             "description": "Identify storage containers exposing write permissions to the world",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.03/templates/divvy_buckets_with_global_write_permission.json"
@@ -387,7 +387,7 @@
         {
             "uuid": "divvy.big_data_instance_audit",
             "category": "Optimization",
-            "name": "Big Data Instance Audit",
+            "name": "Big Data Instance Type Audit",
             "description": "Identify Big Data instances running unapproved instance types",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.03/templates/divvy_big_data_instance_audit.json"
