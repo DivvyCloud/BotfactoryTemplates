@@ -14,7 +14,7 @@
         "filters": [
             {
                 "config": {},
-                "name": "divvy.query.clouds_without_root_mfa""
+                "name": "divvy.query.clouds_without_root_mfa"
             }
         ],
         "groups": [],
