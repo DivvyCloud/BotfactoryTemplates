@@ -33,7 +33,8 @@
                 "config": {
                     "protocols": [
                         "tcp",
-                        "udp"
+                        "udp",
+                        "all"
                     ]
                 },
                 "name": "divvy.filter.access_rule_ip_protocol"
