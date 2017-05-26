@@ -97,14 +97,6 @@
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.03/templates/divvy_scheduled_instances.json"
         },
         {
-            "uuid": "divvy.group_curation",
-            "name": "Resource Group Curation",
-            "category": "Curation",
-            "description": "Curate target resources into one or more resource groups",
-            "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.03/templates/divvy_group_curation.json"
-        },
-        {
             "uuid": "divvy.region_audit",
             "name": "Region Audit",
             "category": "Security",
