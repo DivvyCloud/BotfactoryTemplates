@@ -14,7 +14,7 @@
         "filters": [
             {
                 "config": {
-                    "days": 45
+                    "days": 30
                 },
                 "name": "divvy.filter.service_user_password_last_used"
             }
