@@ -1,8 +1,8 @@
 {
     "uuid": "divvy.orphaned_security_groups",
     "category": "Security",
-    "name": "Orphaned Security Groups",
-    "description": "Security groups unattached to instances",
+    "name": "Resource Access Lists Orphaned",
+    "description": "Resource Access Lists unattached to other cloud resources",
     "instructions": {
         "actions": [
             {
