@@ -32,7 +32,8 @@
             {
                 "config": {
                     "protocols": [
-                        "tcp"
+                        "tcp",
+                        "all"
                     ]
                 },
                 "name": "divvy.filter.access_rule_ip_protocol"

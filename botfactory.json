@@ -315,8 +315,8 @@
         {
             "uuid": "divvy.orphaned_security_groups",
             "category": "Security",
-            "name": "Security Groups Orphaned",
-            "description": "Identify security groups unattached to instances",
+            "name": "Resource Access Lists Orphaned",
+            "description": "Identify Resource Access Lists unattached to other cloud resources",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.03/templates/divvy_orphaned_security_groups.json"
         },
