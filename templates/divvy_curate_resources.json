@@ -1,0 +1,38 @@
+{
+    "name": "Curate resources by owner",
+    "uuid": "divvy.curate_resources",
+    "category": "Curation",
+    "description": "Curate resources into a resource group based on an owner tag",
+    "instructions": {
+        "actions": [
+            {
+                "config": {
+                    "resource_group_id": ""
+                },
+                "name": "divvy.action.curate",
+                "run_when_result_is": true
+            }
+        ],
+        "filters": [
+            {
+                "config": {
+                    "case_sensitive": false,
+                    "tag_key": "Owner",
+                    "tag_values": [
+                        ""
+                    ]
+                },
+                "name": "divvy.filter.validate_tag_value"
+            }
+        ],
+        "resource_types": [
+            "instance",
+            "dbinstance",
+            "mcinstance",
+            "volume",
+            "dbsnapshot",
+            "snapshot",
+            "mcsnapshot"
+        ]
+    }
+}

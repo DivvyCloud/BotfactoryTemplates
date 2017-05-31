@@ -785,6 +785,14 @@
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.03/templates/divvy_region_cache_instance_limit_threshold.json"
         },
         {
+            "uuid": "divvy.curate_resources",
+            "category": "Curation",
+            "name": "Curate resources by owner",
+            "description": "Curate resources info a resource group based on an owner tag",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.03/templates/divvy_curate_resources.json"
+        },
+        {
             "uuid": "divvy.region_region_limit_threshold",
             "category": "Optimization",
             "name": "Region Limits",
