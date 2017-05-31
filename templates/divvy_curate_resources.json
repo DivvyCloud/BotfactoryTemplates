@@ -7,7 +7,7 @@
         "actions": [
             {
                 "config": {
-                    "resource_group_id": "ChangeMe"
+                    "resource_group_id": "resourcegroup:999999999:"
                 },
                 "name": "divvy.action.curate",
                 "run_when_result_is": true
@@ -25,6 +25,12 @@
                 "name": "divvy.filter.validate_tag_value"
             }
         ],
+        "groups": [],
+        "hookpoints": [
+            "divvycloud.resource.created",
+            "divvycloud.resource.modified"
+        ],
+        "ondemand_enabled": true,
         "resource_types": [
             "instance",
             "dbinstance",
