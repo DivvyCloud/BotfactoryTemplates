@@ -7,7 +7,7 @@
         "actions": [
             {
                 "config": {
-                    "resource_group_id": ""
+                    "resource_group_id": "ChangeMe"
                 },
                 "name": "divvy.action.curate",
                 "run_when_result_is": true
@@ -19,7 +19,7 @@
                     "case_sensitive": false,
                     "tag_key": "Owner",
                     "tag_values": [
-                        ""
+                        "ChangeMe"
                     ]
                 },
                 "name": "divvy.filter.validate_tag_value"
