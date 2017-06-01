@@ -1,20 +1,20 @@
 {
     "uuid": "divvy.database_instance_manual_snapshots",
-    "name": "Database Recently Snapshot",
+    "name": "Database Without Recent Snapshot",
     "category": "Best Practices",
-    "description": "Identifies database instances with a recent manual snapshot",
+    "description": "Identifies database instances without a recent manual snapshot",
     "instructions": {
         "actions": [
             {
                 "config": {},
                 "name": "divvy.action.mark_non_compliant",
-                "run_when_result_is": false
+                "run_when_result_is": true
             }
         ],
         "filters": [
             {
                 "config": {
-                    "maximum_days": 14
+                    "maximum_days": 7
                 },
                 "name": "divvy.filter.database_instance_manual_snapshots"
             }
