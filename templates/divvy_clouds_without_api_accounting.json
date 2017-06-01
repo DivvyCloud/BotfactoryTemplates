@@ -2,13 +2,13 @@
     "uuid": "divvy.clouds_without_global_api_accounting",
     "name": "Clouds Without Global API Accounting",
     "category": "Security",
-    "description": "Identifies accounts with API accounting such as AWS CloudTrail inactive/disabled across all regions",
+    "description": "Identifies accounts without API accounting such as AWS CloudTrail enabled across all regions",
     "instructions": {
         "actions": [
             {
                 "config": {},
                 "name": "divvy.action.mark_non_compliant",
-                "run_when_result_is": false
+                "run_when_result_is": true
             }
         ],
         "filters": [
