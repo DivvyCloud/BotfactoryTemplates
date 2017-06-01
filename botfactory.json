@@ -28,7 +28,7 @@
             "uuid": "divvy.clouds_without_api_accounting",
             "name": "Clouds Without Global API Accounting",
             "category": "Security",
-            "description": "Identify accounts with API accounting such as AWS CloudTrail inactive/disabled across all regions",
+            "description": "Identify accounts without API accounting such as AWS CloudTrail enabled across all regions",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/master/templates/divvy_clouds_without_api_accounting.json"
         },
