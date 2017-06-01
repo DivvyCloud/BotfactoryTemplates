@@ -74,9 +74,9 @@
         },
         {
             "uuid": "divvy.database_instance_manual_snapshots",
-            "name": "Database Instances Recently Snapshot",
+            "name": "Database Instances Without Recent Snapshot",
             "category": "Best Practices",
-            "description": "Identify database instances with a recent manual snapshot",
+            "description": "Identify database instances without a recent manual snapshot",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.03/templates/divvy_database_instance_manual_snapshots.json"
         },
