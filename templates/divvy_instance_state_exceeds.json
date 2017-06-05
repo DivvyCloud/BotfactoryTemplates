@@ -1,0 +1,36 @@
+{
+    "uuid": "divvy.instance_state_exceeds",
+    "name": "Instance Lifecycle State Exceeds Threshold",
+    "category": "Best Practice",
+    "description": "Identify instances that have been in a particular lifecycle state, e.g., Running, over a user-defined period of time",
+    "instructions": {
+        "actions": [
+            {
+                "config": {},
+                "name": "divvy.action.mark_non_compliant",
+                "run_when_result_is": true
+            }
+        ],
+        "filters": [
+            {
+                "config": {
+                    "instance_state": ["running"],
+                    "unit_type": "days",
+                    "number_of_units": 1
+                },
+                "name": "divvy.filter.instance_state_time_threshold"
+            }
+        ],
+        "groups": [],
+        "hookpoints": [],
+        "ondemand_enabled": true,
+        "schedule": {
+            "_type": "Daily",
+            "time_of_day": {"_type": "TimeOfDay", "second": 0, "minute": 0, "hour": 4},
+            "exclude_days": []
+        },
+        "resource_types": [
+            "instance"
+        ]
+    }
+}
