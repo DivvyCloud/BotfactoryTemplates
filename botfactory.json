@@ -879,6 +879,54 @@
             "description": "Identify unhealthy volumes that are not functional",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.03/templates/divvy_volume_in_error_state.json"
+        },
+        {
+            "uuid": "divvy.instance_cores_exceed",
+            "category": "Optimization",
+            "name": "Instance Cores Exceed",
+            "description": "Identify instances exceeding a defined number of CPU cores (default is 4 cores)",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.03/templates/divvy_instance_cores_exceed.json"
+        },
+        {
+            "uuid": "divvy.instance_memory_exceeds",
+            "category": "Optimization",
+            "name": "Instance Memory Exceeds",
+            "description": "Identify instances exceeding a user-defined amount of GB in RAM (default is 32 GB)",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.03/templates/divvy_instance_memory_exceeds.json"
+        },
+        {
+            "uuid": "divvy.instance_state",
+            "category": "Best Practices",
+            "name": "Instance Lifecycle State",
+            "description": "Identify instances in a particular lifecycle state, e.g., Running",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.03/templates/divvy_instance_state.json"
+        },
+        {
+            "uuid": "divvy.instance_state_exceeds",
+            "category": "Best Practices",
+            "name": "Instance Lifecycle State Exceeds Threshold",
+            "description": "Identify instances that have been in a particular lifecycle state, e.g., Running, over a user-defined period of time",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.03/templates/divvy_instance_state_exceeds.json"
+        },
+        {
+            "uuid": "divvy.resource_cost",
+            "category": "Optimization",
+            "name": "Resource Cost Exceeds",
+            "description": "Identify resources whose monthly cost exceeds a user-defined value (default $100)",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.03/templates/divvy_resource_cost.json"
+        },
+        {
+            "uuid": "divvy.resource_has_no_owner",
+            "category": "Best Practices",
+            "name": "Resource Has No Owner",
+            "description": "Identify resources that do not have an owner",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.03/templates/divvy_resource_has_no_owner.json"
         }
     ]
 }

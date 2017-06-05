@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.resource_cost",
-    "name": "Resource Cost Exceeds",
-    "category": "Optimization",
-    "description": "Identify resources whose monthly cost exceeds a user-defined value (default $100)",
+    "uuid": "divvy.resource_has_no_owner",
+    "name": "Resource Has No Owner",
+    "category": "Best Practice",
+    "description": "Identify resources that do not have an owner",
     "instructions": {
         "actions": [
             {
@@ -13,10 +13,7 @@
         ],
         "filters": [
             {
-                "config": {
-                    "maximum_monthly_cost": 100
-                },
-                "name": "divvy.filter.monthly_cost_at_least"
+                "name": "divvy.query.resource_has_no_owner"
             }
         ],
         "groups": [],
@@ -25,12 +22,6 @@
             "divvycloud.resource.modified"
         ],
         "ondemand_enabled": true,
-        "resource_types": [
-            "volume",
-            "instance",
-            "dbinstance",
-            "mcinstance",
-            "bigdatainstance"
-        ]
+        "resource_types": []
     }
 }
