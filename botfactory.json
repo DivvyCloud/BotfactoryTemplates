@@ -927,6 +927,22 @@
             "description": "Identify resources that do not have an owner",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.03/templates/divvy_resource_has_no_owner.json"
+        },
+        {
+            "uuid": "divvy.instance_security_groups",
+            "category": "Security",
+            "name": "Instance Security Group Associations",
+            "description": "Identify instances associated with user-provided Security Groups (n.b., AWS only)",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.03/templates/divvy_instance_security_groups.json"
+        },
+        {
+            "uuid": "divvy.volume_state_threshold",
+            "category": "Optimization",
+            "name": "Volume State Time Threshold",
+            "description": "Identify volumes that have been in a user-selected state for a user-defined period of time (defaults are 'available' and 1 day)",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.03/templates/divvy_volume_state_threshold.json"
         }
     ]
 }
