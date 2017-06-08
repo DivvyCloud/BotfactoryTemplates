@@ -1,5 +1,5 @@
 {
-    "name": "Curate resources by owner",
+    "name": "Resource Group Curation",
     "uuid": "divvy.curate_resources",
     "category": "Curation",
     "description": "Curate resources into a resource group based on an owner tag",
