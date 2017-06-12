@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.instance_exposing_ssh",
-    "name": "Instances Exposing Public SSH",
-    "category": "Security",
-    "description": "Identify compute instances with an attached security group that exposes SSH access to the world (0.0.0.0/0)",
+    "uuid": "divvy.instance_cpu_high",
+    "name": "Instances Averaging High CPU",
+    "category": "Optimization",
+    "description": "Identify compute instances that have been averaging a high CPU over a period of time (n.b., AWS only)",
     "instructions": {
         "actions": [
             {
@@ -13,7 +13,11 @@
         ],
         "filters": [
             {
-                "name": "divvy.query.instances_exposing_public_ssh"
+                "config": {
+                    "day": 14,
+                    "avg": 80
+                },
+                "name": "divvy.query.instances_averaging_high_cpu"
             }
         ],
         "groups": [],

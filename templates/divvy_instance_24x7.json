@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.instance_exposing_ssh",
-    "name": "Instances Exposing Public SSH",
-    "category": "Security",
-    "description": "Identify compute instances with an attached security group that exposes SSH access to the world (0.0.0.0/0)",
+    "uuid": "divvy.instances_running_24x7",
+    "name": "Instances Running 24x7",
+    "category": "Optimization",
+    "description": "Identify compute instances that have been running 24x7 over a period of time (default is 1 day)",
     "instructions": {
         "actions": [
             {
@@ -13,7 +13,10 @@
         ],
         "filters": [
             {
-                "name": "divvy.query.instances_exposing_public_ssh"
+                "config": {
+                    "days": 1
+                },
+                "name": "divvy.query.instances_running_24x7"
             }
         ],
         "groups": [],

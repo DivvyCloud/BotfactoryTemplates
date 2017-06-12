@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.instance_exposing_ssh",
-    "name": "Instances Exposing Public SSH",
+    "uuid": "divvy.database_sg_with_permissive_access",
+    "name": "Database Security Groups Exposing Public Access",
     "category": "Security",
-    "description": "Identify compute instances with an attached security group that exposes SSH access to the world (0.0.0.0/0)",
+    "description": "Identify database security groups that expose public access (n.b., AWS only)",
     "instructions": {
         "actions": [
             {
@@ -13,7 +13,7 @@
         ],
         "filters": [
             {
-                "name": "divvy.query.instances_exposing_public_ssh"
+                "name": "divvy.query.database_sg_with_permissive_access"
             }
         ],
         "groups": [],
@@ -25,7 +25,7 @@
             "exclude_days": []
         },
         "resource_types": [
-            "instance"
+            "dbinstance"
         ]
     }
 }

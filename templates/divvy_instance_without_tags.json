@@ -1,0 +1,29 @@
+{
+    "uuid": "divvy.instance_without_tags",
+    "name": "Instances Without Tags",
+    "category": "Best Practices",
+    "description": "Identify compute instances without any tag key/value pairs",
+    "instructions": {
+        "actions": [
+            {
+                "config": {},
+                "name": "divvy.action.mark_non_compliant",
+                "run_when_result_is": true
+            }
+        ],
+        "filters": [
+            {
+                "name": "divvy.query.untagged_instances"
+            }
+        ],
+        "groups": [],
+        "hookpoints": [
+            "divvycloud.resource.created",
+            "divvycloud.resource.modified"
+        ],
+        "ondemand_enabled": true,
+        "resource_types": [
+            "instance"
+        ]
+    }
+}

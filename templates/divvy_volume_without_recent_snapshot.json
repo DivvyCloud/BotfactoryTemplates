@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.instance_exposing_ssh",
-    "name": "Instances Exposing Public SSH",
-    "category": "Security",
-    "description": "Identify compute instances with an attached security group that exposes SSH access to the world (0.0.0.0/0)",
+    "uuid": "divvy.volume_without_recent_snapshot",
+    "name": "Volumes Without Recent Snapshot",
+    "category": "Best Practices",
+    "description": "Identify volumes that have not had a recent backup/snapshot created",
     "instructions": {
         "actions": [
             {
@@ -13,7 +13,10 @@
         ],
         "filters": [
             {
-                "name": "divvy.query.instances_exposing_public_ssh"
+                "config": {
+                    "days": 30
+                },
+                "name": "divvy.filter.recent_volume_snapshots"
             }
         ],
         "groups": [],
@@ -25,7 +28,7 @@
             "exclude_days": []
         },
         "resource_types": [
-            "instance"
+            "volume"
         ]
     }
 }

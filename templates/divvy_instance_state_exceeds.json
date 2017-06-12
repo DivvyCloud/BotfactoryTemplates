@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.instance_exposing_ssh",
-    "name": "Instances Exposing Public SSH",
-    "category": "Security",
-    "description": "Identify compute instances with an attached security group that exposes SSH access to the world (0.0.0.0/0)",
+    "uuid": "divvy.instance_state_exceeds",
+    "name": "Instance Lifecycle State Exceeds Threshold",
+    "category": "Best Practice",
+    "description": "Identify instances that have been in a particular lifecycle state, e.g., Running, over a user-defined period of time",
     "instructions": {
         "actions": [
             {
@@ -13,7 +13,12 @@
         ],
         "filters": [
             {
-                "name": "divvy.query.instances_exposing_public_ssh"
+                "config": {
+                    "instance_state": ["running"],
+                    "unit_type": "days",
+                    "number_of_units": 1
+                },
+                "name": "divvy.filter.instance_state_time_threshold"
             }
         ],
         "groups": [],

@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.instance_exposing_ssh",
-    "name": "Instances Exposing Public SSH",
-    "category": "Security",
-    "description": "Identify compute instances with an attached security group that exposes SSH access to the world (0.0.0.0/0)",
+    "uuid": "divvy.volume_state_threshold",
+    "name": "Volume State Time Threshold",
+    "category": "Optimization",
+    "description": "Identify volumes that have been in a user-selected state for a user-defined period of time (defaults are 'available' and 1 day)",
     "instructions": {
         "actions": [
             {
@@ -13,7 +13,12 @@
         ],
         "filters": [
             {
-                "name": "divvy.query.instances_exposing_public_ssh"
+                "config": {
+                    "state": "available",
+                    "unit_type": "days",
+                    "number_of_units": 1
+                },
+                "name": "divvy.query.volume_state_time_threshold"
             }
         ],
         "groups": [],
@@ -25,7 +30,7 @@
             "exclude_days": []
         },
         "resource_types": [
-            "instance"
+            "volume"
         ]
     }
 }
