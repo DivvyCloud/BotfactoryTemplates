@@ -799,6 +799,14 @@
             "description": "Identify regions within 80% or more of the threshold for any resource type",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.03/templates/divvy_region_limit_threshold.json"
+        },
+        {
+            "uuid": "divvy.instance_exposing_ssh.json",
+            "category": "Security",
+            "name": "Instances Exposing Public SSH",
+            "description": "Match compute instances with an attached security group that exposes SSH access to the world (0.0.0.0/0)",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.03/templates/divvy_instance_exposing_ssh.json"
         }
     ]
 }
