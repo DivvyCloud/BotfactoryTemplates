@@ -17,7 +17,10 @@
             }
         ],
         "groups": [],
-        "hookpoints": [],
+        "hookpoints": [
+            "divvycloud.resource.created",
+            "divvycloud.resource.modified"
+        ],
         "ondemand_enabled": true,
         "schedule": {
             "_type": "Daily",
