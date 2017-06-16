@@ -793,12 +793,156 @@
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.03/templates/divvy_curate_resources.json"
         },
         {
-            "uuid": "divvy.region_region_limit_threshold",
+            "uuid": "divvy.region_limit_threshold",
             "category": "Optimization",
             "name": "Region Limits",
             "description": "Identify regions within 80% or more of the threshold for any resource type",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.03/templates/divvy_region_limit_threshold.json"
+        },
+        {
+            "uuid": "divvy.databases_with_zero_connections",
+            "category": "Optimization",
+            "name": "Database Instances With Zero Connections",
+            "description": "Identify database instances with zero connections over a period of time (14 days default)",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.03/templates/divvy_database_instance_zero_connections.json"
+        },
+        {
+            "uuid": "divvy.database_sg_with_permissive_access",
+            "category": "Security",
+            "name": "Database Security Groups Exposing Public Access",
+            "description": "Identify database security groups that expose public access (n.b., AWS only)",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.03/templates/divvy_database_security_group_exposing_access.json"
+        },
+        {
+            "uuid": "divvy.instances_running_24x7",
+            "category": "Optimization",
+            "name": "Instances Running 24x7",
+            "description": "Identify compute instances that have been running 24x7 over a period of time (default is 1 day)",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.03/templates/divvy_instance_24x7.json"
+        },
+        {
+            "uuid": "divvy.instance_cpu_high",
+            "category": "Optimization",
+            "name": "Instances Averaging High CPU",
+            "description": "Identify compute instances that have been averaging a high CPU over a period of time (n.b., AWS only)",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.03/templates/divvy_instance_cpu_high.json"
+        },
+        {
+            "uuid": "divvy.instance_cpu_low",
+            "category": "Optimization",
+            "name": "Instances Averaging Low CPU",
+            "description": "Identify compute instances that have been averaging a low CPU over a period of time (n.b., AWS only)",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.03/templates/divvy_instance_cpu_low.json"
+        },
+        {
+            "uuid": "divvy.instance_exposing_ssh",
+            "category": "Security",
+            "name": "Instances Exposing Public SSH",
+            "description": "Identify compute instances with an attached security group that exposes SSH access to the world (0.0.0.0/0)",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.03/templates/divvy_instance_exposing_ssh.json"
+        },
+        {
+            "uuid": "divvy.instance_without_tags",
+            "category": "Best Practices",
+            "name": "Instances Without Tags",
+            "description": "Identify compute instances without any tag key/value pairs",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.03/templates/divvy_instance_without_tags.json"
+        },
+        {
+            "uuid": "divvy.network_with_impaired_flow_logs.json",
+            "category": "Security",
+            "name": "Networks With Impaired Flow Logs",
+            "description": "Identify network resources having their flow log delivery impaired (n.b., AWS only).",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.03/templates/divvy_network_with_impaired_flow_logs.json"
+        },
+        {
+            "uuid": "divvy.reserved_instance_nearing_expiration",
+            "category": "Optimization",
+            "name": "Reserved Instances Expiring Soon",
+            "description": "Identify reserved instances set to expire within a set number of days (default is 30 days)",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.03/templates/divvy_reserved_instances_expiring_soon.json"
+        },
+        {
+            "uuid": "divvy.volume_in_error_state",
+            "category": "Best Practices",
+            "name": "Volumes In Error State",
+            "description": "Identify unhealthy volumes that are not functional",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.03/templates/divvy_volume_in_error_state.json"
+        },
+        {
+            "uuid": "divvy.instance_cores_exceed",
+            "category": "Optimization",
+            "name": "Instance Cores Exceed",
+            "description": "Identify instances exceeding a defined number of CPU cores (default is 4 cores)",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.03/templates/divvy_instance_cores_exceed.json"
+        },
+        {
+            "uuid": "divvy.instance_memory_exceeds",
+            "category": "Optimization",
+            "name": "Instance Memory Exceeds",
+            "description": "Identify instances exceeding a user-defined amount of GB in RAM (default is 32 GB)",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.03/templates/divvy_instance_memory_exceeds.json"
+        },
+        {
+            "uuid": "divvy.instance_state",
+            "category": "Best Practices",
+            "name": "Instance Lifecycle State",
+            "description": "Identify instances in a particular lifecycle state, e.g., Running",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.03/templates/divvy_instance_state.json"
+        },
+        {
+            "uuid": "divvy.instance_state_exceeds",
+            "category": "Best Practices",
+            "name": "Instance Lifecycle State Exceeds Threshold",
+            "description": "Identify instances that have been in a particular lifecycle state, e.g., Running, over a user-defined period of time",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.03/templates/divvy_instance_state_exceeds.json"
+        },
+        {
+            "uuid": "divvy.resource_cost",
+            "category": "Optimization",
+            "name": "Resource Cost Exceeds",
+            "description": "Identify resources whose monthly cost exceeds a user-defined value (default $100)",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.03/templates/divvy_resource_cost.json"
+        },
+        {
+            "uuid": "divvy.resource_has_no_owner",
+            "category": "Best Practices",
+            "name": "Resource Has No Owner",
+            "description": "Identify resources that do not have an owner",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.03/templates/divvy_resource_has_no_owner.json"
+        },
+        {
+            "uuid": "divvy.instance_security_groups",
+            "category": "Security",
+            "name": "Instance Security Group Associations",
+            "description": "Identify instances associated with user-provided Security Groups (n.b., AWS only)",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.03/templates/divvy_instance_security_groups.json"
+        },
+        {
+            "uuid": "divvy.volume_state_threshold",
+            "category": "Optimization",
+            "name": "Volume State Time Threshold",
+            "description": "Identify volumes that have been in a user-selected state for a user-defined period of time (defaults are 'available' and 1 day)",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.03/templates/divvy_volume_state_threshold.json"
         }
     ]
 }

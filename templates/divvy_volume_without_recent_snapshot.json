@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.volumes_without_recent_snapshot",
-    "name": "Volumes Without A Recent Snapshot",
+    "uuid": "divvy.volume_without_recent_snapshot",
+    "name": "Volumes Without Recent Snapshot",
     "category": "Best Practices",
-    "description": "Identify volumes without a snapshot in the past X days with 30 days as default",
+    "description": "Identify volumes that have not had a recent backup/snapshot created",
     "instructions": {
         "actions": [
             {
@@ -20,10 +20,13 @@
             }
         ],
         "groups": [],
-        "hookpoints": [
-            "divvycloud.resource.created"
-        ],
+        "hookpoints": [],
         "ondemand_enabled": true,
+        "schedule": {
+            "_type": "Daily",
+            "time_of_day": {"_type": "TimeOfDay", "second": 0, "minute": 0, "hour": 4},
+            "exclude_days": []
+        },
         "resource_types": [
             "volume"
         ]

@@ -1,0 +1,34 @@
+{
+    "uuid": "divvy.databases_with_zero_connections",
+    "name": "Database Instances With Zero Connections",
+    "category": "Optimization",
+    "description": "Identify database instances with zero connections over a period of time (14 days default)",
+    "instructions": {
+        "actions": [
+            {
+                "config": {},
+                "name": "divvy.action.mark_non_compliant",
+                "run_when_result_is": true
+            }
+        ],
+        "filters": [
+            {
+                "config": {
+                    "days": 14
+                },
+                "name": "divvy.query.databases_with_zero_connections"
+            }
+        ],
+        "groups": [],
+        "hookpoints": [],
+        "ondemand_enabled": true,
+        "schedule": {
+            "_type": "Daily",
+            "time_of_day": {"_type": "TimeOfDay", "second": 0, "minute": 0, "hour": 4},
+            "exclude_days": []
+        },
+        "resource_types": [
+            "dbinstance"
+        ]
+    }
+}

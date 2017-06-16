@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.volumes_without_recent_snapshot",
-    "name": "Volumes Without A Recent Snapshot",
+    "uuid": "divvy.volume_in_error_state",
+    "name": "Volumes In Error State",
     "category": "Best Practices",
-    "description": "Identify volumes without a snapshot in the past X days with 30 days as default",
+    "description": "Identify unhealthy volumes that are not functional",
     "instructions": {
         "actions": [
             {
@@ -13,15 +13,13 @@
         ],
         "filters": [
             {
-                "config": {
-                    "days": 30
-                },
-                "name": "divvy.filter.recent_volume_snapshots"
+                "name": "divvy.query.volume_in_error_state"
             }
         ],
         "groups": [],
         "hookpoints": [
-            "divvycloud.resource.created"
+            "divvycloud.resource.created",
+            "divvycloud.resource.modified"
         ],
         "ondemand_enabled": true,
         "resource_types": [

@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.volumes_without_recent_snapshot",
-    "name": "Volumes Without A Recent Snapshot",
+    "uuid": "divvy.instance_without_tags",
+    "name": "Instances Without Tags",
     "category": "Best Practices",
-    "description": "Identify volumes without a snapshot in the past X days with 30 days as default",
+    "description": "Identify compute instances without any tag key/value pairs",
     "instructions": {
         "actions": [
             {
@@ -13,19 +13,17 @@
         ],
         "filters": [
             {
-                "config": {
-                    "days": 30
-                },
-                "name": "divvy.filter.recent_volume_snapshots"
+                "name": "divvy.query.untagged_instances"
             }
         ],
         "groups": [],
         "hookpoints": [
-            "divvycloud.resource.created"
+            "divvycloud.resource.created",
+            "divvycloud.resource.modified"
         ],
         "ondemand_enabled": true,
         "resource_types": [
-            "volume"
+            "instance"
         ]
     }
 }
