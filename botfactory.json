@@ -1023,6 +1023,30 @@
             "description": "Identify load balancers without an SSL listener",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.04/templates/divvy_load_balancer_without_ssl_listener.json"
+        },
+        {
+            "uuid": "divvy.service_encryption_key_does_not_support_rotation",
+            "category": "Security",
+            "name": "Service Encryption Key Rotation Disabled",
+            "description": "Identify encryption keys that have key rotation disabled",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.04/templates/divvy_service_encryption_key_does_not_support_rotation.json"
+        },
+        {
+            "uuid": "divvy.service_encryption_key_expiration",
+            "category": "Security",
+            "name": "Service Encryption Key Expired or Expiring Soon",
+            "description": "Identify encryption keys that are expired or are expiring within user-defined number of days (default is 14 days)",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.04/templates/divvy_service_encryption_key_expiration.json"
+        },
+        {
+            "uuid": "divvy.service_encryption_key_is_disabled",
+            "category": "Security",
+            "name": "Service Encryption Key Disabled",
+            "description": "Identify encryption keys that are disabled",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.04/templates/divvy_service_encryption_key_disabled.json"
         }
     ]
 }
