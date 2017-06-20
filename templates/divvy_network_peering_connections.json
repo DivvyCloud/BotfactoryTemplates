@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.volume_type_audit",
-    "name": "Volume Type Audit",
-    "category": "Best Practices",
-    "description": "Identify volumes running unapproved types",
+    "uuid": "divvy.network_peering_account_whitelist",
+    "name": "Network Peering Connections",
+    "category": "Security",
+    "description": "Identify network peering connections (n.b., AWS only)",
     "instructions": {
         "actions": [
             {
@@ -14,21 +14,19 @@
         "filters": [
             {
                 "config": {
-                    "volume_type_list": [
-                        "io1",
-                        "st1"
-                    ]
+                    "accounts":["123456789012"]
                 },
-                "name": "divvy.filter.volume_type"
+                "name": "divvy.query.network_peering_account_whitelist"
             }
         ],
         "groups": [],
         "hookpoints": [
-            "divvycloud.resource.created"
+            "divvycloud.resource.created",
+            "divvycloud.resource.modified"
         ],
         "ondemand_enabled": true,
         "resource_types": [
-            "volume"
+            "privatenetwork"
         ]
     }
 }

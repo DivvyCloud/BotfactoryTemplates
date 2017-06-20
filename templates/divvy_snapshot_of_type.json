@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.volume_type_audit",
-    "name": "Volume Type Audit",
+    "uuid": "divvy.snapshot_of_type",
+    "name": "Snapshot of Type",
     "category": "Best Practices",
-    "description": "Identify volumes running unapproved types",
+    "description": "Identify database or memcache snapshots based upon their type, e.g., manual or automated",
     "instructions": {
         "actions": [
             {
@@ -14,12 +14,11 @@
         "filters": [
             {
                 "config": {
-                    "volume_type_list": [
-                        "io1",
-                        "st1"
+                    "snapshot_type_list": [
+                        "manual"
                     ]
                 },
-                "name": "divvy.filter.volume_type"
+                "name": "divvy.filter.snapshot_of_type"
             }
         ],
         "groups": [],
@@ -28,7 +27,8 @@
         ],
         "ondemand_enabled": true,
         "resource_types": [
-            "volume"
+            "dbsnapshot",
+            "mcsnapshot"
         ]
     }
 }
