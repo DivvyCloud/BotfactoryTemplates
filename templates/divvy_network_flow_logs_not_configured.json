@@ -1,0 +1,32 @@
+{
+    "uuid": "divvy.network_flow_logs_not_configured",
+    "name": "Network Resources Without Traffic Logging Configured",
+    "category": "Security",
+    "description": "Identify network resources which do not have traffic logging such as AWS VPC Flow Log enabled",
+    "instructions": {
+        "actions": [
+            {
+                "config": {},
+                "name": "divvy.action.mark_non_compliant",
+                "run_when_result_is": true
+            }
+        ],
+        "filters": [
+            {
+                "config": {},
+                "name": "divvy.filter.network_flow_logs_not_configured"
+            }
+        ],
+        "groups": [],
+        "hookpoints": [
+            "divvycloud.resource.created",
+            "divvycloud.resource.modified"
+        ],
+        "ondemand_enabled": true,
+        "resource_types": [
+            "privatenetwork",
+            "privatesubnet",
+            "networkinterface"
+        ]
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "uuid": "divvy.network_has_zero_instances",
+    "name": "Network With No Instances",
+    "category": "Optimization",
+    "description": "Identify networks with zero instances",
+    "instructions": {
+        "actions": [
+            {
+                "config": {},
+                "name": "divvy.action.mark_non_compliant",
+                "run_when_result_is": true
+            }
+        ],
+        "filters": [
+            {
+                "config": {},
+                "name": "divvy.query.network_has_zero_instances"
+            }
+        ],
+        "groups": [],
+        "hookpoints": [
+            "divvycloud.resource.modified"
+        ],
+        "ondemand_enabled": true,
+        "resource_types": [
+            "privatenetwork"
+        ]
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "uuid": "divvy.network_has_instances",
+    "name": "Network With Instances",
+    "category": "Security",
+    "description": "Identify networks with at least one instance",
+    "instructions": {
+        "actions": [
+            {
+                "config": {},
+                "name": "divvy.action.mark_non_compliant",
+                "run_when_result_is": true
+            }
+        ],
+        "filters": [
+            {
+                "config": {},
+                "name": "divvy.query.network_has_instances"
+            }
+        ],
+        "groups": [],
+        "hookpoints": [
+            "divvycloud.resource.modified"
+        ],
+        "ondemand_enabled": true,
+        "resource_types": [
+            "privatenetwork"
+        ]
+    }
+}

@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.volume_type_audit",
-    "name": "Volume Type Audit",
-    "category": "Best Practices",
-    "description": "Identify volumes running unapproved types",
+    "uuid": "divvy.load_balancer_scheme",
+    "name": "Load Balancer Scheme",
+    "category": "Security",
+    "description": "Identify whether a load balancer is internet-facing or internal",
     "instructions": {
         "actions": [
             {
@@ -14,21 +14,21 @@
         "filters": [
             {
                 "config": {
-                    "volume_type_list": [
-                        "io1",
-                        "st1"
+                    "scheme": [
+                        "internet-facing"
                     ]
                 },
-                "name": "divvy.filter.volume_type"
+                "name": "divvy.query.load_balancer_scheme"
             }
         ],
         "groups": [],
         "hookpoints": [
-            "divvycloud.resource.created"
+            "divvycloud.resource.created",
+            "divvycloud.resource.modified"
         ],
         "ondemand_enabled": true,
         "resource_types": [
-            "volume"
+            "loadbalancer"
         ]
     }
 }
