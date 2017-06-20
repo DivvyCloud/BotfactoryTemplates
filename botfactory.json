@@ -1007,6 +1007,22 @@
             "description": "Identify whether a load balancer is internet-facing or internal",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.04/templates/divvy_load_balancer_scheme.json"
+        },
+        {
+            "uuid": "divvy.load_balancer_with_ssl_listener",
+            "category": "Optimization",
+            "name": "Load Balancers With SSL Listener",
+            "description": "Identify load balancers with an SSL listener",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.04/templates/divvy_load_balancer_with_ssl_listener.json"
+        },
+        {
+            "uuid": "divvy.load_balancer_without_ssl_listener",
+            "category": "Optimization",
+            "name": "Load Balancers Without SSL Listener",
+            "description": "Identify load balancers without an SSL listener",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.04/templates/divvy_load_balancer_without_ssl_listener.json"
         }
     ]
 }
