@@ -14,9 +14,7 @@
         "filters": [
             {
                 "config": {
-                    "scheme": [
-                        "internet-facing"
-                    ]
+                    "scheme": "internet-facing"
                 },
                 "name": "divvy.query.load_balancer_scheme"
             }
