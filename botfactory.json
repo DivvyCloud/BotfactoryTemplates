@@ -1047,6 +1047,14 @@
             "description": "Identify encryption keys that are disabled",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.04/templates/divvy_service_encryption_key_disabled.json"
+        },
+        {
+            "uuid": "divvy.snapshots_public",
+            "category": "Security",
+            "name": "Snapshots Publicly Available",
+            "description": "Identify snapshots that are accessible to the public",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.04/templates/divvy_snapshots_public.json"
         }
     ]
 }
