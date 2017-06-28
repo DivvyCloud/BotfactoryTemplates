@@ -1025,12 +1025,12 @@
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.04/templates/divvy_load_balancer_without_ssl_listener.json"
         },
         {
-            "uuid": "divvy.service_encryption_key_does_not_support_rotation",
+            "uuid": "divvy.service_encryption_key_rotation_disabled",
             "category": "Security",
             "name": "Service Encryption Key Rotation Disabled",
             "description": "Identify encryption keys that have key rotation disabled",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.04/templates/divvy_service_encryption_key_does_not_support_rotation.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.04/templates/divvy_service_encryption_key_rotation_disabled.json"
         },
         {
             "uuid": "divvy.service_encryption_key_expiration",
