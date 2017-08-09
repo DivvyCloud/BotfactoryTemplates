@@ -1,6 +1,6 @@
 {
-    "uuid": "divvy.encryption_key_rotation_disabled",
-    "name": "Encryption Key Rotation Disabled",
+    "uuid": "divvy.service_encryption_key_rotation_disabled",
+    "name": "Service Encryption Key Rotation Disabled",
     "category": "Security",
     "description": "Identify encryption keys that have key rotation disabled",
     "instructions": {
