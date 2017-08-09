@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.service_encryption_key_rotation_disabled",
-    "name": "Service Encryption Key Rotation Disabled",
+    "uuid": "divvy.snapshots_public",
+    "name": "Snapshots Publicly Available",
     "category": "Security",
-    "description": "Identify encryption keys that have key rotation disabled",
+    "description": "Identify snapshots that are accessible to the public",
     "instructions": {
         "actions": [
             {
@@ -14,7 +14,7 @@
         "filters": [
             {
                 "config": {},
-                "name": "divvy.query.service_encryption_key_does_not_support_rotation"
+                "name": "divvy.query.public_snapshots"
             }
         ],
         "groups": [],
@@ -24,7 +24,8 @@
         ],
         "ondemand_enabled": true,
         "resource_types": [
-            "serviceencryptionkey"
+            "snapshot",
+            "dbsnapshot"
         ]
     }
 }
