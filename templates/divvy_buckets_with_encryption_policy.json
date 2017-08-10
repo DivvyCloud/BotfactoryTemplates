@@ -1,6 +1,6 @@
 {
     "uuid": "divvy.buckets_with_encryption_policy",
-    "name": "Storage Container With Encryption Policy",
+    "name": "Storage Containers With Encryption Policy",
     "category": "Security",
     "description": "Identify storage container buckets with encryption enabled",
     "instructions": {

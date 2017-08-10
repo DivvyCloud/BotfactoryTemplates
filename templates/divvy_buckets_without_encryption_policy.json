@@ -1,6 +1,6 @@
 {
     "uuid": "divvy.buckets_without_encryption_policy",
-    "name": "Storage Container Without Encryption Policy",
+    "name": "Storage Containers Without Encryption Policy",
     "category": "Security",
     "description": "Identify storage container buckets without encryption enabled",
     "instructions": {
