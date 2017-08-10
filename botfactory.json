@@ -1060,7 +1060,7 @@
             "uuid": "divvy.buckets_with_encryption_policy",
             "category": "Security",
             "name": "Storage Containers With Encryption Policy",
-            "description": "dentify storage container buckets with encryption enabled",
+            "description": "Identify storage container buckets with encryption enabled",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.04/templates/divvy_buckets_with_encryption_policy.json"
         },
@@ -1068,7 +1068,7 @@
             "uuid": "divvy.buckets_without_encryption_policy",
             "category": "Security",
             "name": "Storage Containers Without Encryption Policy",
-            "description": "dentify storage container buckets without encryption enabled",
+            "description": "Identify storage container buckets without encryption enabled",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.04/templates/divvy_buckets_without_encryption_policy.json"
         }
