@@ -609,8 +609,8 @@
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.04/templates/divvy_volume_type_audit.json"
         },
         {
-            "uuid": "divvy.volumes_without_recent_snapshot",
-            "category": "Optimization",
+            "uuid": "divvy.volume_without_recent_snapshot",
+            "category": "Best Practices",
             "name": "Volumes Without A Recent Snapshot",
             "description": "Identify volumes without a snapshot in the past fourteen days",
             "version": "0.1.0",
