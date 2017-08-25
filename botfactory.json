@@ -614,7 +614,7 @@
             "name": "Volumes Without A Recent Snapshot",
             "description": "Identify volumes without a snapshot in the past fourteen days",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.05/templates/divvy_volumes_without_recent_snapshot.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.05/templates/divvy_volume_without_recent_snapshot.json"
         },
         {
             "uuid": "divvy.user_policy_audit",
