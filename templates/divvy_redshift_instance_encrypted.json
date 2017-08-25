@@ -14,8 +14,7 @@
         "filters": [
             {
                 "config": {},
-                "name": "divvy.filter.big_data_instance_encryption",
-                "negate": false
+                "name": "divvy.filter.database_instance_encrypted"
             }
         ],
         "groups": [],

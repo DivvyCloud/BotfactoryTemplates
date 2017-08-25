@@ -14,8 +14,7 @@
         "filters": [
             {
                 "config": {},
-                "name": "divvy.filter.load_balancer_zone_balancing",
-                "negate": true
+                "name": "divvy.query.load_balancers_without_zone_balancing"
             }
         ],
         "groups": [],

@@ -19,8 +19,7 @@
                         "admin"
                     ]
                 },
-                "name": "divvy.filter.big_data_instance_master_username",
-                "negate": false
+                "name": "divvy.query.database_master_username"
             }
         ],
         "groups": [],

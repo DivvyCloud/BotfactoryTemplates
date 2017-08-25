@@ -1,0 +1,32 @@
+{
+    "uuid": "divvy.load_balancer_scheme",
+    "name": "Load Balancer Scheme",
+    "category": "Security",
+    "description": "Identify whether a load balancer is internet-facing or internal",
+    "instructions": {
+        "actions": [
+            {
+                "config": {},
+                "name": "divvy.action.mark_non_compliant",
+                "run_when_result_is": true
+            }
+        ],
+        "filters": [
+            {
+                "config": {
+                    "scheme": "internet-facing"
+                },
+                "name": "divvy.query.load_balancer_scheme"
+            }
+        ],
+        "groups": [],
+        "hookpoints": [
+            "divvycloud.resource.created",
+            "divvycloud.resource.modified"
+        ],
+        "ondemand_enabled": true,
+        "resource_types": [
+            "loadbalancer"
+        ]
+    }
+}

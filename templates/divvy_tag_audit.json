@@ -14,18 +14,18 @@
         "filters": [
             {
                 "config": {
-                    "case_sensitive": "",
-                    "tags_list": [
+                    "case_sensitive": false,
+                    "match_all": true,
+                    "tag_keys": [
                         "Environment",
                         "POC"
                     ]
                 },
-                "name": "divvy.filter.has_all_tags",
-                "negate": false
+                "name": "divvy.query.resource_has_tag_key"
             },
             {
                 "config": {
-                    "case_sensitive": "",
+                    "case_sensitive": false,
                     "tag_key": "Environment",
                     "tag_values": [
                         "Production",
@@ -34,8 +34,7 @@
                         "Staging"
                     ]
                 },
-                "name": "divvy.filter.validate_tag_value",
-                "negate": false
+                "name": "divvy.filter.validate_tag_value"
             }
         ],
         "groups": [],

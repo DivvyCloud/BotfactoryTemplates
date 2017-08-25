@@ -14,8 +14,7 @@
         "filters": [
             {
                 "config": {},
-                "name": "divvy.filter.load_balancer_connection_draining",
-                "negate": true
+                "name": "divvy.query.load_balancers_without_connection_draining"
             }
         ],
         "groups": [],

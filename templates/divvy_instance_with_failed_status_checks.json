@@ -14,8 +14,7 @@
         "filters": [
             {
                 "config": {},
-                "name": "divvy.filter.instance_fails_status_checks",
-                "negate": true
+                "name": "divvy.filter.instance_fails_status_checks"
             }
         ],
         "groups": [],

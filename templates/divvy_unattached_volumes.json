@@ -14,8 +14,7 @@
         "filters": [
             {
                 "config": {},
-                "name": "divvy.filter.orphaned_volume",
-                "negate": false
+                "name": "divvy.filter.orphaned_volume"
             }
         ],
         "groups": [],

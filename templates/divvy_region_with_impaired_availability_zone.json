@@ -14,8 +14,7 @@
         "filters": [
             {
                 "config": {},
-                "name": "divvy.filter.region_with_impaired_zones",
-                "negate": false
+                "name": "divvy.filter.region_with_impaired_zones"
             }
         ],
         "groups": [],

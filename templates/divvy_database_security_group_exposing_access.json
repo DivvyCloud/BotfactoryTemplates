@@ -1,0 +1,31 @@
+{
+    "uuid": "divvy.database_sg_with_permissive_access",
+    "name": "Database Security Groups Exposing Public Access",
+    "category": "Security",
+    "description": "Identify database security groups that expose public access (n.b., AWS only)",
+    "instructions": {
+        "actions": [
+            {
+                "config": {},
+                "name": "divvy.action.mark_non_compliant",
+                "run_when_result_is": true
+            }
+        ],
+        "filters": [
+            {
+                "name": "divvy.query.database_sg_with_permissive_access"
+            }
+        ],
+        "groups": [],
+        "hookpoints": [],
+        "ondemand_enabled": true,
+        "schedule": {
+            "_type": "Daily",
+            "time_of_day": {"_type": "TimeOfDay", "second": 0, "minute": 0, "hour": 4},
+            "exclude_days": []
+        },
+        "resource_types": [
+            "dbinstance"
+        ]
+    }
+}

@@ -2,7 +2,7 @@
     "uuid": "divvy.user_activity_audit",
     "name": "Cloud User Activity Audit",
     "category": "Best Practices",
-    "description": "Identify cloud users who have not logged in recently",
+    "description": "Identify cloud service users who have not logged into the cloud provider console recently",
     "instructions": {
         "actions": [
             {
@@ -14,10 +14,9 @@
         "filters": [
             {
                 "config": {
-                    "last_logon_days": 30
+                    "days": 30
                 },
-                "name": "divvy.filter.service_user_password_last_used",
-                "negate": false
+                "name": "divvy.filter.service_user_password_last_used"
             }
         ],
         "groups": [],

@@ -14,20 +14,14 @@
         "filters": [
             {
                 "config": {},
-                "name": "divvy.filter.cloud_root_credentials_enabled",
-                "negate": false
-            },
-            {
-                "config": {},
-                "name": "divvy.filter.cloud_root_account_mfa_enabled",
-                "negate": true
+                "name": "divvy.query.clouds_without_root_mfa"
             }
         ],
         "groups": [],
         "hookpoints": [],
         "ondemand_enabled": true,
         "resource_types": [
-            "organizationservice"
+            "divvyorganizationservice"
         ],
         "schedule": {
             "_type": "Daily",

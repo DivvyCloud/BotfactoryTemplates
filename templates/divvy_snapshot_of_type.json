@@ -1,0 +1,34 @@
+{
+    "uuid": "divvy.snapshot_of_type",
+    "name": "Snapshot of Type",
+    "category": "Best Practices",
+    "description": "Identify database or memcache snapshots based upon their type, e.g., manual or automated",
+    "instructions": {
+        "actions": [
+            {
+                "config": {},
+                "name": "divvy.action.mark_non_compliant",
+                "run_when_result_is": true
+            }
+        ],
+        "filters": [
+            {
+                "config": {
+                    "snapshot_type_list": [
+                        "manual"
+                    ]
+                },
+                "name": "divvy.filter.snapshot_of_type"
+            }
+        ],
+        "groups": [],
+        "hookpoints": [
+            "divvycloud.resource.created"
+        ],
+        "ondemand_enabled": true,
+        "resource_types": [
+            "dbsnapshot",
+            "mcsnapshot"
+        ]
+    }
+}

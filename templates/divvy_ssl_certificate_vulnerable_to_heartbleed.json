@@ -16,8 +16,7 @@
                 "config": {
                     "date": "2014-04-03 00:00:00"
                 },
-                "name": "divvy.filter.ssl_certificate_older_than",
-                "negate": false
+                "name": "divvy.filter.ssl_certificate_older_than"
             }
         ],
         "groups": [],

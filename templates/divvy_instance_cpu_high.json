@@ -1,0 +1,35 @@
+{
+    "uuid": "divvy.instance_cpu_high",
+    "name": "Instances Averaging High CPU",
+    "category": "Optimization",
+    "description": "Identify compute instances that have been averaging a high CPU over a period of time (n.b., AWS only)",
+    "instructions": {
+        "actions": [
+            {
+                "config": {},
+                "name": "divvy.action.mark_non_compliant",
+                "run_when_result_is": true
+            }
+        ],
+        "filters": [
+            {
+                "config": {
+                    "day": 14,
+                    "avg": 80
+                },
+                "name": "divvy.query.instances_averaging_high_cpu"
+            }
+        ],
+        "groups": [],
+        "hookpoints": [],
+        "ondemand_enabled": true,
+        "schedule": {
+            "_type": "Daily",
+            "time_of_day": {"_type": "TimeOfDay", "second": 0, "minute": 0, "hour": 4},
+            "exclude_days": []
+        },
+        "resource_types": [
+            "instance"
+        ]
+    }
+}

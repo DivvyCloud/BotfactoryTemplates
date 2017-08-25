@@ -14,8 +14,7 @@
         "filters": [
             {
                 "config": {},
-                "name": "divvy.filter.volume_not_encrypted",
-                "negate": false
+                "name": "divvy.filter.volume_not_encrypted"
             }
         ],
         "groups": [],

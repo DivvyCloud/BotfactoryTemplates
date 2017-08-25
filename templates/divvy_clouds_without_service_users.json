@@ -8,7 +8,7 @@
             {
                 "config": {},
                 "name": "divvy.action.mark_non_compliant",
-                "run_when_result_is": false
+                "run_when_result_is": true
             }
         ],
         "filters": [
@@ -16,19 +16,18 @@
                 "config": {
                     "ignore_disabled":false
                     },
-                "name": "divvy.filter.cloud_with_no_service_users",
-                "negate": false
+                "name": "divvy.filter.cloud_with_no_service_users"
             }
         ],
         "groups": [],
         "hookpoints": [],
         "ondemand_enabled": true,
         "resource_types": [
-            "organizationservice"
+            "divvyorganizationservice"
         ],
         "schedule": {
             "_type": "Daily",
-            "time_of_day": {"_type": "TimeOfDay", "second": 0, "minute": 0, "hour": 4},
+            "time_of_day": {"_type": "TimeOfDay", "tz": "UTC", "second": 0, "minute": 0, "hour": 4},
             "exclude_days": []
         }
     }

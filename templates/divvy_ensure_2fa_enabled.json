@@ -8,14 +8,17 @@
             {
                 "config": {},
                 "name": "divvy.action.mark_non_compliant",
-                "run_when_result_is": false
+                "run_when_result_is": true
             }
         ],
         "filters": [
             {
                 "config": {},
-                "name": "divvy.filter.user_has_two_factor_enabled",
-                "negate": false
+                "name": "divvy.filter.service_user_login_profile"
+            },
+            {
+                "config": {},
+                "name": "divvy.query.users_without_mfa"
             }
         ],
         "groups": [],
@@ -26,11 +29,6 @@
         "ondemand_enabled": true,
         "resource_types": [
             "serviceuser"
-        ],
-        "schedule": {
-            "_type": "Daily",
-            "time_of_day": {"_type": "TimeOfDay", "second": 0, "minute": 0, "hour": 4},
-            "exclude_days": []
-        }
+        ]
     }
 }

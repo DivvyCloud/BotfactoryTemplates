@@ -14,8 +14,7 @@
         "filters": [
             {
                 "config": {},
-                "name": "divvy.filter.any_orphaned_elb_sans_instances",
-                "negate": false
+                "name": "divvy.filter.any_orphaned_elb_sans_instances"
             }
         ],
         "groups": [],

@@ -16,8 +16,7 @@
                 "config": {
                     "threshold": 80
                 },
-                "name": "divvy.filter.serviceregion_storage_container_limit",
-                "negate": false
+                "name": "divvy.filter.serviceregion_storage_container_limit"
             }
         ],
         "groups": [],

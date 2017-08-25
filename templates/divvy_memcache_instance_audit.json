@@ -20,8 +20,7 @@
                         "cache.m2.2xlarge"
                     ]
                 },
-                "name": "divvy.filter.instance_type",
-                "negate": false
+                "name": "divvy.filter.instance_type"
             }
         ],
         "groups": [],
@@ -30,7 +29,7 @@
         ],
         "ondemand_enabled": true,
         "resource_types": [
-            "instance"
+            "mcinstance"
         ],
         "schedule": {
             "_type": "Daily",

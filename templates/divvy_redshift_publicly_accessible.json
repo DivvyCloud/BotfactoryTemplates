@@ -14,8 +14,7 @@
         "filters": [
             {
                 "config": {},
-                "name": "divvy.filter.big_data_instance_public_access",
-                "negate": false
+                "name": "divvy.query.database_instance_public_access"
             }
         ],
         "groups": [],

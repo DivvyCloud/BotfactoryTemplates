@@ -14,8 +14,7 @@
         "filters": [
             {
                 "config": {},
-                "name": "divvy.filter.database_instance_multi_az",
-                "negate": false
+                "name": "divvy.filter.database_instance_multi_az"
             }
         ],
         "groups": [],

@@ -18,8 +18,7 @@
                         "ingress"
                     ]
                 },
-                "name": "divvy.filter.access_rule_direction",
-                "negate": false
+                "name": "divvy.filter.access_rule_direction"
             },
             {
                 "config": {
@@ -28,17 +27,16 @@
                         "network_acl"
                     ]
                 },
-                "name": "divvy.filter.access_list_type",
-                "negate": false
+                "name": "divvy.filter.access_list_type"
             },
             {
                 "config": {
                     "protocols": [
-                        "tcp"
+                        "tcp",
+                        "all"
                     ]
                 },
-                "name": "divvy.filter.access_rule_ip_protocol",
-                "negate": false
+                "name": "divvy.filter.access_rule_ip_protocol"
             },
             {
                 "config": {
@@ -46,20 +44,17 @@
                         "5900"
                     ]
                 },
-                "name": "divvy.filter.access_rule_ports",
-                "negate": false
+                "name": "divvy.filter.access_rule_ports"
             },
             {
                 "config": {
                     "action": "allow"
                 },
-                "name": "divvy.filter.access_rule_action",
-                "negate": false
+                "name": "divvy.filter.access_rule_action"
             },
             {
                 "config": {},
-                "name": "divvy.filter.network_open_to_world",
-                "negate": false
+                "name": "divvy.filter.network_open_to_world"
             }
         ],
         "groups": [],

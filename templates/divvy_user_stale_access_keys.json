@@ -8,7 +8,7 @@
             {
                 "config": {},
                 "name": "divvy.action.mark_non_compliant",
-                "run_when_result_is": false
+                "run_when_result_is": true
             }
         ],
         "filters": [
@@ -16,8 +16,7 @@
                 "config": {
                     "days": 90
                 },
-                "name": "divvy.filter.service_user_access_key_age_at_least",
-                "negate": false
+                "name": "divvy.filter.service_user_access_key_age_at_least"
             }
         ],
         "groups": [],

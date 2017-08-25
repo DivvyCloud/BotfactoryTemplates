@@ -20,8 +20,7 @@
                         "db.r3.4xlarge"
                     ]
                 },
-                "name": "divvy.filter.instance_type",
-                "negate": false
+                "name": "divvy.filter.instance_type"
             }
         ],
         "groups": [],
@@ -30,7 +29,7 @@
         ],
         "ondemand_enabled": true,
         "resource_types": [
-            "instance"
+            "dbinstance"
         ],
         "schedule": {
             "_type": "Daily",

@@ -16,8 +16,7 @@
                 "config": {
                     "object_count": 10000
                 },
-                "name": "divvy.filter.storage_container_object_count_at_most",
-                "negate": false
+                "name": "divvy.filter.storage_container_object_count_at_most"
             }
         ],
         "groups": [],

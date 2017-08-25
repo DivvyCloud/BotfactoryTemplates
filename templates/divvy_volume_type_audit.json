@@ -8,19 +8,18 @@
             {
                 "config": {},
                 "name": "divvy.action.mark_non_compliant",
-                "run_when_result_is": false
+                "run_when_result_is": true
             }
         ],
         "filters": [
             {
                 "config": {
                     "volume_type_list": [
-                        "standard",
-                        "sc1"
+                        "io1",
+                        "st1"
                     ]
                 },
-                "name": "divvy.filter.volume_type",
-                "negate": false
+                "name": "divvy.filter.volume_type"
             }
         ],
         "groups": [],

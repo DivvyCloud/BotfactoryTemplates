@@ -14,8 +14,7 @@
         "filters": [
             {
                 "config": {},
-                "name": "divvy.filter.instance_root_volume",
-                "negate": false
+                "name": "divvy.filter.instance_root_volume"
             }
         ],
         "groups": [],

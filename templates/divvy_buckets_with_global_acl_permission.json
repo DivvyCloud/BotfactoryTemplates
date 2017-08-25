@@ -19,8 +19,7 @@
                         "WRITE_ACP"
                     ]
                 },
-                "name": "divvy.filter.bucket_permissions_list",
-                "negate": false
+                "name": "divvy.filter.bucket_permissions_list"
             }
         ],
         "groups": [],

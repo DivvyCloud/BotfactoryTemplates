@@ -14,14 +14,13 @@
         "filters": [
             {
                 "config": {
-                    "db_engines": [
+                    "engines": [
                         "mysql",
                         "aurora",
                         "mariadb"
                     ]
                 },
-                "name": "divvy.filter.database_engine",
-                "negate": false
+                "name": "divvy.filter.database_engine"
             }
         ],
         "groups": [],

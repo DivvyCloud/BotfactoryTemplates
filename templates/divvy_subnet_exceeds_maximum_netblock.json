@@ -14,10 +14,9 @@
         "filters": [
             {
                 "config": {
-                    "block_size": 1024
+                    "block_size": "22"
                 },
-                "name": "divvy.filter.subnet_ip_block_size_at_least",
-                "negate": false
+                "name": "divvy.query.cidr_ip_block_size_at_least"
             }
         ],
         "groups": [],

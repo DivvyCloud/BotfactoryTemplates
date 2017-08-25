@@ -8,7 +8,7 @@
             {
                 "config": {},
                 "name": "divvy.action.mark_non_compliant",
-                "run_when_result_is": false
+                "run_when_result_is": true
             }
         ],
         "filters": [
@@ -16,8 +16,7 @@
                 "config": {
                     "days": 14
                 },
-                "name": "divvy.filter.expiring_ssl_certificates",
-                "negate": false
+                "name": "divvy.filter.expiring_ssl_certificates"
             }
         ],
         "groups": [],

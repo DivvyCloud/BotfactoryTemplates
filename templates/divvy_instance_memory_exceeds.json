@@ -1,0 +1,35 @@
+{
+    "uuid": "divvy.instance_memory_exceeds",
+    "name": "Instance Memory Exceeds",
+    "category": "Optimization",
+    "description": "Identify instances exceeding a user-defined amount of GB in RAM (default is 32 GB)",
+    "instructions": {
+        "actions": [
+            {
+                "config": {},
+                "name": "divvy.action.mark_non_compliant",
+                "run_when_result_is": true
+            }
+        ],
+        "filters": [
+            {
+                "config": {
+                    "memory": 32
+                },
+                "name": "divvy.filter.instance_memory_exceeds_threshold"
+            }
+        ],
+        "groups": [],
+        "hookpoints": [
+            "divvycloud.resource.created",
+            "divvycloud.resource.modified"
+        ],
+        "ondemand_enabled": true,
+        "resource_types": [
+            "instance",
+            "mcinstance",
+            "bigdatainstance",
+            "dbinstance"
+        ]
+    }
+}

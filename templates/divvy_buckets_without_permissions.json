@@ -14,8 +14,7 @@
         "filters": [
             {
                 "config": {},
-                "name": "divvy.filter.bucket_without_permissions",
-                "negate": false
+                "name": "divvy.filter.bucket_without_permissions"
             }
         ],
         "groups": [],

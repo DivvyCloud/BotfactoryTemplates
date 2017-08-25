@@ -1,0 +1,32 @@
+{
+    "uuid": "divvy.instance_state",
+    "name": "Instance Lifecycle State",
+    "category": "Best Practice",
+    "description": "Identify instances in a particular lifecycle state, e.g., Running",
+    "instructions": {
+        "actions": [
+            {
+                "config": {},
+                "name": "divvy.action.mark_non_compliant",
+                "run_when_result_is": true
+            }
+        ],
+        "filters": [
+            {
+                "config": {
+                    "states": ["running"]
+                },
+                "name": "divvy.filter.instance_state"
+            }
+        ],
+        "groups": [],
+        "hookpoints": [
+            "divvycloud.resource.created",
+            "divvycloud.resource.modified"
+        ],
+        "ondemand_enabled": true,
+        "resource_types": [
+            "instance"
+        ]
+    }
+}
