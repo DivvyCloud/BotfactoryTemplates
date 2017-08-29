@@ -1,0 +1,29 @@
+{
+    "uuid": "divvy.create_default_vpc_network.json",
+    "name": "Restores Default Network/VPC",
+    "category": "Best Practices",
+    "description": "Restores a Network or a VPC in a region where it has been deleted",
+    "instructions": {
+        "actions": [
+            {
+                "config": {},
+                "name": "divvy.action.create_default_network",
+                "run_when_result_is": true
+            }
+        ],
+        "filters": [
+            {
+                "config": {},
+                "name": "divvy.filter.region_without_default_network"
+            }
+        ],
+        "groups": [],
+        "hookpoints": [
+            "divvycloud.resource.created"
+        ],
+        "ondemand_enabled": true,
+        "resource_types": [
+            "serviceregion"
+        ]
+    }
+}
