@@ -19,7 +19,7 @@
                         "FULL_CONTROL"
                     ]
                 },
-                "name": "divvy.filter.bucket_permissions_list"
+                "name": "divvy.query.storage_containers_open_to_world"
             }
         ],
         "groups": [],
