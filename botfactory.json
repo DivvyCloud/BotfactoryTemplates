@@ -980,7 +980,7 @@
             "uuid": "divvy.network_flow_logs_configured",
             "category": "Security",
             "name": "Network Resources With Traffic Logging Configured",
-            "description": "Identify network resources which have traffic logging such as AWS VPC Flow Log enabled",
+            "description": "Identify network resources that have traffic logging, e.g., AWS VPC Flow Log, enabled",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.06/templates/divvy_network_flow_logs_configured.json"
         },
@@ -988,7 +988,7 @@
             "uuid": "divvy.network_flow_logs_not_configured",
             "category": "Security",
             "name": "Network Resources Without Traffic Logging Configured",
-            "description": "Identify network resources which do not have traffic logging such as AWS VPC Flow Log enabled",
+            "description": "Identify network resources that do not have traffic logging, e.g., AWS VPC Flow Log, enabled",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.06/templates/divvy_network_flow_logs_not_configured.json"
         },

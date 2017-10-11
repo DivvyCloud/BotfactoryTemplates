@@ -1,8 +1,9 @@
 {
     "uuid": "divvy.bucket_max_objects",
-    "name": "S3 Bucket Max Objects",
+    "name": "Storage Container Max Objects",
     "category": "Optimization",
-    "description": "Identify buckets which exceed a total of 10,000 objects",
+    "description": "Identify storage containers, e.g., AWS S3 buckets, that "
+                   "exceed a given number of objects (default is 10,000)",
     "instructions": {
         "actions": [
             {

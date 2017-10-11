@@ -1,8 +1,9 @@
 {
     "uuid": "divvy.bucket_global_write_permission",
-    "name": "S3 Bucket Global Write (PUT) Permissions",
+    "name": "Storage Container Global Write (PUT) Permissions",
     "category": "Security",
-    "description": "Identify buckets exposing write permissions to the world",
+    "description": "Identify storage containers, e.g., AWS S3 buckets, that "
+                   "expose write permissions to the world",
     "instructions": {
         "actions": [
             {
