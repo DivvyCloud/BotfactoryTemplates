@@ -1,8 +1,8 @@
 {
     "uuid": "divvy.create_default_vpc_network.json",
-    "name": "Restores Default Network/VPC",
+    "name": "Network Default Restore",
     "category": "Best Practices",
-    "description": "Restores a Network or a VPC in a region where it has been deleted",
+    "description": "Restores a default network in a region where it has been deleted",
     "instructions": {
         "actions": [
             {

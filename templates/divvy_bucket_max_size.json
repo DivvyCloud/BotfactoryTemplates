@@ -1,8 +1,9 @@
 {
     "uuid": "divvy.bucket_max_size",
-    "name": "S3 Bucket Max Size",
+    "name": "Storage Container Max Size",
     "category": "Optimization",
-    "description": "Identify buckets which exceed a total size of 1TB",
+    "description": "Identify storage containters, e.g., AWS S3 buckets, that "
+                   "exceed the total size provided in GB (default of 1TB)",
     "instructions": {
         "actions": [
             {
@@ -16,7 +17,7 @@
                 "config": {
                     "container_size": 1024
                 },
-                "name": "divvy.filter.bucket_supports_logging"
+                "name": "divvy.filter.storage_container_size_at_least"
             }
         ],
         "groups": [],
