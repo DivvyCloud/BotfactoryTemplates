@@ -1,41 +1,48 @@
 {
-    "uuid": "divvy.instance_daily_backup",
-    "name": "Instance Daily Backup (Compute)",
-    "category": "Best Practices",
-    "description": "This bot makes a daily backup of compute instances with specific a tag key/value pair. It can be customized to meet additional requirements.",
+    "uuid": "divvy.resource_monthly_cost",
+    "name": "Resource Monthly Cost",
+    "category": "Optimization",
+    "description": "This bot identifies resources with costs above a given threshold. It sends a Slack message that will need to be customized to the specific account.",
     "instructions": {
         "actions": [
-           {
+            {
+            "run_when_result_is": true,
+            "config": {},
+            "name": "divvy.action.mark_non_compliant"
+            },
+            {
             "run_when_result_is": true,
             "config": {
-             "hours": 0,
-             "no_reboot": false
+                "username": "Resource Monthly Cost Bot",
+                "message": "An expensive resource has been found:\no  Monthly cost = `{{event.resource.get_monthly_cost()}}`\no  Owner = `{{event.resource.get_owner_name()}}`\no  Resource name = `{{event.resource.get_resource_name()}}`\no  Account = `{{event.resource.get_organization_service_name()}}`\n===",
+                "recipient_badge_keys": [],
+                "recipient_tag_keys": [],
+                "channel": "#expensive-resources"
             },
-            "name": "divvy.action.create_instance_backup"
-           }
-         ],
+            "name": "slack.action.send_slack_message"
+            }
+            ],
         "filters": [
-           {
+            {
             "config": {
-             "tag_key": "daily_backup",
-             "tag_values": [
-              "true"
-             ],
-             "case_sensitive": false
+             "maximum_monthly_cost": 1000
             },
-            "name": "divvy.filter.validate_tag_value"
-           }
+            "name": "divvy.filter.monthly_cost_at_least"
+            }
         ],
         "groups": [],
-        "hookpoints": [],
-        "ondemand_enabled": false,
-        "schedule": {
-            "_type": "Daily",
-            "time_of_day": {"_type": "TimeOfDay", "second": 0, "minute": 0, "hour": 4},
-            "exclude_days": []
-        },
+        "hookpoints": [
+            "divvycloud.resource.created",
+            "divvycloud.resource.modified"
+        ],
+        "ondemand_enabled": true,
+        "schedule": null,
         "resource_types": [
-            "instance"
+            "instance",
+            "dbinstance",
+            "mcinstance",
+            "bigdatainstance",
+            "volume"
         ]
     }
 }
