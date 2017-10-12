@@ -1,0 +1,41 @@
+{
+    "uuid": "divvy.instance_daily_backup",
+    "name": "Instance Daily Backup (Compute)",
+    "category": "Best Practices",
+    "description": "This bot makes a daily backup of compute instances with specific a tag key/value pair. It can be customized to meet additional requirements.",
+    "instructions": {
+        "actions": [
+           {
+            "run_when_result_is": true,
+            "config": {
+             "hours": 0,
+             "no_reboot": false
+            },
+            "name": "divvy.action.create_instance_backup"
+           }
+         ],
+        "filters": [
+           {
+            "config": {
+             "tag_key": "daily_backup",
+             "tag_values": [
+              "true"
+             ],
+             "case_sensitive": false
+            },
+            "name": "divvy.filter.validate_tag_value"
+           }
+        ],
+        "groups": [],
+        "hookpoints": [],
+        "ondemand_enabled": false,
+        "schedule": {
+            "_type": "Daily",
+            "time_of_day": {"_type": "TimeOfDay", "second": 0, "minute": 0, "hour": 4},
+            "exclude_days": []
+        },
+        "resource_types": [
+            "instance"
+        ]
+    }
+}

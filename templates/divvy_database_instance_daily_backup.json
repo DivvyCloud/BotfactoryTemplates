@@ -1,0 +1,40 @@
+{
+    "uuid": "divvy.database_instance_daily_backup",
+    "name": "Instance Daily Backup (Database)",
+    "category": "Best Practices",
+    "description": "This bot makes a daily backup of database instances with specific a tag key/value pair. It can be customized to meet additional requirements.",
+    "instructions": {
+        "actions": [
+           {
+            "run_when_result_is": true,
+            "config": {
+             "hours": 0
+            },
+            "name": "divvy.action.create_db_instance_snapshot"
+           }
+         ],
+        "filters": [
+           {
+            "config": {
+             "tag_key": "daily_backup",
+             "tag_values": [
+              "true"
+             ],
+             "case_sensitive": false
+            },
+            "name": "divvy.filter.validate_tag_value"
+           }
+        ],
+        "groups": [],
+        "hookpoints": [],
+        "ondemand_enabled": false,
+        "schedule": {
+            "_type": "Daily",
+            "time_of_day": {"_type": "TimeOfDay", "second": 0, "minute": 0, "hour": 4},
+            "exclude_days": []
+        },
+        "resource_types": [
+            "dbinstance"
+        ]
+    }
+}
