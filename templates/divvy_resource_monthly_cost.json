@@ -17,7 +17,7 @@
                 "message": "An expensive resource has been found:\no  Monthly cost = `{{event.resource.get_monthly_cost()}}`\no  Owner = `{{event.resource.get_owner_name()}}`\no  Resource name = `{{event.resource.get_resource_name()}}`\no  Account = `{{event.resource.get_organization_service_name()}}`\n===",
                 "recipient_badge_keys": [],
                 "recipient_tag_keys": [],
-                "channel": "#expensive-resources"
+                "channel": ""
             },
             "name": "slack.action.send_slack_message"
             }
