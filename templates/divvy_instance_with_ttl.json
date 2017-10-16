@@ -1,0 +1,52 @@
+{
+    "uuid": "divvy.instance_with_ttl",
+    "name": "Instances With TTL",
+    "category": "Optimization",
+    "description": "This bot works in coordination with a tagging policy that allows resource owners to specify a 'time to live' (TTL).",
+    "instructions": {
+        "actions": [
+            {
+            "run_when_result_is": true,
+            "config": {},
+            "name": "divvy.action.mark_non_compliant"
+            },
+            {
+            "run_when_result_is": true,
+            "config": {},
+            "name": "divvy.action.ttl_deletion"
+            }
+        ],
+        "filters": [
+            {
+            "config": {
+            "match_all": false,
+            "tag_keys": [
+                "ttl"
+            ],
+             "case_sensitive": false
+            },
+            "name": "divvy.query.resource_has_tag_key"
+            },
+            {
+                "config": {
+                    "states": [
+                        "running",
+                        "stopped",
+                        "paused",
+                        "suspended"
+                    ]
+                },
+            "name": "divvy.filter.instance_state"
+            }
+        ],
+        "groups": [],
+        "hookpoints": [
+            "divvycloud.resource.created",
+            "divvycloud.resource.modified"
+        ],
+        "ondemand_enabled": true,
+        "resource_types": [
+            "instance"
+        ]
+    }
+}
