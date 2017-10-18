@@ -1,6 +1,6 @@
 {
-    "uuid": "divvy.buckets_without_object_versioning",
-    "name": "Storage Container Versioning",
+    "uuid": "divvy.storage_containers_without_versioning",
+    "name": "Storage Container Without Object Versioning",
     "category": "Security",
     "description": "Identify storage containers, e.g., AWS S3 buckets, without "
                    "object versioning enabled",
@@ -9,13 +9,13 @@
             {
                 "config": {},
                 "name": "divvy.action.mark_non_compliant",
-                "run_when_result_is": false
+                "run_when_result_is": true
             }
         ],
         "filters": [
             {
                 "config": {},
-                "name": "divvy.filter.bucket_supports_versioning"
+                "name": "divvy.filter.storage_containers_without_versioning"
             }
         ],
         "groups": [],
