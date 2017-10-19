@@ -1,0 +1,30 @@
+{
+    "uuid": "divvy.storage_container_without_encryption",
+    "name": "Storage Container Without Encryption",
+    "category": "Security",
+    "description": "Identify storage containers, e.g., AWS S3 buckets, without encryption enabled",
+    "instructions": {
+        "actions": [
+            {
+                "config": {},
+                "name": "divvy.action.mark_non_compliant",
+                "run_when_result_is": true
+            }
+        ],
+        "filters": [
+            {
+                "config": {},
+                "name": "divvy.query.storage_containers_not_encrypted"
+            }
+        ],
+        "groups": [],
+        "hookpoints": [
+            "divvycloud.resource.created",
+            "divvycloud.resource.modified"
+        ],
+        "ondemand_enabled": true,
+        "resource_types": [
+            "storagecontainer"
+        ]
+    }
+}
