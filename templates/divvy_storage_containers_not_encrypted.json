@@ -14,7 +14,7 @@
         "filters": [
             {
                 "config": {},
-                "name": "divvy.query.storage_containers_not_encrypted"
+                "name": "storage_containers_not_encrypted"
             }
         ],
         "groups": [],
