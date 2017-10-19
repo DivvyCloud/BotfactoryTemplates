@@ -353,12 +353,12 @@
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.07/templates/divvy_buckets_with_global_write_permission.json"
         },
         {
-            "uuid": "divvy.buckets_without_object_versioning",
+            "uuid": "divvy.storage_containers_without_versioning",
             "category": "Security",
-            "name": "Storage Containers Without Versioning",
+            "name": "Storage Containers Without Object Versioning",
             "description": "Identify storage containers without object versioning enabled",
             "version": "0.1.0",
-            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.07/templates/divvy_buckets_without_object_versioning.json"
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.07/templates/divvy_storage_containers_without_versioning.json"
         },
         {
             "uuid": "divvy.buckets_without_logging",
