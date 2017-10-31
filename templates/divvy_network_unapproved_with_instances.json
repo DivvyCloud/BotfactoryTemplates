@@ -1,0 +1,31 @@
+{
+    "uuid": "divvy.network_unapproved_with_instances",
+    "name": "Network Not on Whitelist Has Instances",
+    "category": "Security",
+    "description": "Identify unapproved networks with at least one instance",
+    "instructions": {
+        "actions": [
+            {
+                "config": {},
+                "name": "divvy.action.mark_non_compliant",
+                "run_when_result_is": true
+            }
+        ],
+        "filters": [
+            {
+                "config": {
+                    "whitelist":["vpc-123456"]
+                },
+                "name": "divvy.query.network_unapproved_with_instances"
+            }
+        ],
+        "groups": [],
+        "hookpoints": [
+            "divvycloud.resource.modified"
+        ],
+        "ondemand_enabled": true,
+        "resource_types": [
+            "privatenetwork"
+        ]
+    }
+}

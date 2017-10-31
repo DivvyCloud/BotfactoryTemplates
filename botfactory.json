@@ -1055,6 +1055,14 @@
             "description": "Identify snapshots that are accessible to the public",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.07/templates/divvy_snapshots_public.json"
+        },
+        {
+            "uuid": "divvy.networks_unapproved_with_instances",
+            "category": "Security",
+            "name": "Network Not on Whitelist Has Instances",
+            "description": "Identify unapproved networks with at least one instance",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.07/templates/divvy_networks_unapproved_with_instances.json"
         }
     ]
 }
