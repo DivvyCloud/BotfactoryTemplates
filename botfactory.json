@@ -1055,6 +1055,22 @@
             "description": "Identify snapshots that are accessible to the public",
             "version": "0.1.0",
             "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.07/templates/divvy_snapshots_public.json"
+        },
+        {
+            "uuid": "divvy.storage_container_with_encryption",
+            "category": "Security",
+            "name": "Storage Container With Encryption",
+            "description": "Identify storage containers, e.g., AWS S3 buckets, with encryption enabled",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.07/templates/divvy_storage_containers_encrypted.json"
+        },
+        {
+            "uuid": "divvy.storage_container_without_encryption",
+            "category": "Security",
+            "name": "Storage Container Without Encryption",
+            "description": "Identify storage containers, e.g., AWS S3 buckets, without encryption enabled",
+            "version": "0.1.0",
+            "github_url": "https://raw.githubusercontent.com/DivvyCloud/BotfactoryTemplates/release/17.07/templates/divvy_storage_containers_not_encrypted.json"
         }
     ]
 }
