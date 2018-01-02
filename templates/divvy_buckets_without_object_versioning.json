@@ -14,7 +14,7 @@
         "filters": [
             {
                 "config": {},
-                "name": "divvy.filter.storage_containers_without_versioning"
+                "name": "divvy.filter.bucket_supports_versioning"
             }
         ],
         "groups": [],
