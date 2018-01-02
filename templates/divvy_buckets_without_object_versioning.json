@@ -2,8 +2,7 @@
     "uuid": "divvy.storage_containers_without_versioning",
     "name": "Storage Container Without Object Versioning",
     "category": "Security",
-    "description": "Identify storage containers, e.g., AWS S3 buckets, without "
-                   "object versioning enabled",
+    "description": "Identify storage containers, e.g., AWS S3 buckets, without object versioning enabled",
     "instructions": {
         "actions": [
             {
