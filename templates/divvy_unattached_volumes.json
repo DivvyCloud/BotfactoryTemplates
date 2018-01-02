@@ -1,6 +1,6 @@
 {
     "uuid": "divvy.unattached_volumes",
-    "name": "Unattached Volumes",
+    "name": "Volumes Unattached",
     "category": "Optimization",
     "description": "Identifies unattached volumes",
     "instructions": {
