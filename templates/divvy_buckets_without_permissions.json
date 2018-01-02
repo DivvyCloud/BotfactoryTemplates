@@ -2,8 +2,7 @@
     "uuid": "divvy.buckets_without_permissions",
     "name": "Storage Containers with No Permissions",
     "category": "Security",
-    "description": "Identify storage containers, e.g., AWS S3 buckets, without "
-                   "any permission sets",
+    "description": "Identify storage containers, e.g., AWS S3 buckets, without any permission sets",
     "instructions": {
         "actions": [
             {
