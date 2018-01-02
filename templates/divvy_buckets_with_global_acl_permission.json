@@ -2,9 +2,7 @@
     "uuid": "divvy.bucket_global_acl_permission",
     "name": "Storage Containers Global ACL Permissions",
     "category": "Security",
-    "description": "Identify storage containers, e.g., AWS S3 buckets, that "
-                   "permit the world view/modify privileges to access list "
-                   "policies",
+    "description": "Identify storage containers, e.g., AWS S3 buckets, that permit the world view/modify privileges to access list policies",
     "instructions": {
         "actions": [
             {
