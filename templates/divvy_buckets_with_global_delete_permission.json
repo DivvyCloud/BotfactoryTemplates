@@ -2,8 +2,7 @@
     "uuid": "divvy.bucket_global_delete_permission",
     "name": "Storage Container Global Delete Permissions",
     "category": "Security",
-    "description": "Identify storage container, e.g., AWS S3 buckets, that "
-                   "expose delete permissions to the world",
+    "description": "Identify storage container, e.g., AWS S3 buckets, that expose delete permissions to the world",
     "instructions": {
         "actions": [
             {

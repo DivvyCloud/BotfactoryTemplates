@@ -2,8 +2,7 @@
     "uuid": "divvy.bucket_global_read_permission",
     "name": "Storage Container Global Read Permissions",
     "category": "Security",
-    "description": "Identify storage containers, e.g., AWS S3 buckets, that "
-                   "expose read (GET) permissions to the world",
+    "description": "Identify storage containers, e.g., AWS S3 buckets, that expose read (GET) permissions to the world",
     "instructions": {
         "actions": [
             {
