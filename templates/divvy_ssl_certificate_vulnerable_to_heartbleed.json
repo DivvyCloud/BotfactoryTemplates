@@ -15,7 +15,7 @@
             {
                 "name": "divvy.filter.ssl_certificate_older_than",
                 "config": {
-                    "date": "2014-04-03T00:00:00.0Z"
+                    "date": u"2014-04-03T04:00:00.000Z"
                 }
             }
         ],
