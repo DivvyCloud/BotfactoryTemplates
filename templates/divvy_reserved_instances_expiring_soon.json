@@ -16,7 +16,7 @@
                 "config": {
                     "days": 30
                 },
-                "name": "divvy.filter.reserved_instance_nearing_expiration"
+                "name": "divvy.query.reserved_instance_nearing_expiration"
             }
         ],
         "groups": [],

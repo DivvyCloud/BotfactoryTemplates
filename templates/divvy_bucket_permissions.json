@@ -1,8 +1,8 @@
 {
     "uuid": "divvy.bucket_permissions",
-    "name": "S3 Bucket Permissions",
+    "name": "Storage Container Permissions",
     "category": "Security",
-    "description": "Identify buckets exposing data with permissive access lists",
+    "description": "Identify storage containers, e.g., AWS S3 buckets, that expose data with permissive access lists",
     "instructions": {
         "actions": [
             {
@@ -20,7 +20,7 @@
                         "READ"
                     ]
                 },
-                "name": "divvy.filter.bucket_permissions_list"
+                "name": "divvy.query.storage_containers_open_to_world"
             }
         ],
         "groups": [],

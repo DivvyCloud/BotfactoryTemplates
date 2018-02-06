@@ -1,8 +1,8 @@
 {
-    "uuid": "divvy.bucket_global_write_permission",
-    "name": "Storage Container Global Write (PUT) Permissions",
+    "uuid": "divvy.storage_container_without_encryption",
+    "name": "Storage Container Without Encryption",
     "category": "Security",
-    "description": "Identify storage containers, e.g., AWS S3 buckets, that expose write permissions to the world",
+    "description": "Identify storage containers, e.g., AWS S3 buckets, without encryption enabled",
     "instructions": {
         "actions": [
             {
@@ -13,12 +13,8 @@
         ],
         "filters": [
             {
-                "config": {
-                    "permissions_list": [
-                        "WRITE"
-                    ]
-                },
-                "name": "divvy.query.storage_containers_open_to_world"
+                "config": {},
+                "name": "storage_containers_not_encrypted"
             }
         ],
         "groups": [],

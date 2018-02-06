@@ -8,15 +8,15 @@
             {
                 "config": {},
                 "name": "divvy.action.mark_non_compliant",
-                "run_when_result_is": false
+                "run_when_result_is": true
             }
         ],
         "filters": [
             {
+                "name": "divvy.filter.ssl_certificate_older_than",
                 "config": {
-                    "date": "2014-04-03 00:00:00"
-                },
-                "name": "divvy.filter.ssl_certificate_older_than"
+                    "date": "2014-04-03T04:00:00.000Z"
+                }
             }
         ],
         "groups": [],

@@ -2,7 +2,7 @@
     "uuid": "divvy.resource_age",
     "name": "Resource Of Age",
     "category": "Optimization",
-    "description": "Identify resources based on their age",
+    "description": "Identify resources based on their age (default is 24 hours).",
     "instructions": {
         "actions": [
             {
@@ -14,7 +14,7 @@
         "filters": [
             {
                 "config": {
-                    "hours": 720
+                    "hours": 24
                 },
                 "name": "divvy.filter.resource_recently_created_or_discovered"
             }

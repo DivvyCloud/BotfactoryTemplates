@@ -1,8 +1,8 @@
 {
     "uuid": "divvy.bucket_global_read_permission",
-    "name": "S3 Bucket Global Read Permissions",
+    "name": "Storage Container Global Read Permissions",
     "category": "Security",
-    "description": "Identify buckets exposing read (GET) permissions to the world",
+    "description": "Identify storage containers, e.g., AWS S3 buckets, that expose read (GET) permissions to the world",
     "instructions": {
         "actions": [
             {
@@ -18,7 +18,7 @@
                         "READ"
                     ]
                 },
-                "name": "divvy.filter.bucket_permissions_list"
+                "name": "divvy.query.storage_containers_open_to_world"
             }
         ],
         "groups": [],

@@ -14,7 +14,7 @@
         "filters": [
             {
                 "config": {
-                    "instance_state": ["running"],
+                    "instance_state": "running",
                     "unit_type": "days",
                     "number_of_units": 1
                 },
