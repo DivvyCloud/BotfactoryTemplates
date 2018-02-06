@@ -14,7 +14,7 @@
         "filters": [
             {
                 "config": {
-                    "limit": 10
+                    "availability": 10
                 },
                 "name": "divvy.filter.subnet_ip_availability_percentage_at_least"
             }

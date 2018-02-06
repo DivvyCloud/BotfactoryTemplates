@@ -1,8 +1,8 @@
 {
     "uuid": "divvy.buckets_without_logging",
-    "name": "S3 Bucket Logging",
+    "name": "Storage Container Logging",
     "category": "Security",
-    "description": "Identify buckets without object logging enabled",
+    "description": "Identify storage containers, e.g., AWS S3 buckets, without object logging enabled",
     "instructions": {
         "actions": [
             {

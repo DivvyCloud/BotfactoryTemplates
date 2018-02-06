@@ -14,7 +14,7 @@
         "filters": [
             {
                 "config": {
-                    "day": 14,
+                    "days": 14,
                     "avg": 80
                 },
                 "name": "divvy.query.instances_averaging_high_cpu"

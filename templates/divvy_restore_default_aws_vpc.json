@@ -1,22 +1,20 @@
 {
-    "uuid": "divvy.volumes_without_recent_snapshot",
-    "name": "Volumes Without A Recent Snapshot",
+    "uuid": "divvy.create_default_vpc_network.json",
+    "name": "Network Default Restore",
     "category": "Best Practices",
-    "description": "Identify volumes without a snapshot in the past X days with 30 days as default",
+    "description": "Restores a default network in a region where it has been deleted",
     "instructions": {
         "actions": [
             {
                 "config": {},
-                "name": "divvy.action.mark_non_compliant",
+                "name": "divvy.action.create_default_network",
                 "run_when_result_is": true
             }
         ],
         "filters": [
             {
-                "config": {
-                    "days": 30
-                },
-                "name": "divvy.filter.recent_volume_snapshots"
+                "config": {},
+                "name": "divvy.filter.region_without_default_network"
             }
         ],
         "groups": [],
@@ -25,7 +23,7 @@
         ],
         "ondemand_enabled": true,
         "resource_types": [
-            "volume"
+            "serviceregion"
         ]
     }
 }
